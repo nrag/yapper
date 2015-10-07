@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WindowsAzure1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="YapperWebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=yappertest;AccountKey=fZv2twMqYN2BQK6nqfG4+IPFEcXNS7Gc4FRBKiCx9fbH6wjjgwa5k4RThPYPYX3QTvpBp8Vur5mbS5PlHGPfeQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="nanda" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDFjDjWtX2aiSs/DYCyCslwwDQYJKoZIhvcNAQEBBQAEggEAJM8+P1DYfEU+BBbOke8wYG2kj8yRu0fKR8PAMCmZO6Nt7cQLmRlQsm/9cV9I+XRo5Wg8xLjIAf4MtqQHcaEOqzZomkUrE1e+vxJsrkyGQaEOGlg8LVL4Xm4WkPrqQEQqo4YWv6UDvAy0lt2vdoEm3kMuNhD+xFQ8r3BLC9o51yjcy9AXBpGJkgwIZXve4xZ3n95GwqAKTAkKceJ9Fjxsu+vDlAWZ9LdWvcbg15WE3Ly42Nj24Vb2lKoW6sDyMPvvyyFpCNQrBtPvJ7d62EWpYCgdns4bfT8H2ZtJXvpcV0HOucRDzHz3Ta2FL6SxdwzGcC5oT33qZVNdKArWXuNuhTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECP8bJXX2zHV3gBCiJ70/8QWhTbXUi8cexmfF" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-07-30T23:59:59.0000000-07:00" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="422BF0452A228468E77F4E74C9DBC037EE54C7F0" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="UserServiceRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=yapper;AccountKey=u679VXVzANmGcZ8Ys2fD2jWZHYyFsbGvDQns5QOSX/5couMsB0VrIUCfRHmpcDN7zyw0ZdcIaB8e2A4MxJ8Qyw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="nanda" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDFjDjWtX2aiSs/DYCyCslwwDQYJKoZIhvcNAQEBBQAEggEAJM8+P1DYfEU+BBbOke8wYG2kj8yRu0fKR8PAMCmZO6Nt7cQLmRlQsm/9cV9I+XRo5Wg8xLjIAf4MtqQHcaEOqzZomkUrE1e+vxJsrkyGQaEOGlg8LVL4Xm4WkPrqQEQqo4YWv6UDvAy0lt2vdoEm3kMuNhD+xFQ8r3BLC9o51yjcy9AXBpGJkgwIZXve4xZ3n95GwqAKTAkKceJ9Fjxsu+vDlAWZ9LdWvcbg15WE3Ly42Nj24Vb2lKoW6sDyMPvvyyFpCNQrBtPvJ7d62EWpYCgdns4bfT8H2ZtJXvpcV0HOucRDzHz3Ta2FL6SxdwzGcC5oT33qZVNdKArWXuNuhTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECP8bJXX2zHV3gBCiJ70/8QWhTbXUi8cexmfF" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-07-30T23:59:59.0000000-07:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="422BF0452A228468E77F4E74C9DBC037EE54C7F0" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

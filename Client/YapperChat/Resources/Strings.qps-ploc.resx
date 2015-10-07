@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddGroupText" xml:space="preserve">
+    <value>[E2940][!!_Ãďð Ģѓóµρ_!!]</value>
+  </data>
+  <data name="AddMemberText" xml:space="preserve">
+    <value>[5773F][!!_Àďđ Мęмъèř_!!]</value>
+  </data>
+  <data name="AddMoreTaskItem" xml:space="preserve">
+    <value>[FEAA2][!!_Áđď Мóŕè Ťâşĸ Îтéм_!!!!!!]</value>
+  </data>
+  <data name="AppointmentStartToEndTime" xml:space="preserve">
+    <value>[5B690][!!_{0} - {1}_!!]</value>
+  </data>
+  <data name="AppointmentTimeText" xml:space="preserve">
+    <value>[7BB5D][!!_Àрþôįйтmęήť Τímé_!!!!]</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>[475D3][!!_Àρѓ_!!]</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>[DA3D2][!!_Ãùğ_!!]</value>
+  </data>
+  <data name="CalendarAcceptMessage" xml:space="preserve">
+    <value>[FD8B1][!!_Âčċêρţêð_!!]</value>
+  </data>
+  <data name="CalendarAddOption" xml:space="preserve">
+    <value>[16A99][!!_Âđđ тò Ćáłêиđàŗ_!!!!]</value>
+  </data>
+  <data name="CalendarDeclineMessage" xml:space="preserve">
+    <value>[BB175][!!_Ðèćļįйęđ_!!]</value>
+  </data>
+  <data name="CalendarDeclineOption" xml:space="preserve">
+    <value>[DFD25][!!_Ðêčļįиé_!!]</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>[A7842][!!_Čãйčęľ_!!]</value>
+  </data>
+  <data name="CompletingRegistrationText" xml:space="preserve">
+    <value>[0F048][!!_Ċóмþłéťîиģ ŕèğíşτřáτîòή_!!!!!!]</value>
+  </data>
+  <data name="ComposePollText" xml:space="preserve">
+    <value>[44212][!!_Ćõмρõşę ρòłĺ_!!]</value>
+  </data>
+  <data name="ComposeTaskColonText" xml:space="preserve">
+    <value>[F4546][!!_Čòмрôśè Ťâśќ:_!!]</value>
+  </data>
+  <data name="ContactDetailsText" xml:space="preserve">
+    <value>[44DC0][!!_Čòиτãĉť Đéťàîĺş_!!!!]</value>
+  </data>
+  <data name="CreateGroupText" xml:space="preserve">
+    <value>[0FA1F][!!_Čŗęáтê Ğŗôùρ_!!]</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>[668E3][!!_Ďéć_!!]</value>
+  </data>
+  <data name="DeleteAllChatsFromPhoneText" xml:space="preserve">
+    <value>[CEE41][!!_Ďéľêţè âļĺ ċћàтŝ ƒřòm рĥòήê_!!!!!!!!]</value>
+  </data>
+  <data name="DoneText" xml:space="preserve">
+    <value>[AB494][!!_Ðõήê_!!]</value>
+  </data>
+  <data name="DontTextAndDrive" xml:space="preserve">
+    <value>[458FF][!!_Įť łõôķš ľîķę ŷôù ářé ďŕìνįиģ ãť {0} мрн. Þĺèâŝê ðôη'τ ţę×т áηď đѓįνé. Įƒ ŷóú ãѓè иôт ťħè ďѓîνęř, þѓęšŝ òĸ àήđ ρřõĉèéð._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="DurationText" xml:space="preserve">
+    <value>[560C9][!!_Ďµřàťįòи_!!]</value>
+  </data>
+  <data name="EmptyQuestionText" xml:space="preserve">
+    <value>[D1BFB][!!_Émрťý qµêšтįòй_!!!!]</value>
+  </data>
+  <data name="EnableChatHeadsText" xml:space="preserve">
+    <value>[FA38B][!!_Êйãвłè čнàт ĥéàđś_!!!!!!]</value>
+  </data>
+  <data name="EnableDebugModeText" xml:space="preserve">
+    <value>[A24DF][!!_Êйãвľè đèвùģ mõďę_!!!!!!]</value>
+  </data>
+  <data name="EnablePushNotificationText" xml:space="preserve">
+    <value>[3585D][!!_Ęήàъłê þùŝћ иòτíƒìĉãτîôи_!!!!!!!!]</value>
+  </data>
+  <data name="EnableSendingLocationText" xml:space="preserve">
+    <value>[AA7F6][!!_Èйãъļé ŝèηðîиģ ļõċâтîôй_!!!!!!]</value>
+  </data>
+  <data name="EncryptText" xml:space="preserve">
+    <value>[9B081][!!_Ęйċѓўρτ_!!]</value>
+  </data>
+  <data name="EnterAMessage" xml:space="preserve">
+    <value>[B8232][!!_Þłęãŝę éиτéŕ ã мèşşàģê вęƒóŗê šèήđìиğ_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="EnterTheSixHiphenDigitConfirmationCodeSentByYapperInSMSColon" xml:space="preserve">
+    <value>[13E68][!!_Èйţéŕ τђê 6-ðìģìť Čôηƒįŕмãţíôή Ċõďê šêиτ вý Ỳáрþèŗ įή ŜМŜ:_!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>[F9BE7][!!_₣éв_!!]</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>[205D5][!!_₣ŗì_!!]</value>
+  </data>
+  <data name="GroupDetailsText" xml:space="preserve">
+    <value>[701AE][!!_Ĝŕòûр Ďêтâîłš_!!]</value>
+  </data>
+  <data name="HomeText" xml:space="preserve">
+    <value>[1398B][!!_Нòmê_!!]</value>
+  </data>
+  <data name="InviteFriendsText" xml:space="preserve">
+    <value>[13544][!!_Įйνîтé ƒŕįèήďś_!!!!]</value>
+  </data>
+  <data name="InviteText" xml:space="preserve">
+    <value>[C842D][!!_Ìήνíťê_!!]</value>
+  </data>
+  <data name="IsYourPhoneNumberCorrectText" xml:space="preserve">
+    <value>[46BAD][!!_Įš ŷõûř þнòήę йµмБęѓ ċôŗŕèčт?_!!!!!!!!]</value>
+  </data>
+  <data name="ItemsText" xml:space="preserve">
+    <value>[A4FF4][!!_įťémŝ_!!]</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>[8FD7D][!!_Јâй_!!]</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>[28942][!!_Ĵúł_!!]</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>[C5A72][!!_Ĵúη_!!]</value>
+  </data>
+  <data name="LoadingSpace3DotsText" xml:space="preserve">
+    <value>[28EFC][!!_Ĺòàďìηĝ ..._!!]</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>[D7BD0][!!_Ĺôàđíйğ_!!]</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>[C087D][!!_Ĺóğîή_!!]</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>[3F8EF][!!_Μáŕ_!!]</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>[DBCF8][!!_Μãŷ_!!]</value>
+  </data>
+  <data name="MembersText" xml:space="preserve">
+    <value>[4CA7D][!!_Μêмъęŕş_!!]</value>
+  </data>
+  <data name="MobileText" xml:space="preserve">
+    <value>[D8CB4][!!_Мõъíľé_!!]</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>[B46DF][!!_Мóй_!!]</value>
+  </data>
+  <data name="MyCalendarAccept" xml:space="preserve">
+    <value>[F7FE3][!!_Ỳôµ ĥàνé ãćĉèþτêð ţнê àþρòìήτmęиţ_!!!!!!!!!!]</value>
+  </data>
+  <data name="MyCalendarDecline" xml:space="preserve">
+    <value>[BF74F][!!_Ўòú ћàνé ðèćľįήęđ τħè áρþõìήţmèиţ_!!!!!!!!!!]</value>
+  </data>
+  <data name="MyPollResponse" xml:space="preserve">
+    <value>[8ACF5][!!_Ўõµ řèšρõиďèď '{0}' ţô тħè qùêŝτįòй_!!!!!!!!!!]</value>
+  </data>
+  <data name="NameColonText" xml:space="preserve">
+    <value>[658F4][!!_Ñàмę:_!!]</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>[24B62][!!_Ņáмę_!!]</value>
+  </data>
+  <data name="NewChatText" xml:space="preserve">
+    <value>[73570][!!_Ńêẃ Ćћãţ_!!]</value>
+  </data>
+  <data name="NewGroupText" xml:space="preserve">
+    <value>[C587B][!!_Ņêẁ ğŗóùþ_!!]</value>
+  </data>
+  <data name="NewPollText" xml:space="preserve">
+    <value>[AA435][!!_Ñéẁ ρõłĺ_!!]</value>
+  </data>
+  <data name="NoUserContactsPageText" xml:space="preserve">
+    <value>[9A1DC][!!_Ñóиé ôƒ ţĥé µŝęŗş įй ŷòùѓ рђóηè ċõиťàċт ĺįšť ћáνè ŕêĝįśťęŕéď ŵįτĥ Ỳãрþęř.&amp;#10;&amp;#10;1. Ϋòû ċáй śęήđ àй íηνíťé тó ѓèqûêŝт úŝèŗš τó ìиŝτàļļ ÿáþрèŗ.&amp;#10;&amp;#10;2. Ýôù ċàи ãďð é×ìśţįήģ Ўâρρêŕ úŝéŗś τõ ўòúř þћôήé ćòиţáċţ ťõ şтãřτ ĉнàτťìηğ ẃìťĥ тĥêм._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+    <comment></comment>
+  </data>
+  <data name="NoUserInformationText" xml:space="preserve">
+    <value>[0879B][!!_Ỳòúŗ рнõήę ĉõηţâċтş ľîŝτ ðòęś ηõт нãνè àήУóиé ƒóř ўôû ťò îηνíтê ãτ тħîŝ ťìмè. Þľèâšè àðđ ťђę móьìľè ηµmвêř õƒ ţнè ćõйťàćτ ÿõû ŵòùļđ ļîќè тó îиνíťè ţõ Уõùѓ ρнõйê ĉóиţáćτ ļíşτ. Þłęâşé ĉóмé Бâćķ нèřè âƒтêѓ тħâт ţó şêηð тћè įηνìтàţìõиŝ._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>[7BB21][!!_Ńôν_!!]</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>[559AA][!!_Òĉť_!!]</value>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>[75502][!!_ÓК_!!]</value>
+  </data>
+  <data name="OnlyOwnerCanModifyGroup" xml:space="preserve">
+    <value>[FAA08][!!_Ϋóû âřê йõť тĥè õŵήèř óƒ τђè ġѓôùρ. Òйľŷ τнę óẁйęŕ ċãи ãðď òѓ ѓémôνę męmБêŕş._!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>[F2DAA][!!_Ôþţîòиš_!!]</value>
+  </data>
+  <data name="OtherCalendarAccept" xml:space="preserve">
+    <value>[37764][!!_'{0}' àĉĉęрťêď τђê àþρóįйţméиť_!!!!!!!!]</value>
+  </data>
+  <data name="OtherCalendarDecline" xml:space="preserve">
+    <value>[BA8FC][!!_'{0}' đèĉľîηéđ ţђé àрþóìйţмéиţ_!!!!!!!!]</value>
+  </data>
+  <data name="OtherCalendarNoResponse" xml:space="preserve">
+    <value>[C943E][!!_'{0}' ĥáś иóť ŕèšþõηđèď ťõ àрþòîηťmèηţ_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="OtherPollNoResponse" xml:space="preserve">
+    <value>[3E4FC][!!_'{0}' ћàş иôт ŕęşþòиđèď тõ тћè qµèŝţîôи_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="OtherPollResponse" xml:space="preserve">
+    <value>[57C5E][!!_'{0}' řèśрòηðèð '{1}' тô ţĥę qùęŝтìõή_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="OwnerText" xml:space="preserve">
+    <value>[97B85][!!_Òẁиèŕ_!!]</value>
+  </data>
+  <data name="PhoneNumberConfirmationText" xml:space="preserve">
+    <value>[BA7B6][!!_Ρђôйę йûмьêŗ ċòйƒįŕмãтįóη_!!!!!!!!]</value>
+  </data>
+  <data name="PhoneNumberIdentityMessageText" xml:space="preserve">
+    <value>[0AB0A][!!_Ỳáþрèѓ úśęŝ ýòûř рнòйé ήùmъèŗ áŝ ýóúŕ îðęήťįţý. Ţћíŝ ηãмé вęĺóẅ įś ẁђâτ ôţћęŗś ẃíľľ śęę ẁђèй ýôù męŝśáģè тћéм._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="PhoneNumberText" xml:space="preserve">
+    <value>[5E7DC][!!_Þнòиę йúmьéŗ_!!]</value>
+  </data>
+  <data name="PhoneNumberToRegisterText" xml:space="preserve">
+    <value>[3B839][!!_Рнóиę иµмьèř ťô řęĝìšţéѓ_!!!!!!!!]</value>
+  </data>
+  <data name="PollResponseMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PullMeDownMessage" xml:space="preserve">
+    <value>[F0DEF][!!_Рµłľ đõẅή ťò ãďđ ήèẃ τâśќ_!!!!!!!!]</value>
+  </data>
+  <data name="PullMeDownTaskItemMessage" xml:space="preserve">
+    <value>[A62F2][!!_Þµľĺ ďóẁй ťò àðď ήêẃ тàŝĸ įτêм_!!!!!!!!]</value>
+  </data>
+  <data name="QuestionText" xml:space="preserve">
+    <value>[21726][!!_Qµéŝťíõή_!!]</value>
+  </data>
+  <data name="ReleaseToCreateNewItem" xml:space="preserve">
+    <value>[1E2BF][!!_Ŗęľęãşè тõ ĉřêáťę йèẃ ìţéм_!!!!!!!!]</value>
+  </data>
+  <data name="RemoveUserText" xml:space="preserve">
+    <value>[0A4BC][!!_Ŗèмõνę Üšęѓ_!!]</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>[D5896][!!_Şàť_!!]</value>
+  </data>
+  <data name="SelectMembersText" xml:space="preserve">
+    <value>[9C608][!!_Ŝêľéčť Мèmьéřş_!!!!]</value>
+  </data>
+  <data name="SendingMessage3Colon" xml:space="preserve">
+    <value>[03481][!!_Šéйďìиĝ méśśáģê..._!!!!!!]</value>
+  </data>
+  <data name="SendingMessageText" xml:space="preserve">
+    <value>[0BB1F][!!_Şêήðîиğ Мêşšâĝê_!!!!]</value>
+  </data>
+  <data name="SendMessageText" xml:space="preserve">
+    <value>[51C8B][!!_Şéήď Μèşŝáġé_!!]</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>[83978][!!_Śęρт_!!]</value>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>[276E9][!!_Šéţтíηġş_!!]</value>
+  </data>
+  <data name="ShowAllResponsesText" xml:space="preserve">
+    <value>[39B6F][!!_Śĥóẅ Ãłľ Ŗèšþõήšèś_!!!!!!]</value>
+  </data>
+  <data name="SignoutText" xml:space="preserve">
+    <value>[722F9][!!_Śîğηôúţ_!!]</value>
+  </data>
+  <data name="SMSVerificationText" xml:space="preserve">
+    <value>[2F56A][!!_ŜΜŚ νêŗìƒîćâţîóή_!!!!]</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>[30466][!!_Šûй_!!]</value>
+  </data>
+  <data name="SynchingText" xml:space="preserve">
+    <value>[33331][!!_Śÿйćįиġ_!!]</value>
+  </data>
+  <data name="TaskAcceptOption" xml:space="preserve">
+    <value>[EBFCC][!!_Âĉćèрť Τášк_!!]</value>
+  </data>
+  <data name="TaskAddedBy" xml:space="preserve">
+    <value>[048C7][!!_Àðďèđ ьў_!!]</value>
+  </data>
+  <data name="TaskDeclineOption" xml:space="preserve">
+    <value>[F9F34][!!_Ďéċľįηę_!!]</value>
+  </data>
+  <data name="TaskSharedBy" xml:space="preserve">
+    <value>[5A4D5][!!_Ŝнàѓęď ъў {0}_!!]</value>
+  </data>
+  <data name="TaskListText" xml:space="preserve">
+    <value>[7590A][!!_Τáŝк ĺìŝτ_!!]</value>
+  </data>
+  <data name="TaskSharedWith" xml:space="preserve">
+    <value>[3C31A][!!_Şнâřêď ẁìťн {0}_!!!!]</value>
+  </data>
+  <data name="ThisIsNotAnAppointment" xml:space="preserve">
+    <value>[55714][!!_Τћîš îś ηóт ãи âþþôįиτмéηт_!!!!!!!!]</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>[0C6AF][!!_Тĥµѓ_!!]</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>[353BC][!!_Ţùé_!!]</value>
+  </data>
+  <data name="UnknownUser" xml:space="preserve">
+    <value>[DC12F][!!_Üиĸήõŵи Ûŝęř_!!]</value>
+  </data>
+  <data name="UntitledTask" xml:space="preserve">
+    <value>[60A54][!!_Üήтíťļęð_!!]</value>
+  </data>
+  <data name="ValidatingConfirmationCodeText" xml:space="preserve">
+    <value>[6380E][!!_Váĺįđáţíηġ ĉòηƒířмàτįõй ċôďé_!!!!!!!!]</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>[FBCBC][!!_Ŵéď_!!]</value>
+  </data>
+  <data name="YapperChatText" xml:space="preserve">
+    <value>[490C6][!!_Ўàþрèŕ Ĉђâт_!!]</value>
+  </data>
+  <data name="YapperSMSMessageText" xml:space="preserve">
+    <value>[D0E48][!!_Ŷáрþéŗ ŵìļĺ ŝêиð âи ŞМŞ méşśâġê ẃíтĥ ţђê ýôûѓ 6 ðìġíţ νéŕįƒíćáťįóή čóđè τô:_!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="YapperText" xml:space="preserve">
+    <value>[EE015][!!_Ўâррèŗ_!!]</value>
+  </data>
+  <data name="YouAreHereText" xml:space="preserve">
+    <value>[248EC][!!_Ϋôµ áŕê ћęѓę_!!]</value>
+  </data>
+  <data name="SendText" xml:space="preserve">
+    <value>[14653][!!_Şéήð_!!]</value>
+  </data>
+  <data name="CompletedTaskCount" xml:space="preserve">
+    <value>[3AB21][!!_тâŝĸ íτêмś ċõmρĺęтęð_!!!!!!]</value>
+  </data>
+  <data name="PreInstallNoUserText" xml:space="preserve">
+    <value>[386CB][!!_Тнęřê âŕê ήò ùśęѓŝ îи Ỳâррęř ţнáť âŗè íи Уòúѓ рħòйę ćôήтâċťş. Рľéâśé àđđ úśęŗŝ ţó ŷóùѓ ċôиτáĉţş._!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="PreInstallText" xml:space="preserve">
+    <value>[907C5][!!_Ỳóû ŵìľĺ Бè âБľé ţó ĉômmµήíĉàтé ẅîţħ ťħê ƒòľľôŵìйğ Ýâρþéř úšêŕş îƒ ўóû řęģíšťêѓ._!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="LoadingAvailableUsersText" xml:space="preserve">
+    <value>[1E729][!!_Ĺòãðîиĝ àνàíľàБľê ùşèѓś ẅĥõm ýôµ ċâй ċĥáτ ẃįťħ ..._!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="HasDeletedTask" xml:space="preserve">
+    <value>[CAEF5][!!_'{0}' ħáš ďêľèťéď τћę šђářêđ тàšķ '{1}'_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="HasSharedTask" xml:space="preserve">
+    <value>[907C0][!!_'{0}' ћãś ŝнãřêđ ã иęẁ τàşķ '{1}'_!!!!!!!!!!]</value>
+  </data>
+  <data name="HasUpdatedTask" xml:space="preserve">
+    <value>[8F0BD][!!_'{0}' нâŝ úρđàтêð тĥé τáśќ '{1}'_!!!!!!!!!!]</value>
+  </data>
+  <data name="ListAlreadyShared" xml:space="preserve">
+    <value>[D48A4][!!_Τнíš łíŝť ћáś âĺřéâðУ вèèή śђâřèð ŵįтħ '{0}'. À ľíŝт ċãη вę şħâřéð ŵįτн õηłÿ òиé ĉõйťâćτ ôř ğřóµþ._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="SeeTask" xml:space="preserve">
+    <value>[B4DA1][!!_Ŝéè Ťâšĸ_!!]</value>
+  </data>
+  <data name="YouDeletedTask" xml:space="preserve">
+    <value>[37EDD][!!_Ϋõµ đêľêťèð ţнę τâšќ '{0}' şĥàŕèđ ŵíţн '{1}'_!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="YouSharedTask" xml:space="preserve">
+    <value>[90A90][!!_Ýõú šћãŕéď τђê тáşĸ '{0}' ŵîţн '{1}'_!!!!!!!!!!]</value>
+  </data>
+  <data name="YouUpdatedTask" xml:space="preserve">
+    <value>[E4FC5][!!_Ўôµ µрðãťęð τнę тãşķ '{0}' šђãŗéđ ŵîťђ '{1}'_!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="ShareTaskText" xml:space="preserve">
+    <value>[D101B][!!_Şнãѓé ţãšĸ_!!]</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>[0986B][!!_Ńêŵ_!!]</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>[564F8][!!_Üþđâťèđ_!!]</value>
+  </data>
+  <data name="TaskSharedWithGroup" xml:space="preserve">
+    <value>[F44B0][!!_Śнářêð ŵįťђ ğřóµр '{0}' ъў '{1}'_!!!!!!!!!!]</value>
+  </data>
+  <data name="NewTaskItemText" xml:space="preserve">
+    <value>[B0F33][!!_Ňèẁ íťęm_!!]</value>
+  </data>
+  <data name="NewTaskText" xml:space="preserve">
+    <value>[5D7C9][!!_Ńèẅ тàşĸ_!!]</value>
+  </data>
+  <data name="TaskCompletedBy" xml:space="preserve">
+    <value>[FC308][!!_Čõmрłêτèð ßý_!!]</value>
+  </data>
+  <data name="TaskUpdatedBy" xml:space="preserve">
+    <value>[3C7FC][!!_Üрďáťéđ Ьў_!!]</value>
+  </data>
+  <data name="PhoneHintText" xml:space="preserve">
+    <value>[AE754][!!_Êйтèř 10 đîġíť þħóиę #_!!!!!!]</value>
+  </data>
+  <data name="NotAGroupMember" xml:space="preserve">
+    <value>[1614E][!!_Ýóû ãŗè иõ ĺôήĝêř â mêмъęŗ óƒ ťĥįş ġѓôûр. Ỳõû ćâηήõτ śèήđ mêšśàĝéś тó τћíş ġřòµþ òř ŕęćêìνę мęšśàğèś ƒŕôм ţћîş ġŕóùр._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="CountryCodeText" xml:space="preserve">
+    <value>[5C8D3][!!_Śêļéćτ čòûиťŕŷ_!!!!]</value>
+  </data>
+  <data name="EnterValidNameText" xml:space="preserve">
+    <value>[BE2ED][!!_Þĺéãşé éήťêř â νàĺîð ήáмè_!!!!!!!!]</value>
+  </data>
+  <data name="InvalidPhoneNumberText" xml:space="preserve">
+    <value>[15E12][!!_Þĺęâŝé éиţęŕ á νâļìď 10 ðįġîţ ρђòйé ηûмьęŗ_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="HideCompletedTasksText" xml:space="preserve">
+    <value>[E4369][!!_Ħįďè ćómρĺęтéď ťãśĸŝ_!!!!!!]</value>
+  </data>
+  <data name="UpdatedTask" xml:space="preserve">
+    <value>[41E75][!!_Üþđáτéð ţнé ţàšќ '{0}'_!!!!!!]</value>
+  </data>
+  <data name="TaskHintText" xml:space="preserve">
+    <value>[E2629][!!_Èητęř ťášķ ήáмè ôř рâśтê mµłтí ĺíηé ţâśќś_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="WrongValidationCode" xml:space="preserve">
+    <value>[8EB87][!!_Тĥè ċõйƒįřмâţîóη ċõďê êήτęŗéđ ŵãŝ ìиćòѓѓęćť. Ρľêâŝê éиťéř íт áġâįи._!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="TwentyPlus" xml:space="preserve">
+    <value>[938EE][!!_20+_!!]</value>
+  </data>
+  <data name="SmsInvite" xml:space="preserve">
+    <value>[89FD1][!!_{0} ẁãηťŝ тô ċõммùиįćãťé ẅîťћ ÿòû ţћŕôµğћ Ўáρρèř. Ρĺéášę ìиşťáĺł Ўàррéŗ ƒŗõм ђťτр://ŵŵẃ.ŷàρрęŕĉħâт.ćóm._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>[8064F][!!_Źíмьãъẁè_!!]</value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>[B4A12][!!_ŻãмБìã_!!]</value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>[722C3][!!_Ýéméй_!!]</value>
+  </data>
+  <data name="Vietnam" xml:space="preserve">
+    <value>[BCA48][!!_Vįéτйàm_!!]</value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>[FAC7A][!!_Véηéźµéľá_!!]</value>
+  </data>
+  <data name="Vanuatu" xml:space="preserve">
+    <value>[E17BC][!!_Vãήùáτû_!!]</value>
+  </data>
+  <data name="Uzbekistan" xml:space="preserve">
+    <value>[4D146][!!_Úžъéкìśťâй_!!]</value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>[64113][!!_Úŕùĝûãý_!!]</value>
+  </data>
+  <data name="UnitedStates" xml:space="preserve">
+    <value>[3D549][!!_Üηîтéď Śťàţèš_!!]</value>
+  </data>
+  <data name="UnitedKingdom" xml:space="preserve">
+    <value>[ADDDF][!!_Üήíτêð Ķíήĝďõm_!!!!]</value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>[2CF2D][!!_Ûηìťêđ Âѓãь Émîŕâţèś_!!!!!!]</value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>[AD3D2][!!_Üĸŕãíиè_!!]</value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>[0D72F][!!_Úğâήďã_!!]</value>
+  </data>
+  <data name="Tuvalu" xml:space="preserve">
+    <value>[69973][!!_Ťúνáłù_!!]</value>
+  </data>
+  <data name="Turkmenistan" xml:space="preserve">
+    <value>[D4EFF][!!_Ťµŗќмèηîŝτâи_!!]</value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>[74255][!!_Тúѓкęÿ_!!]</value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>[ACA1B][!!_Тúйíśîâ_!!]</value>
+  </data>
+  <data name="TrinidadAndTobago" xml:space="preserve">
+    <value>[8839F][!!_Ţŗìйíđàď âйď Τòъáġõ_!!!!!!]</value>
+  </data>
+  <data name="Tonga" xml:space="preserve">
+    <value>[8EFF4][!!_Τóήģâ_!!]</value>
+  </data>
+  <data name="Tokelau" xml:space="preserve">
+    <value>[CF332][!!_Тõĸéļàû_!!]</value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>[14A27][!!_Тòġò_!!]</value>
+  </data>
+  <data name="TimorLeste" xml:space="preserve">
+    <value>[97CD6][!!_Τìмôŕ-Ŀéšťé_!!]</value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>[EBD12][!!_Тнàíĺáиđ_!!]</value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>[81D51][!!_Тãήżàήìá_!!]</value>
+  </data>
+  <data name="Tajikistan" xml:space="preserve">
+    <value>[4368B][!!_Ťáĵîĸįŝτâй_!!]</value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>[549E1][!!_Тáįẃáη_!!]</value>
+  </data>
+  <data name="Syria" xml:space="preserve">
+    <value>[8670A][!!_ŠУѓįà_!!]</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>[73489][!!_Şẅîťżêѓľãиď_!!]</value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>[42C80][!!_Śẃéđèή_!!]</value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>[A3316][!!_Šẅáźìłãηð_!!]</value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>[D8914][!!_Šúѓîηàmé_!!]</value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>[20761][!!_Śúðâη_!!]</value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>[DB2D7][!!_Ŝřî Ŀâйĸà_!!]</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>[09334][!!_Śρáìη_!!]</value>
+  </data>
+  <data name="SouthSudan" xml:space="preserve">
+    <value>[AEA09][!!_Şòµťђ Šúđâή_!!]</value>
+  </data>
+  <data name="SouthKorea" xml:space="preserve">
+    <value>[822FD][!!_Šòùτн Ќôřęà_!!]</value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>[F4248][!!_Şòúťћ Áƒŕìčâ_!!]</value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>[C0951][!!_Śòmàļíà_!!]</value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>[4073A][!!_Ŝłóνêйįã_!!]</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>[8743B][!!_Śľóνàкíâ_!!]</value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>[89EE4][!!_Şîηĝâρòѓè_!!]</value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>[EB765][!!_Šìęřѓã Ĺèóиê_!!]</value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>[5C3D7][!!_Šęўĉћèłłéŝ_!!]</value>
+  </data>
+  <data name="Serbia" xml:space="preserve">
+    <value>[D4D05][!!_Ŝęѓьįâ_!!]</value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>[96FB2][!!_Śêиèģãĺ_!!]</value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>[00054][!!_Ŝâµđì Àŕâвíá_!!]</value>
+  </data>
+  <data name="SaoTomeAndPrincipe" xml:space="preserve">
+    <value>[1C84A][!!_Ŝãó Тòmę ãηđ Þřìиćíрę_!!!!!!]</value>
+  </data>
+  <data name="SanMarino" xml:space="preserve">
+    <value>[0697B][!!_Šáή Μàŗįйõ_!!]</value>
+  </data>
+  <data name="Samoa" xml:space="preserve">
+    <value>[13AAD][!!_Şãмôâ_!!]</value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>[B2DA8][!!_Ŕŵàиðâ_!!]</value>
+  </data>
+  <data name="Russia" xml:space="preserve">
+    <value>[AFBF3][!!_Ѓùşśíâ_!!]</value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>[1AF69][!!_Ѓòmâηíà_!!]</value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>[5CCC7][!!_Qáťâŕ_!!]</value>
+  </data>
+  <data name="PuertoRico" xml:space="preserve">
+    <value>[D1C43][!!_Рµèŕťò Ѓįċô_!!]</value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>[C60E6][!!_Þôŗţùğáľ_!!]</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>[26539][!!_Рóĺàηď_!!]</value>
+  </data>
+  <data name="Pitcairn" xml:space="preserve">
+    <value>[98986][!!_Рîтčâìŗή_!!]</value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>[3BC14][!!_Рħíĺìρρíиęš_!!]</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>[44F15][!!_Þèѓú_!!]</value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>[410E0][!!_Þãřãġúâý_!!]</value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>[41AF4][!!_Ρâрùâ Ńéŵ Ğµìйêã_!!!!]</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>[25A99][!!_Рàήãmà_!!]</value>
+  </data>
+  <data name="Palestine" xml:space="preserve">
+    <value>[E8F83][!!_Рáłèŝтîйè_!!]</value>
+  </data>
+  <data name="Palau" xml:space="preserve">
+    <value>[357BB][!!_Þàļáù_!!]</value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>[7E8B9][!!_Рâкíŝτáй_!!]</value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>[3E7D7][!!_Ômáή_!!]</value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>[E2282][!!_ŅõřẃâУ_!!]</value>
+  </data>
+  <data name="NorthKorea" xml:space="preserve">
+    <value>[59646][!!_Ņóŗтћ Ќôřęã_!!]</value>
+  </data>
+  <data name="Niue" xml:space="preserve">
+    <value>[2C920][!!_Ņìµé_!!]</value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>[E9D18][!!_Ńîğęѓíà_!!]</value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>[3DB37][!!_Ņîğęѓ_!!]</value>
+  </data>
+  <data name="Nicaragua" xml:space="preserve">
+    <value>[87453][!!_Ņìćàŗàğùâ_!!]</value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>[A34D8][!!_Ńęẃ Źèáłáиð_!!]</value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>[EC227][!!_Ñêẃ Ĉàĺèďòиìâ_!!]</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>[86F44][!!_Ńêţнèŕľàйđş_!!]</value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>[C68E9][!!_Ńęрâļ_!!]</value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>[6A156][!!_Ņáúřú_!!]</value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>[E742A][!!_Ñámįьîâ_!!]</value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>[46C03][!!_Μŷáймàř_!!]</value>
+  </data>
+  <data name="Mozambique" xml:space="preserve">
+    <value>[C9A10][!!_Мóżàмьíqµè_!!]</value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>[7A844][!!_Мòѓõĉċò_!!]</value>
+  </data>
+  <data name="Montserrat" xml:space="preserve">
+    <value>[C4354][!!_Мôητŝéŗŕâť_!!]</value>
+  </data>
+  <data name="Montenegro" xml:space="preserve">
+    <value>[DF5BA][!!_Мòήτéйęĝŕò_!!]</value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>[11C40][!!_Μõйĝõľìà_!!]</value>
+  </data>
+  <data name="Monaco" xml:space="preserve">
+    <value>[310F9][!!_Μòиàćò_!!]</value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>[25727][!!_Мõłðõνà_!!]</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>[8C00F][!!_Μêхìċó_!!]</value>
+  </data>
+  <data name="Mayotte" xml:space="preserve">
+    <value>[BB695][!!_ΜâУôţτę_!!]</value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>[5B695][!!_Мâùříτíùś_!!]</value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>[738C0][!!_Мâµŗîťáήįá_!!]</value>
+  </data>
+  <data name="Martinique" xml:space="preserve">
+    <value>[806EB][!!_Мàѓťîйíqµé_!!]</value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>[40170][!!_Мàļťâ_!!]</value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>[2271F][!!_Мâľí_!!]</value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>[40311][!!_Μàłðíνêś_!!]</value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>[AAA2B][!!_Μàĺâўśįà_!!]</value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>[4BF49][!!_Μâĺàẁì_!!]</value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>[8D248][!!_Мâðãğáŝċàŕ_!!]</value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>[FF671][!!_Мàĉêðòиįã_!!]</value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>[FEEE8][!!_Μàĉáò_!!]</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>[0B686][!!_Ĺùхêмъóµŗĝ_!!]</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>[A9EB4][!!_Ŀîţђùáйîã_!!]</value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>[7A598][!!_Ľíêċђţèηŝťêîη_!!]</value>
+  </data>
+  <data name="Libya" xml:space="preserve">
+    <value>[53337][!!_Ĺíвýá_!!]</value>
+  </data>
+  <data name="Liberia" xml:space="preserve">
+    <value>[DEF92][!!_Ľìъęѓîá_!!]</value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>[9C051][!!_Ŀęŝõτћô_!!]</value>
+  </data>
+  <data name="Lebanon" xml:space="preserve">
+    <value>[25420][!!_Ļęъàήóη_!!]</value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>[48E80][!!_Ļãτνîá_!!]</value>
+  </data>
+  <data name="Kyrgyzstan" xml:space="preserve">
+    <value>[03DC1][!!_Ќýŗģÿżŝтáη_!!]</value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>[D89E0][!!_Ќûẃáìт_!!]</value>
+  </data>
+  <data name="Kiribati" xml:space="preserve">
+    <value>[37C0B][!!_ĶíříБâτî_!!]</value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>[DF2C3][!!_Κêήŷâ_!!]</value>
+  </data>
+  <data name="Kazakhstan" xml:space="preserve">
+    <value>[B60B4][!!_Ќâżàќĥśţãи_!!]</value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>[B3565][!!_Јòŗđàη_!!]</value>
+  </data>
+  <data name="Jersey" xml:space="preserve">
+    <value>[2E756][!!_Ĵéŗŝèŷ_!!]</value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>[5F386][!!_Ĵãþãй_!!]</value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>[92BD7][!!_Ĵáмàìčà_!!]</value>
+  </data>
+  <data name="IvoryCoast" xml:space="preserve">
+    <value>[CB209][!!_Ċôτê ď'Ìνõîŗę_!!]</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>[5BB43][!!_Įţáłŷ_!!]</value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>[597C8][!!_Íśŗàèĺ_!!]</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>[94CDC][!!_Ìѓęľàиð_!!]</value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>[BCEDE][!!_Įřàq_!!]</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>[D0E62][!!_Îŗàη_!!]</value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>[1EBD6][!!_Įήďõηêšíã_!!]</value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>[D7762][!!_Ìηðíâ_!!]</value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>[A3EAA][!!_Îćęľãйď_!!]</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>[25E49][!!_Нµиģàѓÿ_!!]</value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>[41810][!!_Ħôиģ Ķóηğ_!!]</value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>[32990][!!_Ħóηđµŕâŝ_!!]</value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>[B1E5B][!!_Ĥâìťì_!!]</value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>[39813][!!_Ĝùўãηà_!!]</value>
+  </data>
+  <data name="GuineaBissau" xml:space="preserve">
+    <value>[AD924][!!_Ģµíиèâ-Вîŝŝâù_!!]</value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>[0E4EC][!!_Ğúíήèà_!!]</value>
+  </data>
+  <data name="Guernsey" xml:space="preserve">
+    <value>[85BFA][!!_Ĝµęѓηśèў_!!]</value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>[5CD05][!!_Ĝµàţéмãļã_!!]</value>
+  </data>
+  <data name="Guam" xml:space="preserve">
+    <value>[28C19][!!_Ĝùâм_!!]</value>
+  </data>
+  <data name="Guadeloupe" xml:space="preserve">
+    <value>[814FB][!!_Ġûáđèľõûрè_!!]</value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>[654F5][!!_Ĝѓęήáðâ_!!]</value>
+  </data>
+  <data name="Greenland" xml:space="preserve">
+    <value>[2415E][!!_Ğŕèèиľãиď_!!]</value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>[A9672][!!_Ġŗêèčè_!!]</value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>[76E36][!!_ĠìБŕãľţář_!!]</value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>[D9C19][!!_Ĝнãήà_!!]</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>[C9E41][!!_Ğéѓmãиŷ_!!]</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>[DE0ED][!!_Ĝèòřģįâ_!!]</value>
+  </data>
+  <data name="Gambia" xml:space="preserve">
+    <value>[B2D32][!!_ĢâmБíà_!!]</value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>[459C8][!!_Ĝâъôή_!!]</value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>[18798][!!_₣ѓęйčħ Þôľўиèšîà_!!!!]</value>
+  </data>
+  <data name="FrenchGuiana" xml:space="preserve">
+    <value>[F59CF][!!_₣ŗęηĉћ Ĝùîãηá_!!]</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>[C2DF3][!!_₣řâиĉę_!!]</value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>[03BFE][!!_₣íиļãήđ_!!]</value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>[2A0B1][!!_₣íĵî_!!]</value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>[21A6D][!!_Ęτђįóρíà_!!]</value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>[317E0][!!_Èśţóήíá_!!]</value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>[1E3CA][!!_Ęříťŕęã_!!]</value>
+  </data>
+  <data name="EquatorialGuinea" xml:space="preserve">
+    <value>[8CCE4][!!_Éqûâτòŗíãĺ Ģùíηęã_!!!!!!]</value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>[4368D][!!_Êľ Ŝâľνáðóř_!!]</value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>[D81F1][!!_Éğÿþτ_!!]</value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>[22985][!!_Êćûãðóѓ_!!]</value>
+  </data>
+  <data name="DominicanRepublic" xml:space="preserve">
+    <value>[DBFC2][!!_Ðômíйîċâй Ѓèρúъļìĉ_!!!!!!]</value>
+  </data>
+  <data name="Dominica" xml:space="preserve">
+    <value>[DA9CB][!!_Ďòmîήíćâ_!!]</value>
+  </data>
+  <data name="Djibouti" xml:space="preserve">
+    <value>[5B300][!!_ĐĵìБõúτį_!!]</value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>[806EC][!!_Đèήmâŗќ_!!]</value>
+  </data>
+  <data name="CzechRepublic" xml:space="preserve">
+    <value>[8DF96][!!_Čźèčħ Řêþûвľîċ_!!!!]</value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>[2401E][!!_Ċýþŕµš_!!]</value>
+  </data>
+  <data name="Curacao" xml:space="preserve">
+    <value>[1D33A][!!_Ĉùѓáçàô_!!]</value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>[2B004][!!_Ċѓòâťįã_!!]</value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>[5A29D][!!_Ċòŝťà Ŗįĉã_!!]</value>
+  </data>
+  <data name="Congo" xml:space="preserve">
+    <value>[98FEF][!!_Ćôηġõ_!!]</value>
+  </data>
+  <data name="Comoros" xml:space="preserve">
+    <value>[85F97][!!_Ċóмôѓóś_!!]</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>[74335][!!_Ċôľõmвíà_!!]</value>
+  </data>
+  <data name="China" xml:space="preserve">
+    <value>[70EF8][!!_Ċħìиâ_!!]</value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>[25755][!!_Čħîļé_!!]</value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>[59C41][!!_Ċĥâđ_!!]</value>
+  </data>
+  <data name="CentralAfricanRepublic" xml:space="preserve">
+    <value>[06DB8][!!_Ćéήтřàł Ãƒřįĉãй Řéþùьľíč_!!!!!!!!]</value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>[3AA9A][!!_Ćàýmâή Îśľáйðś_!!!!]</value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>[E78A7][!!_Čâηâđà_!!]</value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>[8932F][!!_Ĉàméѓòõη_!!]</value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>[14598][!!_Ćáмвôðìà_!!]</value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>[FE7D3][!!_Βûŗµηðí_!!]</value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>[35C80][!!_Βúřќíηá ₣âšò_!!]</value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>[15CF7][!!_Ьûłġãŗíà_!!]</value>
+  </data>
+  <data name="Brunei" xml:space="preserve">
+    <value>[21ECE][!!_ßřµиèí Đáѓûŝŝàĺám_!!!!!!]</value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>[F60A8][!!_Ъѓáżîļ_!!]</value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>[33503][!!_Βóтşẃãήá_!!]</value>
+  </data>
+  <data name="BosniaAndHerzegovina" xml:space="preserve">
+    <value>[FBA73][!!_Вòŝηîâ âйď Ħęŗžęğòνįиâ_!!!!!!]</value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>[74830][!!_Ъõłíνįà_!!]</value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>[52F75][!!_ßħµтàή_!!]</value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>[73F85][!!_βéѓмµđã_!!]</value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>[7A8F0][!!_Βęиîй_!!]</value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>[124A9][!!_Βèłìźê_!!]</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>[7F979][!!_Ьêłģíúm_!!]</value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>[D8A93][!!_Вêłãŗûš_!!]</value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>[E45BB][!!_ЪàřБâðõş_!!]</value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>[31FE8][!!_Βâήġłãðèšђ_!!]</value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>[F2D84][!!_Ъàħŗãìή_!!]</value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>[95070][!!_ßâћâmãş_!!]</value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>[1BB24][!!_Áżêřьâįĵàи_!!]</value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>[37A88][!!_Àûśţѓíà_!!]</value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>[34ED2][!!_Ãûšτŕâłìà_!!]</value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>[AC41F][!!_Ářùвá_!!]</value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>[9107E][!!_Âřмéйîà_!!]</value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>[9778B][!!_Âŕĝęйţíиá_!!]</value>
+  </data>
+  <data name="AntiguaAndBarbuda" xml:space="preserve">
+    <value>[77204][!!_Âήτíĝûâ âήđ ßâřБûďà_!!!!!!]</value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>[BB5CC][!!_Ãήğùįļĺà_!!]</value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>[55EE8][!!_Áήģõłá_!!]</value>
+  </data>
+  <data name="Andorra" xml:space="preserve">
+    <value>[4B3EA][!!_Âηđõŗřâ_!!]</value>
+  </data>
+  <data name="AmericanSamoa" xml:space="preserve">
+    <value>[1459D][!!_Âмęŕįčãη Ŝáмóá_!!!!]</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>[069E6][!!_Áľğêѓìá_!!]</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>[CF0FC][!!_Àĺьãйįà_!!]</value>
+  </data>
+  <data name="Afghanistan" xml:space="preserve">
+    <value>[5C768][!!_Ãƒģнãиíśţàй_!!]</value>
+  </data>
+  <data name="YapperIntroduction" xml:space="preserve">
+    <value>[1FB5C][!!_ Ϋâþρęŗ ċôмьîηèş ťнê êàşê óƒ â мęśšãĝįйĝ àρрľîċâτíõη ẅįťђ τħê рòẅêŗ óƒ émãìĺ. Ẅįτђ Ỳâρþéѓ, ýòµ ćãή_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="YapperTutorialStart" xml:space="preserve">
+    <value>[94818][!!_Ẃĥìľę ẃè âřé šéţтìήģ тĥįйġŝ úр, ļêť'ŝ ļòõĸ âť śómé õƒ ùйìqúę ƒęâťûŗèş ôƒ Ýãþþêŕ._!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>[92673][!!_Ẅèľćòмê_!!]</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>[F72A0][!!_Ċàĺéήðãř_!!]</value>
+  </data>
+  <data name="CalendarPaneInstruction" xml:space="preserve">
+    <value>[791F2][!!_Тħèй, śèļêĉт ţћé ċàļêηđàŗ âťтãćħмęηť îй τħé čáľèйðâř рàиé_!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="CalendarAttachInstruction" xml:space="preserve">
+    <value>[11A59][!!_Τó śéήð â čãľęηďãŕ ãррóíйťmêиţ, Бêƒôŗê šéήđįйģ à мéşśàģè, śéĺéċт ţнê âţťâćђmęиť ćĺíþ îη ţĥè ãþþвãŗ_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>[AB819][!!_Ņê×ť_!!]</value>
+  </data>
+  <data name="PollPaneInstruction" xml:space="preserve">
+    <value>[2E135][!!_Ţнèή, şêłęċτ τħê ċâļêηðâѓ áţţâčђmèηт ìй тћę čàĺèηðàŗ ρâηę_!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="PollAttachInstruction" xml:space="preserve">
+    <value>[5D861][!!_Τô šêηđ â qúįćќ рòĺĺ, ъêƒôѓé śéйðįйġ à мêšŝàĝę, şęļęčτ тħé àτтâĉħмęйτ ćľìρ íη ţђê âρþвáŕ_!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Poll" xml:space="preserve">
+    <value>[77FEA][!!_Qûîċķ Þóĺł_!!]</value>
+  </data>
+  <data name="SendTasks" xml:space="preserve">
+    <value>[7C72B][!!_Čŕęãтê âйð śнàŕê Тáŝкś_!!!!!!]</value>
+  </data>
+  <data name="TaskPageInstruction" xml:space="preserve">
+    <value>[15128][!!_Ţõ νįêẁ èхįşτìηġ ţãşкś áηđ čŕèâτê иêŵ τãŝќś, ŝęĺęċτ τнê тášķ рáğę íĉòи ìή тнè тóρ ôƒ τнé ãþþļîĉâţíòή_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>[A861C][!!_Ţâŝкś_!!]</value>
+  </data>
+  <data name="TaskAddNewInstruction" xml:space="preserve">
+    <value>[3599B][!!_Ňêẅ тãşкŝ ĉàй вé ãððéď вÿ čłįĉќíиģ ôή ťћé àďď ъµτťôη îή тћę âрþľîčàτíôή ьãř_!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="TaskDeleteInstruction" xml:space="preserve">
+    <value>[3EC45][!!_Ţô ðêľęтè á ťášк, ŝẅįþê тħę тâśķ ţò ľêƒť_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="TaskCompleteInstruction" xml:space="preserve">
+    <value>[8F2D7][!!_Тô ċõмрĺéтè á тàşќ, šẃìþê тħę ţàśķ ţó řìģħť_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="SendPoll" xml:space="preserve">
+    <value>[F549C][!!_Qùîĉķ Þôľļ ƒŕîêηðš_!!!!!!]</value>
+  </data>
+  <data name="SendCalendar" xml:space="preserve">
+    <value>[BEAEB][!!_Şéήđ Ċâļêиđàř âþþõîηтmêйтš_!!!!!!!!]</value>
+  </data>
+  <data name="DemocraticRepublicCongo" xml:space="preserve">
+    <value>[3CBF2][!!_Đęmõĉŗàτįċ Řęρúвľíċ óƒ Čõηğò_!!!!!!!!]</value>
+  </data>
+  <data name="Cuba" xml:space="preserve">
+    <value>[93323][!!_ČûБâ_!!]</value>
+  </data>
+  <data name="TutorialText" xml:space="preserve">
+    <value>[6006D][!!_Тµτôŕįâľ_!!]</value>
+  </data>
+</root>

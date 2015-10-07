@@ -1,0 +1,1 @@
+SELECT dbo.ConversationTable.ConversationId, dbo.ConversationTable.LastPostTime from dbo.ConversationTable JOIN dbo.ConversationRecipientTable ON dbo.ConversationTable.ConversationId = dbo.ConversationRecipientTable.ConversationId Where dbo.ConversationRecipientTable.RecipientId = @recipientId ORDER BY dbo.ConversationTable.LastPostTime DESC 

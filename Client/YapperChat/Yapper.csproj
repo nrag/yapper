@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DE4A828-23F4-4759-9810-7FB6926BB773}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YapperChat</RootNamespace>
+    <AssemblyName>YapperChat</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>da-DK;de-AT;de-CH;de-DE;en-AU;en-GB;en-US;es-AR;es-BO;es-CL;es-CO;es-CR;es-DO;es-EC;es-ES;es-MX;es-NI;es-PE;es-PR;es;fr-BE;fr-FR;fr;it-IT;ja-JP;ko-KR;nl;pt-BR;pt-PT;qps-ploc;ru-RU;sv-FI;sv-SE;zh-CN;zh-HK;zh-TW</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Yapper_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>YapperChat.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.0.7.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WP7, Version=4.0.23.35572, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZLib.Phone">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ICSharpCode.SharpZLib.Phone.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.Controls">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.Filtering">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.Filtering.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Bmp">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.IO.Bmp.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Gif">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.IO.Gif.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Png">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.IO.Png.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.Utils">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\ImageTools.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="libphonenumber-csharp-portable">
+      <HintPath>..\packages\libphonenumber-csharp-portable.1.0.0.2\lib\libphonenumber-csharp-portable.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaViewer">
+      <HintPath>..\packages\PhoneMediaViewer.1.0.1\lib\wp8\MediaViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoneCodeContractsAssemblies">
+      <HintPath>..\packages\ImageTools.0.3.1\lib\sl3-wp\PhoneCodeContractsAssemblies.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\windowsphone8\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGIS.GZipWebClient, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll</HintPath>
+    </Reference>
+    <Reference Include="WPControls">
+      <HintPath>..\packages\WPControls.1.5.2\lib\wp8\WPControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AesEncryption.cs" />
+    <Compile Include="Common\FrameworkElementExtensions.cs" />
+    <Compile Include="Common\ItemsControlExtension.cs" />
+    <Compile Include="Common\LinqToVisualTree.cs" />
+    <Compile Include="Common\ObservableCollectionExtension.cs" />
+    <Compile Include="Common\ObservableSortedList.cs" />
+    <Compile Include="Common\ResettableObservableCollection.cs" />
+    <Compile Include="Common\RsaEncryption.cs" />
+    <Compile Include="Common\SteamExtension.cs" />
+    <Compile Include="Common\Tuple.cs" />
+    <Compile Include="Common\UIElementExtension.cs" />
+    <Compile Include="Common\VisualTreeAdapter.cs" />
+    <Compile Include="Controls\ArgumentValidator.cs" />
+    <Compile Include="Controls\BooleanToChatDirectionConverter.cs" />
+    <Compile Include="Controls\CalendarConverter.cs" />
+    <Compile Include="Controls\ColorToBrushConverter.cs" />
+    <Compile Include="Controls\ColorToHexConverter.cs" />
+    <Compile Include="Common\GroupingHelper.cs" />
+    <Compile Include="Controls\DragImage.xaml.cs">
+      <DependentUpon>DragImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageAndUnreadCount.xaml.cs">
+      <DependentUpon>ImageAndUnreadCount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IMultiValueConverter.cs" />
+    <Compile Include="Controls\Interactions\DragReOrderInteraction.cs" />
+    <Compile Include="Controls\Interactions\IItem.cs" />
+    <Compile Include="Controls\Interactions\IInteraction.cs" />
+    <Compile Include="Controls\Interactions\IItemCreator.cs" />
+    <Compile Include="Controls\Interactions\InteractionBase.cs" />
+    <Compile Include="Controls\Interactions\InteractionManager.cs" />
+    <Compile Include="Controls\Interactions\PinchAddNewInteraction.cs" />
+    <Compile Include="Controls\Interactions\PullDownToAddNewInteraction.cs" />
+    <Compile Include="Controls\Interactions\SwipeInteraction.cs" />
+    <Compile Include="Controls\Interactions\TapEditInteraction.cs" />
+    <Compile Include="Controls\InverseBooleanConverter.cs" />
+    <Compile Include="Controls\ListBoxExtenders.cs" />
+    <Compile Include="Controls\ListLoopingDataSource.cs" />
+    <Compile Include="Controls\LoopingDataSourceBase.cs" />
+    <Compile Include="Controls\NullMessageIdToVisibilityConverter.cs" />
+    <Compile Include="Controls\NullToVisibilityConverter.cs" />
+    <Compile Include="Controls\ObjectToStringConverter.cs" />
+    <Compile Include="Controls\ProgressIndicatorProxy.cs" />
+    <Compile Include="Controls\PullDownColorConverter.cs" />
+    <Compile Include="Controls\PullDownItem.xaml.cs">
+      <DependentUpon>PullDownItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RssTextTrimmer.cs" />
+    <Compile Include="Controls\StringToBooleanConverter.cs" />
+    <Compile Include="Controls\TaskCompletionToBrushConverver.cs" />
+    <Compile Include="Controls\TickAndCross.xaml.cs">
+      <DependentUpon>TickAndCross.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UnreadCountToColorConverter.cs" />
+    <Compile Include="Controls\VisualTree.cs" />
+    <Compile Include="Database\DataContextWrapper.cs" />
+    <Compile Include="Database\IDataContextWrapper.cs" />
+    <Compile Include="Database\YapperDataContext.cs" />
+    <Compile Include="EventMessages\DeleteEvent.cs" />
+    <Compile Include="EventMessages\DisplayYesNoButtonEvent.cs" />
+    <Compile Include="EventMessages\ExistingMessageEvent.cs" />
+    <Compile Include="EventMessages\GroupMemberAddedEvent.cs" />
+    <Compile Include="EventMessages\GroupMemberRemovedEvent.cs" />
+    <Compile Include="EventMessages\MessageSentEvent.cs" />
+    <Compile Include="EventMessages\NewContactEvent.cs" />
+    <Compile Include="EventMessages\NewConversationCreatedEvent.cs" />
+    <Compile Include="EventMessages\NewGroupEvent.cs" />
+    <Compile Include="EventMessages\NewMessageEvent.cs" />
+    <Compile Include="EventMessages\NewMessageSavedEvent.cs" />
+    <Compile Include="EventMessages\NewTaskSavedEvent.cs" />
+    <Compile Include="EventMessages\PushNotificationEvent.cs" />
+    <Compile Include="EventMessages\QuitApplicationEvent.cs" />
+    <Compile Include="EventMessages\RefreshGroupsEvent.cs" />
+    <Compile Include="EventMessages\RefreshTaskMessage.cs" />
+    <Compile Include="EventMessages\ReloadTaskCountEvent.cs" />
+    <Compile Include="EventMessages\ScrollToEvent.cs" />
+    <Compile Include="EventMessages\SyncEvent.cs" />
+    <Compile Include="EventMessages\RegistrationCompleteEvent.cs" />
+    <Compile Include="EventMessages\VerificationCodeValidationCompleteEvent.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="Models\AppointmentDateTime.cs" />
+    <Compile Include="Models\ContactSearchArguments.cs" />
+    <Compile Include="Models\ContactSearchSerializer.cs" />
+    <Compile Include="Models\ExceptionDetails.cs" />
+    <Compile Include="Models\GroupMemberModel.cs" />
+    <Compile Include="Models\GroupModel.cs" />
+    <Compile Include="Models\IContactSearchController.cs" />
+    <Compile Include="Models\IUserSettings.cs" />
+    <Compile Include="Models\EncryptedMessage.cs" />
+    <Compile Include="Models\MessageFlags.cs" />
+    <Compile Include="Models\MessageType.cs" />
+    <Compile Include="Models\PollOption.cs" />
+    <Compile Include="Models\PollResponseGroup.cs" />
+    <Compile Include="Models\TaskListMessageCreator.cs" />
+    <Compile Include="Models\TaskMessageCreator.cs" />
+    <Compile Include="Models\UserCookieModel.cs" />
+    <Compile Include="Models\YapperContactsSearchEventArgs.cs" />
+    <Compile Include="PushNotification\IPushNotification.cs" />
+    <Compile Include="PushNotification\PushNotification.cs" />
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProxy\IServiceProxy.cs" />
+    <Compile Include="ServiceProxy\YapperServiceProxy.cs" />
+    <Compile Include="Sync\CacheSync.cs" />
+    <Compile Include="ViewModels\AddNewGroupViewModel.cs" />
+    <Compile Include="ViewModels\AllConversationsViewModel.cs" />
+    <Compile Include="ViewModels\AllGroupsViewModel.cs" />
+    <Compile Include="ViewModels\AllTasksViewModel.cs" />
+    <Compile Include="ViewModels\ContactDetailsViewModel.cs" />
+    <Compile Include="ViewModels\DispatcherHelper.cs" />
+    <Compile Include="ViewModels\DisplayFullImageViewModel.cs" />
+    <Compile Include="ViewModels\DisplayLocationViewModel.cs" />
+    <Compile Include="ViewModels\EnterConfirmationCodeViewModel.cs" />
+    <Compile Include="ViewModels\GroupDetailsViewModel.cs" />
+    <Compile Include="ViewModels\NewConversationViewModel.cs" />
+    <Compile Include="ViewModels\NewMessageCountViewModel.cs" />
+    <Compile Include="ViewModels\NewTaskCountViewModel.cs" />
+    <Compile Include="ViewModels\NewUserRegistrationViewModel.cs" />
+    <Compile Include="ViewModels\PhoneContactsJumpListViewModel.cs" />
+    <Compile Include="Models\ContactGroup.cs" />
+    <Compile Include="Models\ContactItem.cs" />
+    <Compile Include="ViewModels\ConversationMessagesViewModel.cs" />
+    <Compile Include="Models\DateTimeHelper.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\UserSettingsModel.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\RegisteredUsersViewModel.cs" />
+    <Compile Include="ViewModels\UserSettingsViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelLocator.cs" />
+    <Compile Include="ViewModels\YapperChatViewModel.cs" />
+    <Compile Include="Views\AddNewGroupView.xaml.cs">
+      <DependentUpon>AddNewGroupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConversationMessagesView.xaml.cs">
+      <DependentUpon>ConversationMessagesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DisplayFullImage.xaml.cs">
+      <DependentUpon>DisplayFullImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnterConfirmationCodeView.xaml.cs">
+      <DependentUpon>EnterConfirmationCodeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InviteFriends.xaml.cs">
+      <DependentUpon>InviteFriends.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewConversationView.xaml.cs">
+      <DependentUpon>NewConversationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewUserRegistrationView.xaml.cs">
+      <DependentUpon>NewUserRegistrationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhoneContactsJumpListView.xaml.cs">
+      <DependentUpon>PhoneContactsJumpListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DisplayLocation.xaml.cs">
+      <DependentUpon>DisplayLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuestionComposition.xaml.cs">
+      <DependentUpon>QuestionComposition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegisteredUsersView.xaml.cs">
+      <DependentUpon>RegisteredUsersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tasklist.xaml.cs">
+      <DependentUpon>Tasklist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimePickerPage.xaml.cs">
+      <DependentUpon>TimePickerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialCalendarPage.xaml.cs">
+      <DependentUpon>TutorialCalendarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialPageWelcome.xaml.cs">
+      <DependentUpon>TutorialPageWelcome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialPollPage.xaml.cs">
+      <DependentUpon>TutorialPollPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialTaskCompletion.xaml.cs">
+      <DependentUpon>TutorialTaskCompletion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialTaskPage.xaml.cs">
+      <DependentUpon>TutorialTaskPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TutorialYapperIntroduction.xaml.cs">
+      <DependentUpon>TutorialYapperIntroduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserSettingsView.xaml.cs">
+      <DependentUpon>UserSettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\YapperChatContactsPivot.xaml.cs">
+      <DependentUpon>YapperChatContactsPivot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\MessageModel.generated.cs">
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\ConversationModel.cs" />
+    <Compile Include="Views\YapperChatTaskPivot.xaml.cs">
+      <DependentUpon>YapperChatTaskPivot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\YapperChatMessagesPivot.xaml.cs">
+      <DependentUpon>YapperChatMessagesPivot.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Views\InviteFriends.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DragImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PullDownItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TickAndCross.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tasklist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TimePickerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialCalendarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialPageWelcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialPollPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialTaskCompletion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialTaskPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TutorialYapperIntroduction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\YapperChatContactsPivot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\YapperChatTaskPivot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\YapperChatMessagesPivot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="CustomTheme\System.Windows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="CustomTheme\ThemeResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Controls\ImageAndUnreadCount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewGroupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConversationMessagesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DisplayFullImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EnterConfirmationCodeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewConversationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewUserRegistrationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhoneContactsJumpListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DisplayLocation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuestionComposition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegisteredUsersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserSettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="..\..\Server\YapperServer\MessageStore\MessageLayer\Message.xml">
+      <Link>Models\Message.xml</Link>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ext\WPControls.dll" />
+    <Content Include="Images\appbar.calendar.14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.camera.send.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\appbar.home.question.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\appbar.image.portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.input.keyboard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.list.create.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.paperclip.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.share.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\calendaraccept.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\calendarblue.png" />
+    <Content Include="Images\calendardecline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\cancel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\chart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ChartBlue.png" />
+    <Content Include="Images\default.group.profile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\favs.addto.png" />
+    <Content Include="Images\feature.calendar.gray.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.list.gray.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.calendar.accent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.list.accent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.phone.accent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.email.gray.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.email.accent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\feature.phone.gray.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\group.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ListBlue.png" />
+    <Content Include="Images\mapicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\microphone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\microphone40.png" />
+    <Content Include="Images\news.png" />
+    <Content Include="Images\progress.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\TaskCompleteAnimation.gif" />
+    <Content Include="Images\TaskDeleteAnimation.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tile-medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tile-small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tile-wide.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\TutorialAddTask.png" />
+    <Content Include="Images\TutorialAttachmentAppbar.png" />
+    <Content Include="Images\TutorialCalendarPaneSelect.png" />
+    <Content Include="Images\TutorialPollPaneSelect.png" />
+    <Content Include="Images\TutorialTaskSelect.png" />
+    <Content Include="Models\ClientMessage.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Models\msxsl\msxsl.exe" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ext\GalaSoft.MvvmLight.WP7.dll" />
+    <Content Include="Images\appbar.camera.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.cancel.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Resource Include="Images\applicationicon.png" />
+    <Content Include="Images\appbar.check.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.invite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.message.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.message.send.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\appbar.phone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\default.profile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="PanoramaBackground.png" />
+    <Content Include="Images\appbar.add.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.overflowdots.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ext\Coding4Fun.Toolkit.Controls.dll" />
+    <Content Include="SplashScreenImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings.da-DK.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.da-DK.xlf</DependentUpon>
+      <culture>da-DK</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.de-AT.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de-AT.xlf</DependentUpon>
+      <culture>de-AT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.de-CH.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de-CH.xlf</DependentUpon>
+      <culture>de-CH</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.de-DE.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de-DE.xlf</DependentUpon>
+      <culture>de-DE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.en-AU.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.en-AU.xlf</DependentUpon>
+      <culture>en-AU</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.en-GB.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.en-GB.xlf</DependentUpon>
+      <culture>en-GB</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.en-US.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.en-US.xlf</DependentUpon>
+      <culture>en-US</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-AR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-AR.xlf</DependentUpon>
+      <culture>es-AR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-BO.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-BO.xlf</DependentUpon>
+      <culture>es-BO</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-CL.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-CL.xlf</DependentUpon>
+      <culture>es-CL</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-CO.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-CO.xlf</DependentUpon>
+      <culture>es-CO</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-CR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-CR.xlf</DependentUpon>
+      <culture>es-CR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-DO.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-DO.xlf</DependentUpon>
+      <culture>es-DO</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-EC.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-EC.xlf</DependentUpon>
+      <culture>es-EC</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-ES.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-ES.xlf</DependentUpon>
+      <culture>es-ES</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-MX.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-MX.xlf</DependentUpon>
+      <culture>es-MX</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-NI.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-NI.xlf</DependentUpon>
+      <culture>es-NI</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-PE.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-PE.xlf</DependentUpon>
+      <culture>es-PE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es-PR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es-PR.xlf</DependentUpon>
+      <culture>es-PR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.es.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es.xlf</DependentUpon>
+      <culture>es</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.fr-BE.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr-BE.xlf</DependentUpon>
+      <culture>fr-BE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.fr-FR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr-FR.xlf</DependentUpon>
+      <culture>fr-FR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.fr.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr.xlf</DependentUpon>
+      <culture>fr</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.it-IT.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.it-IT.xlf</DependentUpon>
+      <culture>it-IT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.ja-JP.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.ja-JP.xlf</DependentUpon>
+      <culture>ja-JP</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.ko-KR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.ko-KR.xlf</DependentUpon>
+      <culture>ko-KR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.nl.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.nl.xlf</DependentUpon>
+      <culture>nl</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.pt-BR.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.pt-BR.xlf</DependentUpon>
+      <culture>pt-BR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.pt-PT.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.pt-PT.xlf</DependentUpon>
+      <culture>pt-PT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.qps-ploc.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.qps-ploc.xlf</DependentUpon>
+      <culture>qps-ploc</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.ru-RU.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.ru-RU.xlf</DependentUpon>
+      <culture>ru-RU</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.sv-FI.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.sv-FI.xlf</DependentUpon>
+      <culture>sv-FI</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.sv-SE.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.sv-SE.xlf</DependentUpon>
+      <culture>sv-SE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.zh-CN.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.zh-CN.xlf</DependentUpon>
+      <culture>zh-CN</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.zh-HK.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.zh-HK.xlf</DependentUpon>
+      <culture>zh-HK</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.zh-TW.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.zh-TW.xlf</DependentUpon>
+      <culture>zh-TW</culture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources\Strings.da-DK.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.da-DK.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.de-AT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.de-AT.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.de-CH.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.de-CH.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.de-DE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.de-DE.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.en-AU.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.en-AU.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.en-GB.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.en-GB.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.en-US.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.en-US.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-AR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-AR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-BO.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-BO.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-CL.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-CL.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-CO.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-CO.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-CR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-CR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-DO.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-DO.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-EC.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-EC.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-ES.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-ES.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-MX.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-MX.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-NI.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-NI.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-PE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-PE.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es-PR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es-PR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.es.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.es.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.fr-BE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.fr-BE.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.fr-FR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.fr-FR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.fr.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.fr.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.it-IT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.it-IT.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.ja-JP.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.ja-JP.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.ko-KR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.ko-KR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.nl.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.nl.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.pt-BR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.pt-BR.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.pt-PT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.pt-PT.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.qps-ploc.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.qps-ploc.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.ru-RU.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.ru-RU.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.sv-FI.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.sv-FI.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.sv-SE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.sv-SE.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.zh-CN.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.zh-CN.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.zh-HK.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.zh-HK.resx</LastGenOutput>
+    </XliffResource>
+    <XliffResource Include="Resources\Strings.zh-TW.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Strings.zh-TW.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)Models\msxsl\msxsl.exe" "$(ProjectDir)..\..\Server\YapperServer\MessageStore\MessageLayer\Message.xml" "$(ProjectDir)Models\ClientMessage.xslt" -o "$(ProjectDir)Models\MessageModel.generated.cs"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>3.0</MultilingualAppToolkitVersion>
+  </PropertyGroup>
+</Project>

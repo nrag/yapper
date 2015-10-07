@@ -1,0 +1,145 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="YapperChat.Views.YapperChatMessagesPivot"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="clr-namespace:YapperChat.ViewModels"
+    xmlns:ycontrols="clr-namespace:YapperChat.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:scm="clr-namespace:System.ComponentModel;assembly=System.Windows"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" 
+    Orientation="Portrait"
+    BackKeyPress="PhoneApplicationPage_BackKeyPress"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" 
+          Background="{StaticResource PhoneBackgroundBrush}" 
+          HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="0,0,0,0">
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding Path=LocalizedResources.YapperText, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="55" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <Button Click="MessagePivotView_Click"  Width="100" Height="100" HorizontalAlignment="Left" BorderBrush="{StaticResource PhoneAccentBrush}" Margin="-3" Padding="-3">
+                    <Button.Content>
+                        <Image Name="YapImage" Source="{StaticResource MessageImageAccent}"/>
+                    </Button.Content>
+                </Button>
+                <Button Click="ContactsPivotView_Click"  Width="100" Height="100" HorizontalAlignment="Left" BorderBrush="Black" Margin="-3" Padding="-3" Background="{StaticResource PhoneAccentBrush}">
+                    <Button.Content>
+                        <Image Name="ApptImage" Source="{StaticResource ContactsImageGray}"/>
+                    </Button.Content>
+                </Button>
+                <Button Click="TaskPivotView_Click"  Width="100" Height="100" HorizontalAlignment="Left" BorderBrush="Black" Margin="-3" Padding="-3" Background="{StaticResource PhoneAccentBrush}">
+                    <Button.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.Column="0" Name="TaskImage" Source="{StaticResource TaskAttachImageGray}"/>
+                            <Border Height="35" Width="35" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" Visibility="{Binding NewTaskCount.IsNewTaskAvailable, Converter={StaticResource booleanToVisibilityConverter}}">
+                                <TextBlock Text="{Binding NewTaskCount.Count}" Foreground="{StaticResource PhoneBackgroundBrush}" Style="{StaticResource PhoneTextSmallStyle}" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-3,0,0,0"/>
+                            </Border>
+                        </Grid>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </Border>
+        <ycontrols:ProgressIndicatorProxy 
+            x:Name="TileProgressIndicator" 
+            IsIndeterminate="True" 
+            IsVisible="{Binding Path=AllConversations.IsLoaded, Converter={StaticResource inverseBooleanConverter}}" 
+            Text="{Binding Path=LocalizedResources.SynchingText, Source={StaticResource LocalizedStrings}}" />
+        <ListBox 
+            Grid.Row="1"
+            HorizontalAlignment="Stretch" 
+            HorizontalContentAlignment="Stretch" 
+            Name="FavoritesListBox" 
+            VerticalAlignment="Top" 
+            Tap ="ConversationList_Tap">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel ItemWidth="480" ItemHeight="100" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemsSource>
+                <Binding>
+                    <Binding.Source>
+                        <CollectionViewSource x:Name="FavoritesCollection" Source="{Binding Path=AllConversations.Conversations}">
+                            <CollectionViewSource.SortDescriptions>
+                                <scm:SortDescription PropertyName="FavoriteIndex"  Direction="Descending"/>
+                            </CollectionViewSource.SortDescriptions>
+                        </CollectionViewSource>
+                    </Binding.Source>
+                </Binding>
+            </ListBox.ItemsSource>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl 
+                                x:Name="ConversationStackPanel" 
+                                VerticalContentAlignment="Stretch" 
+                                HorizontalContentAlignment="Stretch" 
+                                Loaded="StackPanel_Loaded" 
+                                BorderBrush="{StaticResource PhoneAccentBrush}" 
+                                Width="480">
+                        <Grid 
+                                    x:Name="ListBoxGrid" 
+                                    HorizontalAlignment="Stretch" 
+                                    Margin="10,5,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BorderBrush="{StaticResource PhoneForegroundBrush}">
+                                <Image  Height="80" Width="80" Source="{Binding Recipient.ContactPhoto}" VerticalAlignment="Top"/>
+                            </Border>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding OtherParticipants}" TextWrapping="NoWrap" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextLargeStyle}"></TextBlock>
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding SimpleDateTime}" TextWrapping="Wrap" Style="{StaticResource PhoneTextTitle3Style}"></TextBlock>
+                            <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"  BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="0,0,0,0.25" Margin="5,0,0,0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding ConversationPreviewMessage}" TextWrapping="NoWrap" VerticalAlignment="Top" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextTitle3Style}"></TextBlock>
+                                    <Border Grid.Row="0" Grid.Column="1" Height="35" Width="35" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" Visibility="{Binding HasUnread, Converter={StaticResource booleanToVisibilityConverter}}">
+                                        <TextBlock Text="{Binding UnreadCount}" Foreground="{StaticResource PhoneBackgroundBrush}" Style="{StaticResource PhoneTextSmallStyle}" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-3,0,0,0"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </ContentControl>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+    <phone:PhoneApplicationPage.Resources>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Key="MessagePivotApplicationBar">
+            <shell:ApplicationBarIconButton IconUri="Images/favs.addto.png" Text="." Click="InviteFriendsAppBarButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="Images/appbar.add.rest.png" Text="." Click="StartNewChat_Click"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="." Click="ApplicationBarSignout_Click"/>
+                <shell:ApplicationBarMenuItem Text="." Click="ApplicationBarSettings_Click"/>
+                <shell:ApplicationBarMenuItem Text="Tutorial" Click="ApplicationBarTutorial_Click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.Resources>
+</phone:PhoneApplicationPage>

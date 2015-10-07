@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="da-DK" />
+    <Language code="de-AT" />
+    <Language code="de-CH" />
+    <Language code="de-DE" />
+    <Language code="en-AU" />
+    <Language code="en-GB" />
+    <Language code="en-US" />
+    <Language code="es-AR" />
+    <Language code="es-BO" />
+    <Language code="es-CL" />
+    <Language code="es-CO" />
+    <Language code="es-CR" />
+    <Language code="es-DO" />
+    <Language code="es-EC" />
+    <Language code="es-ES" />
+    <Language code="es-MX" />
+    <Language code="es-NI" />
+    <Language code="es-PE" />
+    <Language code="es-PR" />
+    <Language code="es" />
+    <Language code="fr-BE" />
+    <Language code="fr-FR" />
+    <Language code="fr" />
+    <Language code="it-IT" />
+    <Language code="ja-JP" />
+    <Language code="ko-KR" />
+    <Language code="nl" />
+    <Language code="pt-BR" />
+    <Language code="pt-PT" />
+    <Language code="qps-ploc" />
+    <Language code="ru-RU" />
+    <Language code="sv-FI" />
+    <Language code="sv-SE" />
+    <Language code="zh-CN" />
+    <Language code="zh-HK" />
+    <Language code="zh-TW" />
+  </Languages>
+  <App xmlns="" ProductID="{2f42d86a-20a4-4679-af82-e5b663f62f61}" Title="YapperChat" RuntimeType="Silverlight" Version="1.0.0.22" Genre="apps.normal" Author="YapperChat author" Description="Sample description" Publisher="YapperChat" PublisherID="{fb89d2da-86e2-430a-9e7d-9f12252443b3}">
+    <IconPath IsRelative="true" IsResource="false">Images\applicationicon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="YapperChatToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsResource="false" IsRelative="true">Images\tile-small.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsResource="false" IsRelative="true">Images\tile-small.png</BackgroundImageURI>
+          <Title>YapperChat</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI IsResource="false" IsRelative="true">Images\tile-medium.png</BackBackgroundImageURI>
+          <BackTitle>YapperChat</BackTitle>
+          <LargeBackgroundImageURI IsResource="false" IsRelative="true">Images\tile-wide.png</LargeBackgroundImageURI>
+          <LargeBackContent>YapperChat</LargeBackContent>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

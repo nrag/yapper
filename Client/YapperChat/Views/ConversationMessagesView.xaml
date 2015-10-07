@@ -1,0 +1,719 @@
+﻿<phone:PhoneApplicationPage xmlns:Controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"  
+    x:Class="YapperChat.Views.ConversationMessagesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:c4fun="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:ycontrols="clr-namespace:YapperChat.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wpControls="clr-namespace:WPControls;assembly=WPControls"
+    xmlns:local="clr-namespace:YapperChat.Controls.Converters"
+    Background="{StaticResource PhoneBackgroundBrush}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" 
+    d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    BackKeyPress="PhoneApplicationPage_BackKeyPress">
+
+    <phone:PhoneApplicationPage.Resources>
+        <local:ColorConverter x:Key="ColorConverter"/>
+
+        <shell:ApplicationBar x:Key="AddMemberPageApplicationBar" IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="Images/appbar.check.png" Text="." Click="AddMemberApplicationBarDone_Click"/>
+        </shell:ApplicationBar>
+
+        <shell:ApplicationBar x:Key="ContactDetailsAppBar" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="Images/appbar.add.rest.png" Text="." Click="ApplicationBarIconButton_Click"/>
+        </shell:ApplicationBar>
+
+        <shell:ApplicationBar x:Key="MessagesAppBar" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="Images/appbar.message.send.png" Text="." Click="SendMessage_Click" IsEnabled="true"/>
+        </shell:ApplicationBar>
+
+        <shell:ApplicationBar x:Key="RemoveMemberAppBar" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="Images/delete.png" Text="." Click="RemoveUserButton_Click" IsEnabled="true"/>
+            <shell:ApplicationBarIconButton IconUri="Images/cancel.png" Text="." Click="CancelRemoveUserButton_Click" IsEnabled="true"/>
+        </shell:ApplicationBar>
+
+        <shell:ApplicationBar x:Key="PollResponsesAppBar" IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="Images/appbar.check.png" Text="." Click="PollResponsesApplicationBarDone_Click"/>
+        </shell:ApplicationBar>
+        
+        <DataTemplate x:Key="GroupMemberItemTemplate">
+            <Grid x:Name="GroupMemberGrid" HorizontalAlignment="Stretch" Margin="0,5,0,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Name}" TextWrapping="NoWrap" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextTitle2Style}"></TextBlock>
+                <!-- Button Name="RemoveUserButton" Grid.Row="0" Grid.Column="1" Click="RemoveUserButton_Click" BorderThickness="0"  Background="{StaticResource PhoneAccentBrush}" Content="Remove" Visibility="{Binding ElementName=ContactDetailsGrid, Path=IsGroupOwner, Converter={StaticResource booleanToVisibilityConverter}}" FontWeight="Bold">
+                </Button-->
+            </Grid>
+        </DataTemplate>
+
+        <Style x:Key="MemberJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="113,113"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="{StaticResource PhoneAccentBrush}" Width="113" Height="113" Margin="6">
+                            <TextBlock Text="{Binding Key}" Style="{StaticResource PhoneTextExtraLargeStyle}" VerticalAlignment="Center"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Key="PollResponseGroupHeaderTemplate">
+            <StackPanel>
+                <Border BorderBrush="{StaticResource PhoneForegroundBrush}" BorderThickness=".5" Margin="12,8,0,8">
+                    <TextBlock 
+                                Text="{Binding Response}" 
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource PhoneTextTitle2Style}"
+                                FontWeight="ExtraBold"/>
+                </Border>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="PollResponseItemTemplate">
+            <StackPanel Orientation="Horizontal" Margin="15,5,0,5">
+                <Image Height="70" Width="70" Source="{Binding ContactPhoto}" />
+                <TextBlock Text="{Binding Name}" Margin="5" Style="{StaticResource PhoneTextTitle2Style}"/>
+            </StackPanel>
+        </DataTemplate>
+        
+        <Style x:Key="SelectedTextBlockStyle" TargetType="phone:LongListSelector" >
+            <Setter Property="LayoutMode" Value="List"/>
+            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <UserControl>
+                            <Border x:Name="MyBorder" Background="Transparent">
+                                <VisualStateManager.VisualStateGroups  >
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal" />
+                                        <VisualState x:Name="Selected">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background)" Storyboard.TargetName="MyBorder">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneAccentBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <StackPanel>
+                                    <TextBlock x:Name="textBlock" Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextTitle2Style}"/>
+                                </StackPanel>
+                            </Border>
+                        </UserControl>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Key="ChatItemTemplate">
+            <c4fun:ChatBubble Name="chatBubble" 
+                              MinWidth="100" Margin="20,0,0,20"
+                              ChatBubbleDirection="{Binding Path=IsMine, Converter={StaticResource booleanToChatPropertyConverter}, ConverterParameter=direction}"
+                              HorizontalAlignment="{Binding Path=IsMine, Converter={StaticResource booleanToChatPropertyConverter}, ConverterParameter=alignment}"
+                              Background="{Binding Path=IsMine, Converter={StaticResource booleanToChatPropertyConverter}, ConverterParameter=background}"
+                              Foreground="{StaticResource PhoneForegroundBrush}"
+                              BorderBrush="{Binding Path=IsMine, Converter={StaticResource booleanToChatPropertyConverter}, ConverterParameter=background}">
+                <StackPanel Background="Transparent" HorizontalAlignment="Center">
+                    <Grid x:Name="ChatBubbleGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Row="0" Grid.Column="0" Source="{Binding Sender.ContactPhoto}" Margin="0,0,5,0" Height="40" Width="40"/>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                                <TextBlock Text="{Binding Sender.Name}" Grid.Row="0" Grid.Column="0"
+                                           TextWrapping="NoWrap" 
+                                           HorizontalAlignment="Stretch" 
+                                           FontSize="{StaticResource PhoneFontSizeNormal}" 
+                                           FontWeight="Bold" 
+                                           Foreground="{StaticResource PhoneForegroundBrush}"></TextBlock>
+                                <Image Margin="5,0,0,0" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                                       Height="30" 
+                                       Width="30" 
+                                       Source="/Images/mapicon.png" 
+                                       Tap="LocationImage_Tap"
+                                       HorizontalAlignment="Left"
+                                       Visibility="{Binding IsLocationAvailable, Converter={StaticResource booleanToVisibilityConverter}}"></Image>
+                                <Button Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                                        Background="Red" 
+                                        Foreground="{StaticResource PhoneBackgroundBrush}" 
+                                        HorizontalAlignment="Left" 
+                                        Content="{Binding Path=LocalizedResources.SeeTask, Source={StaticResource LocalizedStrings}}" 
+                                        FontSize="14"  
+                                        Click="SeeTaskButton_Click" 
+                                        ClickMode="Release"
+                                        Visibility="{Binding ShouldShowSeeTaskButton, Converter={StaticResource booleanToVisibilityConverter}}"></Button>
+                            <TextBlock Text="{Binding SimpleDateTime}" 
+                                       TextWrapping="NoWrap" 
+                                       TextAlignment="Left" 
+                                       Grid.Row="1"
+                                       Grid.Column="0"
+                                       Foreground="{StaticResource PhoneForegroundBrush}" 
+                                       FontSize="{StaticResource PhoneFontSizeSmall}"></TextBlock>
+                        </Grid>
+                        <StackPanel Name="MessagePanel" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" HorizontalAlignment="Stretch">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Orientation="Vertical" Grid.Column="0">
+                                    <TextBlock Text="{Binding Hourglass}" 
+                                               Visibility="{Binding MessageId, Converter={StaticResource nullMessageIdToVisibilityConverter}}"></TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="{Binding TextMessageForDisplay}" 
+                                             Grid.Column="1"
+                                               TextWrapping="Wrap" 
+                                               FontSize="{StaticResource PhoneFontSizeMedium}" 
+                                               Foreground="White" 
+                                               VerticalAlignment="Center"
+                                               Visibility="{Binding IsTextMessage}"/>
+                            </Grid>
+                            <Image Source="{Binding MessageImage}" 
+                                   x:Uid="{Binding MessageId}"  
+                                   Visibility="{Binding IsImage, Converter={StaticResource booleanToVisibilityConverter}}"  
+                                   Tap="ImageTapped"  
+                                   Width="{Binding ImageWidth}" 
+                                   Height="{Binding ImageHeight}"
+                                   Grid.Column="1"/>
+                            <toolkit:WrapPanel Orientation="Horizontal" Visibility="{Binding IsCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}">
+                                <Image Name="CalendarMessageImage" Source="{StaticResource CalendarAttachImage}" Height="70" Width="70" VerticalAlignment="Center"/>
+                                <toolkit:WrapPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding SimpleAppointmentDate}" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="{StaticResource PhoneFontSizeMedium}"/>
+                                    <TextBlock Text="{Binding SimpleAppointmentStartEndTime}" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="{StaticResource PhoneFontSizeMedium}"/>
+                                </toolkit:WrapPanel>
+                            </toolkit:WrapPanel>
+                            <toolkit:WrapPanel x:Name="PollOptionsWrapPanel" Grid.Row="2" Grid.ColumnSpan="2"  Visibility="{Binding ShouldShowPollOptions, Converter={StaticResource booleanToVisibilityConverter}}">
+                                <Border BorderBrush="LightBlue" BorderThickness="1,1,1,1" CornerRadius="8,8,8,8" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                    <ItemsControl x:Name="PollStackPanel" ItemsSource="{Binding PollOptionsForDisplay}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <toolkit:WrapPanel/>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Button Height="70" Background="Red" Foreground="{StaticResource PhoneBackgroundBrush}" HorizontalAlignment="Right" Content="{Binding}" FontSize="{StaticResource PhoneFontSizeSmall}"  Click="PollResponseButtons_Click" ClickMode="Release" IsEnabled="{Binding ElementName=PollOptionsWrapPanel, Path=DataContext.ShouldEnablePollButtons}"></Button>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Border>
+                            </toolkit:WrapPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0" Visibility="{Binding ShouldShowNonGroupPollResponse, Converter={StaticResource booleanToVisibilityConverter}}">
+                                <Border BorderBrush="{StaticResource PhoneBackgroundBrush}" BorderThickness=".25" Visibility="{Binding HasAcceptedCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}">
+                                    <Image Name="CalendarAccept" Height="60" Width="60" Source="{StaticResource CalendarAcceptImage}"  Visibility="{Binding HasAcceptedCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                                </Border>
+                                <Border BorderBrush="{StaticResource PhoneBackgroundBrush}" BorderThickness=".25" Visibility="{Binding HasDeclinedCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}">
+                                    <Image Name="CalendarDecline" Height="60" Width="60" Source="{StaticResource CalendarDeclineImage}" Visibility="{Binding HasDeclinedCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                                </Border>
+                                <Border BorderBrush="{StaticResource PhoneBackgroundBrush}" BorderThickness=".25" Visibility="{Binding IsPollMessageButNotCalendar, Converter={StaticResource booleanToVisibilityConverter}}">
+                                    <Image Name="PollMessageImage" Height="60" Width="60" Source="{StaticResource PollImage}"  VerticalAlignment="Center" Visibility="{Binding ShouldShowPollOptions, Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter=true}"/>
+                                </Border>
+                                <TextBlock Width="300" Text="{Binding PollResponseMessage}" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiLight}" FontSize="22" FontWeight="ExtraBold" VerticalAlignment="Center"  Visibility="{Binding ShouldShowNonGroupPollResponse, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                            </StackPanel>
+                            <toolkit:WrapPanel Orientation="Vertical" Margin="0,0,0,0" Visibility="{Binding ShouldShowGroupPollResponses, Converter={StaticResource booleanToVisibilityConverter}}">
+                                <Button Height="70" Background="Red" Foreground="{StaticResource PhoneBackgroundBrush}" HorizontalAlignment="Left" Content="{Binding Path=LocalizedResources.ShowAllResponsesText, Source={StaticResource LocalizedStrings}}" FontSize="{StaticResource PhoneFontSizeSmall}" ClickMode="Release"  Click="ShowPollResponsesButton_Click"></Button>
+                            </toolkit:WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </c4fun:ChatBubble>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <ContentControl 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Background="{StaticResource PhoneBackgroundBrush}">
+        <controls:Pivot x:Name="ConversationPagePivot" Style="{StaticResource PivotStyle}" Background="{StaticResource PhoneBackgroundBrush}" SelectionChanged="ConversationPagePivot_SelectionChanged">
+            <controls:PivotItem x:Name="ConversationPivot" Header="{Binding Participants}">
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <ycontrols:ProgressIndicatorProxy x:Name="ProgressIndicator" IsIndeterminate="True" IsVisible="{Binding Path=IsSendingMessage}" Text="{Binding Path=LocalizedResources.SendingMessageText, Source={StaticResource LocalizedStrings}}" />
+                    <ycontrols:ProgressIndicatorProxy x:Name="SyncingIndicator" IsIndeterminate="True" IsVisible="{Binding Path=IsSyncing}" Text="{Binding Path=LocalizedResources.SynchingText, Source={StaticResource LocalizedStrings}}" />
+                    <ycontrols:ProgressIndicatorProxy x:Name="LoadingIndicator" IsIndeterminate="True" IsVisible="{Binding Path=IsLoading}" Text="{Binding Path=LocalizedResources.LoadingText, Source={StaticResource LocalizedStrings}}" />
+
+                    <phone:LongListSelector 
+                                    x:Name="messagesListBox"
+                                    Grid.Row="0" 
+                                    Background="Transparent"
+                                    ItemTemplate="{StaticResource ChatItemTemplate}"
+                                    ItemsSource="{Binding Messages}"
+                                    IsGroupingEnabled="False"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Bottom"
+                                    ItemRealized="MessageListBox_ItemRealized">
+                    </phone:LongListSelector>
+                    <StackPanel Name="PollResponsesStack" Visibility="Collapsed">
+                        <Popup 
+                                Name="PollResponsesPopup" 
+                                IsOpen="False" 
+                                Visibility="Collapsed">
+                            <Border Background="{StaticResource PhoneBackgroundBrush}" BorderBrush="Transparent" Opacity=".95">
+                                <Grid x:Name="PollResponsesPopupGrid" Height="600" Width="480">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <c4fun:ChatBubble Grid.Row="0" 
+                                                      Name="PopupChatBubble" 
+                                                      MaxWidth="400" 
+                                                      Margin="-20, 0, 0,0"
+                                                      Foreground="{StaticResource PhoneForegroundBrush}">
+                                        <StackPanel Background="Transparent" HorizontalAlignment="Center">
+                                            <Grid x:Name="PopupChatBubbleGrid" HorizontalAlignment="Stretch" Width="400">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <Image Grid.Row="0" Grid.Column="0" Source="{Binding Sender.ContactPhoto}" Margin="0,0,5,0" Height="40" Width="40"/>
+                                                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding Sender.Name}" TextWrapping="NoWrap" HorizontalAlignment="Stretch" FontSize="{StaticResource PhoneFontSizeNormal}" FontWeight="Bold" Foreground="{StaticResource PhoneForegroundBrush}"></TextBlock>
+                                                        <Image Margin="5,0,0,0" 
+                                                                   Height="30" 
+                                                                   Width="30" 
+                                                                   Source="/Images/mapicon.png" 
+                                                                   Tap="LocationImage_Tap"
+                                                                   Visibility="{Binding IsLocationAvailable, Converter={StaticResource booleanToVisibilityConverter}}"></Image>
+                                                    </StackPanel>
+                                                    <TextBlock Text="{Binding SimpleDateTime}" 
+                                                               TextWrapping="NoWrap" 
+                                                               TextAlignment="Left" 
+                                                               Foreground="{StaticResource PhoneForegroundBrush}" 
+                                                               FontSize="{StaticResource PhoneFontSizeSmall}"></TextBlock>
+                                                </StackPanel>
+                                                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" HorizontalAlignment="Stretch">
+                                                    <TextBlock Text="{Binding TextMessageForDisplay}" 
+                                                               TextWrapping="Wrap" 
+                                                               FontSize="{StaticResource PhoneFontSizeMedium}" 
+                                                               Foreground="White" 
+                                                               Visibility="{Binding IsTextMessage}"/>
+                                                    <toolkit:WrapPanel Orientation="Horizontal" 
+                                                                       Visibility="{Binding IsCalendarMessage, Converter={StaticResource booleanToVisibilityConverter}}">
+                                                        <Image Name="PopupCalendarMessageImage" Source="{StaticResource CalendarAttachImage}" Height="70" Width="70" VerticalAlignment="Center"/>
+                                                        <toolkit:WrapPanel Orientation="Vertical">
+                                                            <TextBlock Text="{Binding SimpleAppointmentDate}" 
+                                                                       TextWrapping="Wrap" 
+                                                                       VerticalAlignment="Center" 
+                                                                       FontSize="{StaticResource PhoneFontSizeMedium}"/>
+                                                            <TextBlock Text="{Binding SimpleAppointmentStartEndTime}" 
+                                                                       TextWrapping="Wrap" 
+                                                                       VerticalAlignment="Center" 
+                                                                       FontSize="{StaticResource PhoneFontSizeMedium}"/>
+                                                        </toolkit:WrapPanel>
+                                                    </toolkit:WrapPanel>
+                                                    <toolkit:WrapPanel x:Name="PopupPollOptionsWrapPanel" 
+                                                                       Grid.Row="2" 
+                                                                       Grid.ColumnSpan="2"  
+                                                                       Visibility="{Binding ShouldShowPollOptions, Converter={StaticResource booleanToVisibilityConverter}}">
+                                                        <Border BorderBrush="LightBlue" 
+                                                                BorderThickness="1,1,1,1" 
+                                                                CornerRadius="8,8,8,8" 
+                                                                HorizontalAlignment="Left" 
+                                                                VerticalAlignment="Top">
+                                                            <ItemsControl x:Name="PopupPollStackPanel" ItemsSource="{Binding PollOptionsForDisplay}">
+                                                                <ItemsControl.ItemsPanel>
+                                                                    <ItemsPanelTemplate>
+                                                                        <toolkit:WrapPanel/>
+                                                                    </ItemsPanelTemplate>
+                                                                </ItemsControl.ItemsPanel>
+                                                                <ItemsControl.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <Button Height="70" 
+                                                                                Background="Red" 
+                                                                                Foreground="{StaticResource PhoneBackgroundBrush}" 
+                                                                                HorizontalAlignment="Right" 
+                                                                                Content="{Binding}" 
+                                                                                FontSize="{StaticResource PhoneFontSizeSmall}"></Button>
+                                                                    </DataTemplate>
+                                                                </ItemsControl.ItemTemplate>
+                                                            </ItemsControl>
+                                                        </Border>
+                                                    </toolkit:WrapPanel>
+                                                    <toolkit:WrapPanel Orientation="Vertical" 
+                                                                       Margin="0,0,0,0" 
+                                                                       Visibility="{Binding PollHasResponded, Converter={StaticResource booleanToVisibilityConverter}}" 
+                                                                       HorizontalAlignment="Center">
+                                                        <Border BorderBrush="LightBlue" 
+                                                                BorderThickness="1,1,1,1" 
+                                                                CornerRadius="8,8,8,8" 
+                                                                HorizontalAlignment="Left" 
+                                                                VerticalAlignment="Top">
+                                                            <ItemsControl x:Name="PopupPollResponseDisplayPanel" ItemsSource="{Binding DisplayPollResponses}">
+                                                                <ItemsControl.ItemsPanel>
+                                                                    <ItemsPanelTemplate>
+                                                                        <toolkit:WrapPanel Orientation="Horizontal"/>
+                                                                    </ItemsPanelTemplate>
+                                                                </ItemsControl.ItemsPanel>
+                                                                <ItemsControl.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <StackPanel Orientation="Vertical">
+                                                                            <StackPanel Margin="5,5,5,5">
+                                                                                <TextBlock Foreground="White" 
+                                                                                           FontSize="{StaticResource PhoneFontSizeSmall}" 
+                                                                                           HorizontalAlignment="Left" 
+                                                                                           VerticalAlignment="Center" 
+                                                                                           Text="{Binding Path=Key}"/>
+                                                                            </StackPanel>
+                                                                            <Grid Margin="5,5,5,5">
+                                                                                <TextBlock Grid.Row="0" 
+                                                                                           Grid.Column="0" 
+                                                                                           Width="25" 
+                                                                                           HorizontalAlignment="Center" 
+                                                                                           VerticalAlignment="Center" 
+                                                                                           FontSize="{StaticResource PhoneFontSizeSmall}" 
+                                                                                           FontWeight="Bold" 
+                                                                                           Foreground="White" 
+                                                                                           Text="{Binding Path=Value}"></TextBlock>
+                                                                            </Grid>
+                                                                        </StackPanel>
+                                                                    </DataTemplate>
+                                                                </ItemsControl.ItemTemplate>
+                                                            </ItemsControl>
+                                                        </Border>
+                                                    </toolkit:WrapPanel>
+                                                </StackPanel>
+                                                <phone:LongListSelector 
+                                                    Grid.Row="2"
+                                                    Grid.Column="0"
+                                                    Grid.ColumnSpan="2"
+                                                    x:Name="PollResponsesSelector"
+                                                    GroupHeaderTemplate="{StaticResource PollResponseGroupHeaderTemplate}"
+                                                    ItemTemplate="{StaticResource PollResponseItemTemplate}"
+                                                    IsGroupingEnabled="True"
+                                                    Height="400"
+                                                    HorizontalContentAlignment="Stretch">
+                                                </phone:LongListSelector>
+                                            </Grid>
+                                        </StackPanel>
+                                    </c4fun:ChatBubble>
+                                </Grid>
+                            </Border>
+                        </Popup>
+                    </StackPanel>
+                    <ContentControl Grid.Row="1"
+                                    IsEnabled="{Binding IsSendingMessage, Converter={StaticResource inverseBooleanConverter}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Width="440">
+                                <c4fun:ChatBubbleTextBox Grid.Row="0" 
+                                                         Grid.Column="0"
+                                                         Grid.ColumnSpan="2"
+                                                         x:Name="NewMessageTextBox" 
+                                                         Width="400" 
+                                                         HorizontalAlignment="Right" 
+                                                         VerticalAlignment="Bottom" 
+                                                         ChatBubbleDirection="LowerRight" 
+                                                         TextWrapping="Wrap"  
+                                                         Background="White" 
+                                                         Margin="0,0,0,0"
+                                                         TextChanged="NewMessageTextBox_TextChanged" 
+                                                         SizeChanged="NewMessageTextBox_SizeChanged" 
+                                                         KeyDown="NewMessageTextBox_KeyDown" 
+                                                         GotFocus="NewMessageTextBox_GotFocus"
+                                                         InputScope="Chat" 
+                                                         Visibility="Visible" 
+                                                         CaretBrush="{StaticResource PhoneTextCaretBrush}" 
+                                                         BorderBrush="{StaticResource PhoneForegroundBrush}" 
+                                                         SelectionBackground="{StaticResource PhoneTextBoxEditBorderBrush}" 
+                                                         Foreground="{StaticResource PhoneTextBoxForegroundBrush}" 
+                                                         SelectionForeground="{StaticResource PhoneForegroundBrush}">
+                                </c4fun:ChatBubbleTextBox>
+                                <Image Name="microphone" Source="/Images/Microphone40.png" Margin="0,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Tap="MicrophoneImage_Tap"></Image>
+                            </StackPanel>
+                            <Grid Name="AttachmentGrid" 
+                                  Grid.Row="1" 
+                                  Grid.Column="0" 
+                                  Grid.ColumnSpan="2" 
+                                  Visibility="Collapsed">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Row="0" 
+                                        Grid.Column="0"  
+                                        Click="ApptButton_Click" 
+                                        Background="{StaticResource PhoneAccentBrush}"
+                                        Width="100"
+                                        Height="100"
+                                        HorizontalAlignment="Right">
+                                    <Button.Content>
+                                        <Image Name="ApptImage" Source="{StaticResource CalendarAttachImage}" />
+                                    </Button.Content>
+                                </Button>
+                                <Button Grid.Row="0" 
+                                        Grid.Column="1"  
+                                        Click="QuestionButton_Click" 
+                                        Background="{StaticResource PhoneAccentBrush}"
+                                        Width="100"
+                                        Height="100">
+                                    <Button.Content>
+                                        <Image Name="QuestionImage" 
+                                               Source="{StaticResource PollImage}" />
+                                    </Button.Content>
+                                </Button>
+                                <Button Grid.Row="0" 
+                                        Grid.Column="2"  
+                                        Click="SendImage_Click" 
+                                        Background="{StaticResource PhoneAccentBrush}"
+                                        Height="100"
+                                        Width="100"
+                                        HorizontalAlignment="Left">
+                                    <Button.Content>
+                                        <Image Name="PhotoImage" Source="{StaticResource PhotoAttachImage}" />
+                                    </Button.Content>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </ContentControl>
+                    <StackPanel Name="PollCompositionPanel" 
+                                        Background="{StaticResource PhoneAccentBrush}"
+                                        Visibility="Collapsed" 
+                                        Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center">
+                                	    <Run Text="Question"/>
+                            </TextBlock>
+                            <TextBox x:Name="PollQuestion" Width="300" Text="{Binding Path=LocalizedResources.EmptyQuestionText, Source={StaticResource LocalizedStrings}}" InputScope="Chat"/>
+                            <Image Name="PollQuestionImage" Height="50" Width="50" Stretch="UniformToFill"></Image>
+                        </StackPanel>
+                        <TextBlock>Options:</TextBlock>
+                        <ListBox ItemsSource="{Binding ListOfQuestions}" Name="QuestionsListBox">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding}" Width="350" TextChanged="TextBox_TextChanged" InputScope="Chat"></TextBox>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                    <StackPanel Name="ApptCompositionPanel" 
+                                        Background="{StaticResource PhoneAccentBrush}"
+                                        Visibility="Collapsed" 
+                                        Grid.Row="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" x:Name="ApptQuestion" Text="Meeting" InputScope="Chat"/>
+                            <wpControls:Calendar Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="Cal" FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                                                         ColorConverter="{StaticResource ColorConverter}" 
+                                                         SelectionChanged="Cal_SelectionChanged" 
+                                                         HorizontalContentAlignment="Stretch"
+                                                         HorizontalAlignment="Stretch"
+                                                         VerticalAlignment="Stretch"
+                                                         VerticalContentAlignment="Stretch"
+                                                         Foreground="Black"
+                                                         Height="330"
+                                                         Width="455"/>
+                            <StackPanel Grid.Row="2" Grid.Column="0">
+                                <TextBlock Text="{Binding Path=LocalizedResources.AppointmentTimeText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontWeight="Bold" Style="{StaticResource PhoneTextTitle3Style}"/>
+                                <toolkit:TimePicker  
+                                    x:Name="ApptTimePicker" 
+                                    FontSize="10"
+                                    ValueStringFormat="{}{0:T}"
+                                    PickerPageUri="/Views/TimePickerPage.xaml">
+                                </toolkit:TimePicker>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Grid.Column="1">
+                                <TextBlock Text="{Binding Path=LocalizedResources.DurationText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontWeight="Bold" Style="{StaticResource PhoneTextTitle3Style}"/>
+                                <c4fun:TimeSpanPicker x:Name="ApptDurationPicker" FontSize="10"
+                                                      Step="0:30"
+                                                      Max="12:00"
+                                                      ValueStringFormat="{}{0:h} : {0:m}" >
+                                </c4fun:TimeSpanPicker>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </controls:PivotItem>
+            <controls:PivotItem x:Name="ContactDetailPivot">
+                <controls:PivotItem.Header>
+                    <StackPanel>
+                        <TextBlock FontSize="{StaticResource PhoneFontSizeExtraLarge}" Text="{Binding Path=LocalizedResources.ContactDetailsText, Source={StaticResource LocalizedStrings}}" Visibility="{Binding IsGroup,Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter=true}"/>
+                        <TextBlock FontSize="{StaticResource PhoneFontSizeExtraLarge}" Text="{Binding Path=LocalizedResources.GroupDetailsText, Source={StaticResource LocalizedStrings}}" Visibility="{Binding IsGroup,Converter={StaticResource booleanToVisibilityConverter}}"/>
+                    </StackPanel>
+                </controls:PivotItem.Header>
+                <StackPanel>
+                    <!--LayoutRoot is the root grid where all page content is placed-->
+                    <Grid x:Name="ContactDetailsGrid" Visibility="{Binding IsGroup,Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter=true}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid x:Name="MobilePhonePanel" Grid.Row="1" Visibility="{Binding Path=ContactDetail.Loaded, Converter={StaticResource booleanToVisibilityConverter}}" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Border BorderThickness="5" Grid.Column="0" HorizontalAlignment="Left" BorderBrush="Transparent">
+                                <TextBlock x:Name="MobilePhoneLabel" Text="{Binding Path=LocalizedResources.MobileText, Source={StaticResource LocalizedStrings}}" FontSize="{StaticResource PhoneFontSizeLarge}"></TextBlock>
+                            </Border>
+                            <TextBlock x:Name="MobilePhoneValue" Grid.Row="1"  Grid.Column="0" Text="{Binding ContactDetail.MobilePhone}" FontSize="{StaticResource PhoneFontSizeMedium}"></TextBlock>
+                            <Button 
+                            Name="CallMobileButton" 
+                            Grid.Row="0" 
+                            Grid.RowSpan="2" 
+                            Grid.Column="1" 
+                            HorizontalContentAlignment="Stretch" 
+                            VerticalContentAlignment="Stretch"
+                            Click="CallMobileButton_Click"
+                            Background="{StaticResource PhoneAccentBrush}">
+                                <Button.Content>
+                                    <Image Name="CallMobileImage" Source="{StaticResource CallPhoneImage}"/>
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+
+                        <Grid x:Name="HomePhonePanel" Grid.Row="2" Visibility="{Binding Path=ContactDetail.Loaded, Converter={StaticResource booleanToVisibilityConverter}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" Grid.Column="0" BorderThickness="5" HorizontalAlignment="Left" BorderBrush="Transparent" Visibility="{Binding Path=ContactDetail.HomePhone, Converter={StaticResource nullToVisibilityConverter}}">
+                                <TextBlock x:Name="HomePhoneLabel" Text="{Binding Path=LocalizedResources.HomeText, Source={StaticResource LocalizedStrings}}" FontSize="{StaticResource PhoneFontSizeLarge}"></TextBlock>
+                            </Border>
+                            <TextBlock x:Name="HomePhoneValue" Grid.Row="1" Grid.Column="0" Text="{Binding ContactDetail.HomePhone}" FontSize="{StaticResource PhoneFontSizeMedium}" Visibility="{Binding Path=ContactDetail.HomePhone, Converter={StaticResource nullToVisibilityConverter}}"></TextBlock>
+                            <Button 
+                            Name="CallHomeButton" 
+                            Grid.Row="0" 
+                            Grid.RowSpan="2" 
+                            Grid.Column="1" 
+                            Visibility="{Binding Path=ContactDetail.HomePhone, Converter={StaticResource nullToVisibilityConverter}}"
+                            HorizontalContentAlignment="Stretch" 
+                            VerticalContentAlignment="Stretch"
+                            Click="CallHomeButton_Click"
+                            Background="{StaticResource PhoneAccentBrush}">
+                                <Button.Content>
+                                    <Image Name="CallHomeImage" Source="{StaticResource CallPhoneImage}"/>
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <StackPanel Visibility="{Binding IsGroup,Converter={StaticResource booleanToVisibilityConverter}}">
+                        <Popup 
+                                Name="SelectUserPopup" 
+                                IsOpen="False" 
+                                Visibility="Collapsed">
+                            <Border Background="{StaticResource PhoneBackgroundBrush}">
+                                <Grid x:Name="AddMemberPopupGrid" Background="Transparent" Height="600" Width="480">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Text="{Binding Path=LocalizedResources.AddMemberText, Source={StaticResource LocalizedStrings}}" Style="{StaticResource TextBlockNormalStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="0,0,0,10"/>
+                                    <toolkit:LongListMultiSelector 
+                                                x:Name="ContactsListSelector"
+                                                Grid.Row="1"
+                                                Background="Transparent"
+                                                Margin="0,-8,0,0"
+                                                GroupHeaderTemplate="{StaticResource ContactGroupHeaderTemplate}"
+                                                ItemTemplate="{StaticResource ContactItemTemplate}"
+                                                IsSelectionEnabled="True"
+                                                IsGroupingEnabled="True"
+                                                HorizontalContentAlignment="Stretch"
+                                                EnforceIsSelectionEnabled="True"
+                                                IsEnabled="{Binding GroupDetail.IsUpdating, Converter={StaticResource inverseBooleanConverter}}">
+                                    </toolkit:LongListMultiSelector>
+                                </Grid>
+                            </Border>
+                        </Popup>
+                        <Grid x:Name="LayoutRoot" Background="Transparent" Height="600">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0">
+                                <TextBlock  Text="{Binding Path=LocalizedResources.OwnerText, Source={StaticResource LocalizedStrings}}" TextWrapping="NoWrap" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextExtraLargeStyle}" FontWeight="ExtraBold" Foreground="{StaticResource PhoneAccentBrush}"></TextBlock>
+                                <TextBlock Text="{Binding GroupDetail.Owner}" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextTitle2Style}"></TextBlock>
+                                <TextBlock  Text="{Binding Path=LocalizedResources.MembersText, Source={StaticResource LocalizedStrings}}" TextWrapping="NoWrap" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextExtraLargeStyle}" FontWeight="ExtraBold" Foreground="{StaticResource PhoneAccentBrush}"></TextBlock>
+                                <!--TitlePanel contains the name of the application and page title-->
+                            </StackPanel>
+                            <phone:LongListSelector 
+                                    x:Name="GroupMemberListSelector"
+                                    Grid.Row="1"
+                                    Background="Transparent"
+                                    Margin="0,-8,0,0"
+                                    Style="{StaticResource SelectedTextBlockStyle}"
+                                    GroupHeaderTemplate="{StaticResource ContactGroupHeaderTemplate}"
+                                    JumpListStyle="{StaticResource MemberJumpListStyle}"
+                                    ItemsSource="{Binding GroupDetail.Members}"
+                                    IsGroupingEnabled="True"
+                                    SelectionChanged="GroupMember_SelectionChanged">
+                            </phone:LongListSelector>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </ContentControl>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MessageStore</RootNamespace>
+    <AssemblyName>MessageStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>%24/Yapper/Yapper-InfrastructureChanges/Server/YapperServer/MessageStore</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://nrag.visualstudio.com/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\IDatabaseConnection.cs" />
+    <Compile Include="MessageLayer\InvalidMessageError.cs" />
+    <Compile Include="MessageLayer\InvalidMessageException.cs" />
+    <Compile Include="MessageLayer\MessageValidator.cs" />
+    <Compile Include="Query\AndFilter.cs" />
+    <Compile Include="BlobStore\AzureBlobStore.cs" />
+    <Compile Include="BlobStore\BlobStoreFactory.cs" />
+    <Compile Include="Query\ComparisonFilter.cs" />
+    <Compile Include="Database\DatabaseColumn.cs" />
+    <Compile Include="Database\DatabaseConnection.cs" />
+    <Compile Include="Database\DatabaseConnectionFactory.cs" />
+    <Compile Include="Database\DatabaseCountOperator.cs" />
+    <Compile Include="Database\DatabaseInsertOperator.cs" />
+    <Compile Include="Database\DatabaseTable.cs" />
+    <Compile Include="MessageLayer\DataContractToTableRowConverter.cs" />
+    <Compile Include="BlobStore\IBlobStore.cs" />
+    <Compile Include="BlobStore\IBlobStoreFactory.cs" />
+    <Compile Include="Database\IColumn.cs" />
+    <Compile Include="Database\IDatabaseConnectionFactory.cs" />
+    <Compile Include="IMessageStore.cs" />
+    <Compile Include="Database\ITableRow.cs" />
+    <Compile Include="Database\ITable.cs" />
+    <Compile Include="MessageLayer\Message.cs" />
+    <Compile Include="MessageLayer\Message.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Message.xml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageLayer\MessageSerializer.cs" />
+    <Compile Include="MessageStore.cs" />
+    <Compile Include="MessageLayer\MessageTable.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Message.xml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageLayer\MessageTableRow.cs" />
+    <Compile Include="MessageLayer\MessageFlags.cs" />
+    <Compile Include="Query\OrFilter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Database\DatabaseQueryOperator.cs" />
+    <Compile Include="Query\QueryFilter.cs" />
+    <Compile Include="Query\SelectFilter.cs" />
+    <Compile Include="Query\SortCriteria.cs" />
+    <Compile Include="Database\TableRow.cs" />
+    <Compile Include="MessageLayer\YapperColumnAttribute.cs" />
+    <Compile Include="MessageLayer\YapperTableAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MessageLayer\Message.xslt" />
+    <Content Include="MessageLayer\Message.xml">
+    </Content>
+    <Content Include="MessageLayer\MessageTable.xslt" />
+    <Content Include="msxsl\msxsl.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{a1a97aa7-aa20-4236-a7bc-7405cef7cef8}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)msxsl\msxsl.exe" "$(ProjectDir)MessageLayer\Message.xml" "$(ProjectDir)MessageLayer\Message.xslt" -o "$(ProjectDir)MessageLayer\Message.generated.cs"
+"$(ProjectDir)msxsl\msxsl.exe" "$(ProjectDir)MessageLayer\Message.xml" "$(ProjectDir)MessageLayer\MessageTable.xslt" -o "$(ProjectDir)MessageLayer\MessageTable.generated.cs"</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

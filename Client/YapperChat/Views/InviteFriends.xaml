@@ -1,0 +1,91 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="YapperChat.Views.InviteFriends"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:c4fun="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:ycontrols="clr-namespace:YapperChat.Controls"
+    xmlns:ViewModels="clr-namespace:YapperChat.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Background="{StaticResource PhoneBackgroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" 
+    BackKeyPress="PhoneApplicationPage_BackKeyPress">
+    <phone:PhoneApplicationPage.Resources>
+        <Style x:Key="ContactsJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="113,113"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="{StaticResource PhoneAccentBrush}" Width="100" Height="100" Margin="5">
+                            <TextBlock Text="{Binding Key}" Style="{StaticResource PhoneTextExtraLargeStyle}" VerticalAlignment="Top" FontWeight="Bold"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <DataTemplate x:Key="InviteContactItemTemplate">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Height="60" Width="60" Source="{Binding Image}" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+                <TextBlock Text="{Binding DisplayName}" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextTitle2Style}" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <ContentControl 
+        x:Name="ContentControl"
+        HorizontalContentAlignment="Stretch" 
+        VerticalContentAlignment="Stretch"
+        IsEnabled="{Binding IsRegistering, Converter={StaticResource inverseBooleanConverter}}" Foreground="{StaticResource PhoneForegroundBrush}">
+        <Grid x:Name="LayoutRoot" VerticalAlignment="Stretch" Background="{StaticResource PhoneBackgroundBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="FirstRow" Height="1.2*"/>
+                <RowDefinition x:Name="SecondRow" Height="8*"/>
+                <RowDefinition x:Name="ThirdRow" Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" 
+                       Margin="12,0,0,0" 
+                       x:Name="InviteFriendsTextBlock" 
+                       Text="{Binding Path=LocalizedResources.InviteFriendsText, Source={StaticResource LocalizedStrings}}" 
+                       Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="LoadingTextBlock" 
+                        Margin="12,0,0,0" 
+                        Text="{Binding Path=LocalizedResources.LoadingSpace3DotsText, Source={StaticResource LocalizedStrings}}"
+                        TextWrapping="Wrap"
+                        FontSize="{StaticResource PhoneFontSizeMedium}" 
+                        Style="{StaticResource TextBlockNormalStyle}"
+                        Visibility="{Binding IsLoading, Converter={StaticResource booleanToVisibilityConverter}}"
+                        Grid.Row="1">
+            </TextBlock>
+            <TextBlock Name="NoUsersTextBlock" 
+                        Text="{Binding Path=LocalizedResources.NoUserInformationText, Source={StaticResource LocalizedStrings}}"
+                        TextWrapping="Wrap"
+                        FontSize="{StaticResource PhoneFontSizeMedium}" 
+                        Style="{StaticResource TextBlockNormalStyle}"
+                        Visibility="{Binding IsContactsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"
+                        Grid.Row="1">
+            </TextBlock>
+            <toolkit:LongListMultiSelector 
+                        x:Name="ContactsListSelector"
+                        GroupHeaderTemplate="{StaticResource ContactGroupHeaderTemplate}"
+                        ItemTemplate="{StaticResource InviteContactItemTemplate}"
+                        JumpListStyle="{StaticResource ContactsJumpListStyle}"
+                        IsSelectionEnabled="True"
+                        ItemsSource="{Binding Items}"
+                        IsGroupingEnabled="True"
+                        VerticalContentAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        Visibility="{Binding IsContactsNotEmpty, Converter={StaticResource booleanToVisibilityConverter}}"
+                        Grid.Row="1"
+                        EnforceIsSelectionEnabled="True">
+            </toolkit:LongListMultiSelector>
+            <Button Grid.Row="2" Content="{Binding Path=LocalizedResources.InviteText, Source={StaticResource LocalizedStrings}}" Click="InviteFriends_Click" HorizontalContentAlignment="center" Visibility="{Binding IsContactsNotEmpty, Converter={StaticResource booleanToVisibilityConverter}}" Width="478"></Button>
+        </Grid>
+    </ContentControl>
+</phone:PhoneApplicationPage>

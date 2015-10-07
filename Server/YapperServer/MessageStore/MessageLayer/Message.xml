@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- ==================================================
+!!!!!!!Warning Warning Warning Warning Warning!!!!!!!!!!!!
+
+DO NOT CHANGE THE COLUMNID OF COLUMNS THAT ARE ALREADY DEFINED
+
+!!!!!!!Warning Warning Warning Warning Warning!!!!!!!!!!!!
+=======================================================-->
+
+<Table TableName="Message">
+
+  <!-- MessageId Property. This is a column in the table-->
+  <Column>
+    <Name>MessageId</Name>
+    <Type>Guid</Type>
+    <ColumnId>1</ColumnId>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+      <BlobName>true</BlobName>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+      <ClientPrimaryKey>true</ClientPrimaryKey>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <!-- Conversation Id property. This is a column in the table-->
+  <Column>
+    <Name>ConversationId</Name>
+    <Type>Guid</Type>
+    <ColumnId>2</ColumnId>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+      <BlobContainer>true</BlobContainer>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+      <ClientPrimaryKey>true</ClientPrimaryKey>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>MessageFlags</Name>
+    <ColumnId>3</ColumnId>
+    <Type>MessageFlags</Type>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>SenderId</Name>
+    <Type>int</Type>
+    <ColumnId>4</ColumnId>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>false</SentToClient>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>RecipientId</Name>
+    <Type>int</Type>
+    <ColumnId>5</ColumnId>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>false</SentToClient>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>LastUpdateTimeUtcTicks</Name>
+    <Type>long</Type>
+    <ColumnId>6</ColumnId>
+    <Server>
+      <ColumnLocation>Database</ColumnLocation>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>PostDateTimeUtcTicks</Name>
+    <Type>long</Type>
+    <ColumnId>7</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>true</Required>
+  </Column>
+
+  <Column>
+    <Name>TextMessage</Name>
+    <Type>string</Type>
+    <ColumnId>8</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>Image</Name>
+    <Type>byte[]</Type>
+    <ColumnId>9</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>false</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>PollOptions</Name>
+    <Type>List&lt;string&gt;</Type>
+    <ColumnId>10</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>false</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>PollMessageId</Name>
+    <Type>Guid?</Type>
+    <ColumnId>11</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>PollResponse</Name>
+    <Type>string</Type>
+    <ColumnId>12</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>ClientMessageId</Name>
+    <Type>Guid</Type>
+    <ColumnId>13</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+      <ClientPrimaryKey>true</ClientPrimaryKey>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>LocationLatitude</Name>
+    <Type>double?</Type>
+    <ColumnId>14</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>LocationLongitude</Name>
+    <Type>double?</Type>
+    <ColumnId>15</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>AppointmentDateTimeTicks</Name>
+    <Type>long?</Type>
+    <ColumnId>16</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>TaskName</Name>
+    <Type>string</Type>
+    <ColumnId>17</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>TaskId</Name>
+    <Type>Guid?</Type>
+    <ColumnId>18</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>TaskItemList</Name>
+    <Type>List&lt;Message&gt;</Type>
+    <ColumnId>19</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <GenerateOnClient>false</GenerateOnClient>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>false</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>TaskIsCompleted</Name>
+    <Type>bool?</Type>
+    <ColumnId>20</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>EncryptedMessage</Name>
+    <Type>byte[]</Type>
+    <ColumnId>21</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>false</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>AppointmentDuration</Name>
+    <Type>long?</Type>
+    <ColumnId>22</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>IsTaskDeleted</Name>
+    <Type>bool?</Type>
+    <ColumnId>23</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>false</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+
+  <Column>
+    <Name>ItemOrder</Name>
+    <Type>string</Type>
+    <ColumnId>24</ColumnId>
+    <Server>
+      <ColumnLocation>BlobStore</ColumnLocation>
+    </Server>
+    <Client>
+      <SentToClient>true</SentToClient>
+      <StoredOnClient>true</StoredOnClient>
+    </Client>
+    <Required>false</Required>
+  </Column>
+</Table>

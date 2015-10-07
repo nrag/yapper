@@ -1,0 +1,39 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="YapperChat.Views.DisplayLocation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="clr-namespace:YapperChat.ViewModels"
+    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    xmlns:maptk="clr-namespace:Microsoft.Phone.Maps.Toolkit;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.DataContext>
+        <ViewModels:DisplayLocationViewModel />
+    </phone:PhoneApplicationPage.DataContext>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="0,0,0,-650">
+            <Controls:Map Name="LocationMap" Height="650" >
+                <maptk:MapExtensions.Children>
+                    <maptk:Pushpin Content="{Binding Path=LocalizedResources.YouAreHereText, Source={StaticResource LocalizedStrings}}" GeoCoordinate="{Binding DisplayGeoLocation}" ></maptk:Pushpin>
+                </maptk:MapExtensions.Children>
+            </Controls:Map>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

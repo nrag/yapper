@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddGroupText" xml:space="preserve">
+    <value>添加组</value>
+  </data>
+  <data name="AddMemberText" xml:space="preserve">
+    <value>添加成员</value>
+  </data>
+  <data name="AddMoreTaskItem" xml:space="preserve">
+    <value>添加多个任务项目</value>
+  </data>
+  <data name="AppointmentStartToEndTime" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="AppointmentTimeText" xml:space="preserve">
+    <value>约会时间</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>4月</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>8月</value>
+  </data>
+  <data name="CalendarAcceptMessage" xml:space="preserve">
+    <value>已接受</value>
+  </data>
+  <data name="CalendarAddOption" xml:space="preserve">
+    <value>添加到日历</value>
+  </data>
+  <data name="CalendarDeclineMessage" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
+  <data name="CalendarDeclineOption" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CompletingRegistrationText" xml:space="preserve">
+    <value>完成注册</value>
+  </data>
+  <data name="ComposePollText" xml:space="preserve">
+    <value>撰写轮询</value>
+  </data>
+  <data name="ComposeTaskColonText" xml:space="preserve">
+    <value>撰写任务：</value>
+  </data>
+  <data name="ContactDetailsText" xml:space="preserve">
+    <value>联系人详细信息</value>
+  </data>
+  <data name="CreateGroupText" xml:space="preserve">
+    <value>创建组</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>12月</value>
+  </data>
+  <data name="DeleteAllChatsFromPhoneText" xml:space="preserve">
+    <value>从电话中删除所有的聊天</value>
+  </data>
+  <data name="DoneText" xml:space="preserve">
+    <value>完成。</value>
+  </data>
+  <data name="DontTextAndDrive" xml:space="preserve">
+    <value>它看起来像您带来 {0} 每小时英里） 处。请不要文本和驱动器。如果您不是该驱动程序，请按确定，然后执行。</value>
+  </data>
+  <data name="DurationText" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="EmptyQuestionText" xml:space="preserve">
+    <value>空的问题</value>
+  </data>
+  <data name="EnableChatHeadsText" xml:space="preserve">
+    <value>启用聊天磁头</value>
+  </data>
+  <data name="EnableDebugModeText" xml:space="preserve">
+    <value>启用调试模式</value>
+  </data>
+  <data name="EnablePushNotificationText" xml:space="preserve">
+    <value>启用推式通知</value>
+  </data>
+  <data name="EnableSendingLocationText" xml:space="preserve">
+    <value>启用发送位置</value>
+  </data>
+  <data name="EncryptText" xml:space="preserve">
+    <value>加密</value>
+  </data>
+  <data name="EnterAMessage" xml:space="preserve">
+    <value>请输入一条消息，然后发送</value>
+  </data>
+  <data name="EnterTheSixHiphenDigitConfirmationCodeSentByYapperInSMSColon" xml:space="preserve">
+    <value>输入发送 SMS 中的 Yapper 的 6 位数字确认代码：</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>2月</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="GroupDetailsText" xml:space="preserve">
+    <value>组详细信息</value>
+  </data>
+  <data name="HomeText" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="InviteFriendsText" xml:space="preserve">
+    <value>邀请好友</value>
+  </data>
+  <data name="InviteText" xml:space="preserve">
+    <value>邀请</value>
+  </data>
+  <data name="IsYourPhoneNumberCorrectText" xml:space="preserve">
+    <value>您的电话号码是正确的吗？</value>
+  </data>
+  <data name="ItemsText" xml:space="preserve">
+    <value>项</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>1月</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>7月</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>6月</value>
+  </data>
+  <data name="LoadingSpace3DotsText" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>3月</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>五月</value>
+  </data>
+  <data name="MembersText" xml:space="preserve">
+    <value>成员:</value>
+  </data>
+  <data name="MobileText" xml:space="preserve">
+    <value>移动:</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="MyCalendarAccept" xml:space="preserve">
+    <value>已接受的约会</value>
+  </data>
+  <data name="MyCalendarDecline" xml:space="preserve">
+    <value>您已拒绝约会</value>
+  </data>
+  <data name="MyPollResponse" xml:space="preserve">
+    <value>响应"{0} 的问题</value>
+  </data>
+  <data name="NameColonText" xml:space="preserve">
+    <value>名称:</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>名称:</value>
+  </data>
+  <data name="NewChatText" xml:space="preserve">
+    <value>新聊天</value>
+  </data>
+  <data name="NewGroupText" xml:space="preserve">
+    <value>新建组</value>
+  </data>
+  <data name="NewPollText" xml:space="preserve">
+    <value>新建投票</value>
+  </data>
+  <data name="NoUserContactsPageText" xml:space="preserve">
+    <value>无电话联系人名单中的用户具有使用 Yapper 进行注册。&amp;#10 ；&amp;#10; 1。您可以向请求用户安装 yapper 发送邀请。&amp;#10 ；&amp;#10 ； 2。联系电话要开始与他们聊天，可以添加现有的 Yapper 用户。</value>
+    <comment></comment>
+  </data>
+  <data name="NoUserInformationText" xml:space="preserve">
+    <value>电话联系人列表中没有任何人可以在这次邀请。请添加您想要邀请到电话联系人列表中的联系人的移动电话号码。欢迎光临回来后，若要发送邀请。</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>11月</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>10月</value>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OnlyOwnerCanModifyGroup" xml:space="preserve">
+    <value>您不是组的所有者。只有所有者才可以添加或移除成员。</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="OtherCalendarAccept" xml:space="preserve">
+    <value>"{0} 已接受的约会</value>
+  </data>
+  <data name="OtherCalendarDecline" xml:space="preserve">
+    <value>"{0} 谢绝约会</value>
+  </data>
+  <data name="OtherCalendarNoResponse" xml:space="preserve">
+    <value>"{0} 尚未对约会</value>
+  </data>
+  <data name="OtherPollNoResponse" xml:space="preserve">
+    <value>"{0} 尚未答复的问题</value>
+  </data>
+  <data name="OtherPollResponse" xml:space="preserve">
+    <value>"{0} 响应"{1} 的问题</value>
+  </data>
+  <data name="OwnerText" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="PhoneNumberConfirmationText" xml:space="preserve">
+    <value>电话号码确认</value>
+  </data>
+  <data name="PhoneNumberIdentityMessageText" xml:space="preserve">
+    <value>Yapper 使用您的电话号码，作为您的身份信息。下面该名称是您邮件它们时其他人会看到。</value>
+  </data>
+  <data name="PhoneNumberText" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="PhoneNumberToRegisterText" xml:space="preserve">
+    <value>要注册的电话号码</value>
+  </data>
+  <data name="PollResponseMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PullMeDownMessage" xml:space="preserve">
+    <value>向下拉动，以添加新任务</value>
+  </data>
+  <data name="PullMeDownTaskItemMessage" xml:space="preserve">
+    <value>向下拉动，以添加新任务项</value>
+  </data>
+  <data name="QuestionText" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="ReleaseToCreateNewItem" xml:space="preserve">
+    <value>若要创建新项目的版本</value>
+  </data>
+  <data name="RemoveUserText" xml:space="preserve">
+    <value>删除用户</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="SelectMembersText" xml:space="preserve">
+    <value>选择成员</value>
+  </data>
+  <data name="SendingMessage3Colon" xml:space="preserve">
+    <value>发送消息</value>
+  </data>
+  <data name="SendingMessageText" xml:space="preserve">
+    <value>发送消息</value>
+  </data>
+  <data name="SendMessageText" xml:space="preserve">
+    <value>发送消息</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>9 月</value>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>设置...</value>
+  </data>
+  <data name="ShowAllResponsesText" xml:space="preserve">
+    <value>显示所有答复</value>
+  </data>
+  <data name="SignoutText" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="SMSVerificationText" xml:space="preserve">
+    <value>SMS 验证</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="SynchingText" xml:space="preserve">
+    <value>正在同步...</value>
+  </data>
+  <data name="TaskAcceptOption" xml:space="preserve">
+    <value>接受任务</value>
+  </data>
+  <data name="TaskAddedBy" xml:space="preserve">
+    <value>添加者:</value>
+  </data>
+  <data name="TaskDeclineOption" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="TaskSharedBy" xml:space="preserve">
+    <value>共享者: {0}</value>
+  </data>
+  <data name="TaskListText" xml:space="preserve">
+    <value>任务列表</value>
+  </data>
+  <data name="TaskSharedWith" xml:space="preserve">
+    <value>已与 {0} 共享</value>
+  </data>
+  <data name="ThisIsNotAnAppointment" xml:space="preserve">
+    <value>这不是约会</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>周四</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="UnknownUser" xml:space="preserve">
+    <value>未知用户</value>
+  </data>
+  <data name="UntitledTask" xml:space="preserve">
+    <value>无标题</value>
+  </data>
+  <data name="ValidatingConfirmationCodeText" xml:space="preserve">
+    <value>验证确认码</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="YapperChatText" xml:space="preserve">
+    <value>Yapper 聊天</value>
+  </data>
+  <data name="YapperSMSMessageText" xml:space="preserve">
+    <value>Yapper 将发送 SMS 消息与 6 位验证代码为：</value>
+  </data>
+  <data name="YapperText" xml:space="preserve">
+    <value>Yapper</value>
+  </data>
+  <data name="YouAreHereText" xml:space="preserve">
+    <value>您的位置</value>
+  </data>
+  <data name="SendText" xml:space="preserve">
+    <value>发送:</value>
+  </data>
+  <data name="CompletedTaskCount" xml:space="preserve">
+    <value>任务已完成的项目</value>
+  </data>
+  <data name="PreInstallNoUserText" xml:space="preserve">
+    <value>没有在 Yapper 用户电话联系人中。请将用户添加到您的联系人。</value>
+  </data>
+  <data name="PreInstallText" xml:space="preserve">
+    <value>您将能够与下面的 Yapper 用户进行通信，如果您注册。</value>
+  </data>
+  <data name="LoadingAvailableUsersText" xml:space="preserve">
+    <value>正在加载可用的用户谁可以与您聊天...</value>
+  </data>
+  <data name="HasDeletedTask" xml:space="preserve">
+    <value>"{0} 已删除的共享的任务"{1}</value>
+  </data>
+  <data name="HasSharedTask" xml:space="preserve">
+    <value>"{0} 具有共享新任务"{1}</value>
+  </data>
+  <data name="HasUpdatedTask" xml:space="preserve">
+    <value>"{0} 已更新的任务"{1}</value>
+  </data>
+  <data name="ListAlreadyShared" xml:space="preserve">
+    <value>此列表已共享与"{0}。可与只有一个联系人或组共享列表。</value>
+  </data>
+  <data name="SeeTask" xml:space="preserve">
+    <value>查看任务</value>
+  </data>
+  <data name="YouDeletedTask" xml:space="preserve">
+    <value>删除任务"{0} 与"{1} 共享</value>
+  </data>
+  <data name="YouSharedTask" xml:space="preserve">
+    <value>共享任务"{0} 与"{1}</value>
+  </data>
+  <data name="YouUpdatedTask" xml:space="preserve">
+    <value>更新任务"{0} 与"{1} 共享</value>
+  </data>
+  <data name="ShareTaskText" xml:space="preserve">
+    <value>共享任务</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="TwentyPlus" xml:space="preserve">
+    <value>20多</value>
+  </data>
+  <data name="TaskSharedWithGroup" xml:space="preserve">
+    <value>通过 '{1}' 的组"{0} 与共享</value>
+  </data>
+  <data name="NewTaskItemText" xml:space="preserve">
+    <value>新建项</value>
+  </data>
+  <data name="NewTaskText" xml:space="preserve">
+    <value>新建任务(&amp;N)</value>
+  </data>
+  <data name="TaskCompletedBy" xml:space="preserve">
+    <value>填写人</value>
+  </data>
+  <data name="TaskUpdatedBy" xml:space="preserve">
+    <value>更新者:</value>
+  </data>
+  <data name="PhoneHintText" xml:space="preserve">
+    <value>输入 10 位数字电话号码</value>
+  </data>
+  <data name="NotAGroupMember" xml:space="preserve">
+    <value>您不是此组的成员。无法将邮件发送到该组或从该组中接收消息。</value>
+  </data>
+  <data name="CountryCodeText" xml:space="preserve">
+    <value>选择国家/地区</value>
+  </data>
+  <data name="EnterValidNameText" xml:space="preserve">
+    <value>请输入有效的名称。</value>
+  </data>
+  <data name="InvalidPhoneNumberText" xml:space="preserve">
+    <value>请输入一个有效的 10 位数电话号码</value>
+  </data>
+  <data name="HideCompletedTasksText" xml:space="preserve">
+    <value>隐藏已完成的任务</value>
+  </data>
+  <data name="UpdatedTask" xml:space="preserve">
+    <value>更新任务"{0}</value>
+  </data>
+  <data name="TaskHintText" xml:space="preserve">
+    <value>输入任务名称或粘贴多行任务</value>
+  </data>
+  <data name="WrongValidationCode" xml:space="preserve">
+    <value>输入确认码不正确。请重新输入。</value>
+  </data>
+  <data name="SmsInvite" xml:space="preserve">
+    <value>{0} 希望通过 Yapper 与您进行通信。请从 http://www.yapperchat.com 中安装 Yapper。</value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>津巴布韦</value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>赞比亚</value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>也门</value>
+  </data>
+  <data name="Vietnam" xml:space="preserve">
+    <value>越南</value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>委内瑞拉</value>
+  </data>
+  <data name="Vanuatu" xml:space="preserve">
+    <value>瓦努阿图</value>
+  </data>
+  <data name="Uzbekistan" xml:space="preserve">
+    <value>乌兹别克斯坦</value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>乌拉圭</value>
+  </data>
+  <data name="UnitedStates" xml:space="preserve">
+    <value>美国</value>
+  </data>
+  <data name="UnitedKingdom" xml:space="preserve">
+    <value>英国</value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>阿拉伯联合酋长国</value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>乌克兰</value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>乌干达</value>
+  </data>
+  <data name="Tuvalu" xml:space="preserve">
+    <value>图瓦卢</value>
+  </data>
+  <data name="Turkmenistan" xml:space="preserve">
+    <value>土库曼斯坦</value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>土耳其</value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>突尼斯</value>
+  </data>
+  <data name="TrinidadAndTobago" xml:space="preserve">
+    <value>特立尼达和多巴哥</value>
+  </data>
+  <data name="Tonga" xml:space="preserve">
+    <value>汤加</value>
+  </data>
+  <data name="Tokelau" xml:space="preserve">
+    <value>托克劳</value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>多哥</value>
+  </data>
+  <data name="TimorLeste" xml:space="preserve">
+    <value>东帝汶</value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>泰国</value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>坦桑尼亚</value>
+  </data>
+  <data name="Tajikistan" xml:space="preserve">
+    <value>塔吉克斯坦</value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>台湾</value>
+  </data>
+  <data name="Syria" xml:space="preserve">
+    <value>叙利亚</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>瑞士</value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>瑞典</value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>斯威士兰</value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>苏里南</value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>苏丹</value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>斯里兰卡</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>西班牙</value>
+  </data>
+  <data name="SouthSudan" xml:space="preserve">
+    <value>南苏丹</value>
+  </data>
+  <data name="SouthKorea" xml:space="preserve">
+    <value>南韩</value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>南非</value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>索马里</value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>斯洛文尼亚</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>斯洛伐克</value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>新加坡</value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>塞拉利昂</value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>塞舌尔</value>
+  </data>
+  <data name="Serbia" xml:space="preserve">
+    <value>塞尔维亚</value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>塞内加尔</value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>沙特阿拉伯</value>
+  </data>
+  <data name="SaoTomeAndPrincipe" xml:space="preserve">
+    <value>圣多美和普林西比</value>
+  </data>
+  <data name="SanMarino" xml:space="preserve">
+    <value>圣马力诺</value>
+  </data>
+  <data name="Samoa" xml:space="preserve">
+    <value>萨摩亚</value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>卢旺达</value>
+  </data>
+  <data name="Russia" xml:space="preserve">
+    <value>俄罗斯</value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>罗马尼亚</value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>卡塔尔</value>
+  </data>
+  <data name="PuertoRico" xml:space="preserve">
+    <value>波多黎各</value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>葡萄牙</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>波兰</value>
+  </data>
+  <data name="Pitcairn" xml:space="preserve">
+    <value>皮特凯恩</value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>菲律宾</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>秘鲁</value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>巴拉圭</value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>巴布亚新几内亚</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>巴拿马</value>
+  </data>
+  <data name="Palestine" xml:space="preserve">
+    <value>Palestine</value>
+  </data>
+  <data name="Palau" xml:space="preserve">
+    <value>帕劳</value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>巴基斯坦</value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>阿曼</value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>挪威</value>
+  </data>
+  <data name="NorthKorea" xml:space="preserve">
+    <value>朝鲜</value>
+  </data>
+  <data name="Niue" xml:space="preserve">
+    <value>纽埃</value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>尼日利亚</value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>尼日尔</value>
+  </data>
+  <data name="Nicaragua" xml:space="preserve">
+    <value>尼加拉瓜</value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>新西兰</value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>新喀里多尼亚</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>荷兰</value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>尼泊尔</value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>瑙鲁</value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>纳米比亚</value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>缅甸</value>
+  </data>
+  <data name="Mozambique" xml:space="preserve">
+    <value>莫桑比克</value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>摩洛哥</value>
+  </data>
+  <data name="Montserrat" xml:space="preserve">
+    <value>蒙特塞拉特</value>
+  </data>
+  <data name="Montenegro" xml:space="preserve">
+    <value>黑山共和国</value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>蒙古</value>
+  </data>
+  <data name="Monaco" xml:space="preserve">
+    <value>摩纳哥</value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>摩尔多瓦</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>墨西哥</value>
+  </data>
+  <data name="Mayotte" xml:space="preserve">
+    <value>马约特岛</value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>毛里求斯</value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>毛里塔尼亚</value>
+  </data>
+  <data name="Martinique" xml:space="preserve">
+    <value>马提尼克</value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>马耳他</value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>马里</value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>马尔代夫</value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>马来西亚</value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>马拉维</value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>马达加斯加</value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>马其顿</value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>澳门</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>卢森堡</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>立陶宛</value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>列支敦士登</value>
+  </data>
+  <data name="Libya" xml:space="preserve">
+    <value>利比亚</value>
+  </data>
+  <data name="Liberia" xml:space="preserve">
+    <value>利比里亚</value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>莱索托</value>
+  </data>
+  <data name="Lebanon" xml:space="preserve">
+    <value>黎巴嫩</value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>拉脱维亚</value>
+  </data>
+  <data name="Kyrgyzstan" xml:space="preserve">
+    <value>吉尔吉斯斯坦</value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>科威特</value>
+  </data>
+  <data name="Kiribati" xml:space="preserve">
+    <value>基里巴斯</value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>肯尼亚</value>
+  </data>
+  <data name="Kazakhstan" xml:space="preserve">
+    <value>哈萨克斯坦</value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>约旦</value>
+  </data>
+  <data name="Jersey" xml:space="preserve">
+    <value>泽西</value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>日本</value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>牙买加</value>
+  </data>
+  <data name="IvoryCoast" xml:space="preserve">
+    <value>科特迪瓦</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>意大利</value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>以色列</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>爱尔兰</value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>伊拉克</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>伊朗</value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>印度尼西亚</value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>印度</value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>冰岛</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>匈牙利</value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>香港特别行政区</value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>洪都拉斯</value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>海地</value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>圭亚那</value>
+  </data>
+  <data name="GuineaBissau" xml:space="preserve">
+    <value>几内亚比绍</value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>几内亚</value>
+  </data>
+  <data name="Guernsey" xml:space="preserve">
+    <value>格恩西</value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>危地马拉</value>
+  </data>
+  <data name="Guam" xml:space="preserve">
+    <value>关岛</value>
+  </data>
+  <data name="Guadeloupe" xml:space="preserve">
+    <value>瓜德罗普</value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>格林纳达</value>
+  </data>
+  <data name="Greenland" xml:space="preserve">
+    <value>格陵兰</value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>希腊</value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>直布罗陀</value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>加纳</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>德国</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>格鲁吉亚</value>
+  </data>
+  <data name="Gambia" xml:space="preserve">
+    <value>冈比亚</value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>加蓬</value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>法属波利尼西亚</value>
+  </data>
+  <data name="FrenchGuiana" xml:space="preserve">
+    <value>法属圭亚那</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>法国</value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>芬兰</value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>斐济</value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>埃塞俄比亚</value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>爱沙尼亚</value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>厄立特里亚</value>
+  </data>
+  <data name="EquatorialGuinea" xml:space="preserve">
+    <value>赤道几内亚</value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>萨尔瓦多</value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>埃及</value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>厄瓜多尔</value>
+  </data>
+  <data name="DominicanRepublic" xml:space="preserve">
+    <value>多米尼加共和国</value>
+  </data>
+  <data name="Dominica" xml:space="preserve">
+    <value>多米尼加</value>
+  </data>
+  <data name="Djibouti" xml:space="preserve">
+    <value>吉布提</value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>丹麦</value>
+  </data>
+  <data name="CzechRepublic" xml:space="preserve">
+    <value>捷克共和国</value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>塞浦路斯</value>
+  </data>
+  <data name="Curacao" xml:space="preserve">
+    <value>库拉索</value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>克罗地亚</value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>哥斯达黎加</value>
+  </data>
+  <data name="Congo" xml:space="preserve">
+    <value>刚果共和国</value>
+  </data>
+  <data name="Comoros" xml:space="preserve">
+    <value>科摩罗</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>哥伦比亚</value>
+  </data>
+  <data name="China" xml:space="preserve">
+    <value>中国</value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>智利</value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>乍得</value>
+  </data>
+  <data name="CentralAfricanRepublic" xml:space="preserve">
+    <value>中非共和国</value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>开曼群岛</value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>加拿大</value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>喀麦隆</value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>柬埔寨</value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>布隆迪</value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>布基纳法索</value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>保加利亚</value>
+  </data>
+  <data name="Brunei" xml:space="preserve">
+    <value>文莱达鲁萨兰国</value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>巴西</value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>博茨瓦纳</value>
+  </data>
+  <data name="BosniaAndHerzegovina" xml:space="preserve">
+    <value>波斯尼亚和黑塞哥维那</value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>玻利维亚</value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>不丹</value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>百慕大</value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>贝宁</value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>伯利兹</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>比利时</value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>白俄罗斯</value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>巴巴多斯</value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>孟加拉国</value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>巴林</value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>巴哈马</value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>阿塞拜疆</value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>奥地利</value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>澳大利亚</value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>阿鲁巴</value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>亚美尼亚</value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>阿根廷</value>
+  </data>
+  <data name="AntiguaAndBarbuda" xml:space="preserve">
+    <value>安提瓜和巴布达</value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>安圭拉</value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>安哥拉</value>
+  </data>
+  <data name="Andorra" xml:space="preserve">
+    <value>安道尔</value>
+  </data>
+  <data name="AmericanSamoa" xml:space="preserve">
+    <value>美属萨摩亚</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>阿尔及利亚</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>阿尔巴尼亚</value>
+  </data>
+  <data name="Afghanistan" xml:space="preserve">
+    <value>阿富汗</value>
+  </data>
+  <data name="YapperIntroduction" xml:space="preserve">
+    <value>Yapper 将电源的电子邮件消息传递应用程序的易用性结合在一起。使用 Yapper，您可以</value>
+  </data>
+  <data name="YapperTutorialStart" xml:space="preserve">
+    <value>虽然我们正在设置操作，让我们看一些 Yapper 的独特功能。</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>欢迎使用</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>日历\r\n</value>
+  </data>
+  <data name="CalendarPaneInstruction" xml:space="preserve">
+    <value>然后，在日历窗格中选择的日历附件</value>
+  </data>
+  <data name="CalendarAttachInstruction" xml:space="preserve">
+    <value>若要发送的日历约会，再发送一条消息，在 appbar 中选择附件剪辑</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="PollPaneInstruction" xml:space="preserve">
+    <value>然后，在日历窗格中选择的日历附件</value>
+  </data>
+  <data name="PollAttachInstruction" xml:space="preserve">
+    <value>若要发送快速轮询，再发送一条消息，选择附件中的剪辑 appbar</value>
+  </data>
+  <data name="Poll" xml:space="preserve">
+    <value>调查</value>
+  </data>
+  <data name="SendTasks" xml:space="preserve">
+    <value>创建和共享任务</value>
+  </data>
+  <data name="TaskPageInstruction" xml:space="preserve">
+    <value>若要查看现有任务和创建新任务，应用程序的顶部，选择任务页图标</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="TaskAddNewInstruction" xml:space="preserve">
+    <value>可以通过单击应用程序栏中的添加按钮添加新任务</value>
+  </data>
+  <data name="TaskDeleteInstruction" xml:space="preserve">
+    <value>若要删除任务，刷卡左侧的任务</value>
+  </data>
+  <data name="TaskCompleteInstruction" xml:space="preserve">
+    <value>若要完成一项任务，刷卡右侧的任务</value>
+  </data>
+  <data name="SendPoll" xml:space="preserve">
+    <value>快速轮询朋友</value>
+  </data>
+  <data name="SendCalendar" xml:space="preserve">
+    <value>发送日历约会</value>
+  </data>
+  <data name="DemocraticRepublicCongo" xml:space="preserve">
+    <value>刚果民主共和国</value>
+  </data>
+  <data name="Cuba" xml:space="preserve">
+    <value>古巴</value>
+  </data>
+  <data name="TutorialText" xml:space="preserve">
+    <value>教程</value>
+  </data>
+</root>

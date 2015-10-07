@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ko-KR" original="Strings.resx" tool-id="MultilingualAppToolkit" product-name="Yapper" product-version="1.0.1" build-num="1">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1085.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/AddGroupText" translate="yes" xml:space="preserve">
+          <source>Add Group</source>
+          <target state="translated" state-qualifier="tm-suggestion">그룹 추가</target>
+        </trans-unit>
+        <trans-unit id="Resx/AddMemberText" translate="yes" xml:space="preserve">
+          <source>Add Member</source>
+          <target state="translated" state-qualifier="tm-suggestion">구성원 추가</target>
+        </trans-unit>
+        <trans-unit id="Resx/AddMoreTaskItem" translate="yes" xml:space="preserve">
+          <source>Add More Task Item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 항목 추가</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppointmentStartToEndTime" translate="yes" xml:space="preserve">
+          <source>{0} - {1}</source>
+          <target state="translated">{0} - {1}</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppointmentTimeText" translate="yes" xml:space="preserve">
+          <source>Appointment Time</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">약속 시간</target>
+        </trans-unit>
+        <trans-unit id="Resx/April" translate="yes" xml:space="preserve">
+          <source>Apr</source>
+          <target state="translated">4 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/August" translate="yes" xml:space="preserve">
+          <source>Aug</source>
+          <target state="translated">8 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarAcceptMessage" translate="yes" xml:space="preserve">
+          <source>Accepted</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">수락됨</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarAddOption" translate="yes" xml:space="preserve">
+          <source>Add to Calendar</source>
+          <target state="translated" state-qualifier="tm-suggestion">일정에 추가</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarDeclineMessage" translate="yes" xml:space="preserve">
+          <source>Declined</source>
+          <target state="translated" state-qualifier="tm-suggestion">거절</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarDeclineOption" translate="yes" xml:space="preserve">
+          <source>Decline</source>
+          <target state="translated" state-qualifier="tm-suggestion">동의 안 함</target>
+        </trans-unit>
+        <trans-unit id="Resx/CancelText" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated" state-qualifier="tm-suggestion">취소</target>
+        </trans-unit>
+        <trans-unit id="Resx/CompletingRegistrationText" translate="yes" xml:space="preserve">
+          <source>Completing registration</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">등록 완료</target>
+        </trans-unit>
+        <trans-unit id="Resx/ComposePollText" translate="yes" xml:space="preserve">
+          <source>Compose poll</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">설문 작성</target>
+        </trans-unit>
+        <trans-unit id="Resx/ComposeTaskColonText" translate="yes" xml:space="preserve">
+          <source>Compose Task:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업을 작성 합니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/ContactDetailsText" translate="yes" xml:space="preserve">
+          <source>Contact Details</source>
+          <target state="translated" state-qualifier="tm-suggestion">담당자 세부 정보</target>
+        </trans-unit>
+        <trans-unit id="Resx/CreateGroupText" translate="yes" xml:space="preserve">
+          <source>Create Group</source>
+          <target state="translated" state-qualifier="tm-suggestion">그룹 만들기</target>
+        </trans-unit>
+        <trans-unit id="Resx/December" translate="yes" xml:space="preserve">
+          <source>Dec</source>
+          <target state="translated">12 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/DeleteAllChatsFromPhoneText" translate="yes" xml:space="preserve">
+          <source>Delete all chats from phone</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 번호에서 모든 채팅 삭제</target>
+        </trans-unit>
+        <trans-unit id="Resx/DoneText" translate="yes" xml:space="preserve">
+          <source>Done</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">완료.</target>
+        </trans-unit>
+        <trans-unit id="Resx/DontTextAndDrive" translate="yes" xml:space="preserve">
+          <source>It looks like you are driving at {0} mph. Please don't text and drive. If you are not the driver, press ok and proceed.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 望에 반하는 것 같습니다. 말아 요 텍스트와 드라이브. 드라이버가 없는 경우 키를 확인 하 고 진행 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/DurationText" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <target state="translated" state-qualifier="tm-suggestion">기간</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptyQuestionText" translate="yes" xml:space="preserve">
+          <source>Empty question</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빈 질문</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableChatHeadsText" translate="yes" xml:space="preserve">
+          <source>Enable chat heads</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">채팅 헤드를 사용 합니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableDebugModeText" translate="yes" xml:space="preserve">
+          <source>Enable debug mode</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">디버그 모드를 사용 합니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnablePushNotificationText" translate="yes" xml:space="preserve">
+          <source>Enable push notification</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">푸시 알림 사용</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableSendingLocationText" translate="yes" xml:space="preserve">
+          <source>Enable sending location</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">송신 위치 사용</target>
+        </trans-unit>
+        <trans-unit id="Resx/EncryptText" translate="yes" xml:space="preserve">
+          <source>Encrypt</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">암호화</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnterAMessage" translate="yes" xml:space="preserve">
+          <source>Please enter a message before sending</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">메시지를 보내기 전에 입력 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnterTheSixHiphenDigitConfirmationCodeSentByYapperInSMSColon" translate="yes" xml:space="preserve">
+          <source>Enter the 6-digit Confirmation Code sent by Yapper in SMS:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper SMS에서 보낸 6 자리 인증 코드를 입력 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/February" translate="yes" xml:space="preserve">
+          <source>Feb</source>
+          <target state="translated">2 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/Friday" translate="yes" xml:space="preserve">
+          <source>Fri</source>
+          <target state="translated" state-qualifier="tm-suggestion">금</target>
+        </trans-unit>
+        <trans-unit id="Resx/GroupDetailsText" translate="yes" xml:space="preserve">
+          <source>Group Details</source>
+          <target state="translated" state-qualifier="tm-suggestion">그룹 세부 정보</target>
+        </trans-unit>
+        <trans-unit id="Resx/HomeText" translate="yes" xml:space="preserve">
+          <source>Home</source>
+          <target state="translated" state-qualifier="tm-suggestion">Home</target>
+        </trans-unit>
+        <trans-unit id="Resx/InviteFriendsText" translate="yes" xml:space="preserve">
+          <source>Invite friends</source>
+          <target state="translated" state-qualifier="tm-suggestion">친구 초대</target>
+        </trans-unit>
+        <trans-unit id="Resx/InviteText" translate="yes" xml:space="preserve">
+          <source>Invite</source>
+          <target state="translated" state-qualifier="tm-suggestion">초대</target>
+        </trans-unit>
+        <trans-unit id="Resx/IsYourPhoneNumberCorrectText" translate="yes" xml:space="preserve">
+          <source>Is your phone number correct?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 번호는 올바른가?</target>
+        </trans-unit>
+        <trans-unit id="Resx/ItemsText" translate="yes" xml:space="preserve">
+          <source>items</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">항목</target>
+        </trans-unit>
+        <trans-unit id="Resx/January" translate="yes" xml:space="preserve">
+          <source>Jan</source>
+          <target state="translated">1 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/July" translate="yes" xml:space="preserve">
+          <source>Jul</source>
+          <target state="translated">7 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/June" translate="yes" xml:space="preserve">
+          <source>Jun</source>
+          <target state="translated">6 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/LoadingSpace3DotsText" translate="yes" xml:space="preserve">
+          <source>Loading ...</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">로드하고 있습니다...</target>
+        </trans-unit>
+        <trans-unit id="Resx/LoadingText" translate="yes" xml:space="preserve">
+          <source>Loading</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">로드하고 있습니다...</target>
+        </trans-unit>
+        <trans-unit id="Resx/LoginText" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="translated" state-qualifier="tm-suggestion">로그인</target>
+        </trans-unit>
+        <trans-unit id="Resx/March" translate="yes" xml:space="preserve">
+          <source>Mar</source>
+          <target state="translated">3 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/May" translate="yes" xml:space="preserve">
+          <source>May</source>
+          <target state="translated" state-qualifier="tm-suggestion">5월</target>
+        </trans-unit>
+        <trans-unit id="Resx/MembersText" translate="yes" xml:space="preserve">
+          <source>Members</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">멤버:</target>
+        </trans-unit>
+        <trans-unit id="Resx/MobileText" translate="yes" xml:space="preserve">
+          <source>Mobile</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">휴대폰:</target>
+        </trans-unit>
+        <trans-unit id="Resx/Monday" translate="yes" xml:space="preserve">
+          <source>Mon</source>
+          <target state="translated" state-qualifier="tm-suggestion">월</target>
+        </trans-unit>
+        <trans-unit id="Resx/MyCalendarAccept" translate="yes" xml:space="preserve">
+          <source>You have accepted the appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">약속을 수락</target>
+        </trans-unit>
+        <trans-unit id="Resx/MyCalendarDecline" translate="yes" xml:space="preserve">
+          <source>You have declined the appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">약속을 거절 했습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/MyPollResponse" translate="yes" xml:space="preserve">
+          <source>You responded '{0}' to the question</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">질문에 대 한 ' {0} '이 (0)를 응답</target>
+        </trans-unit>
+        <trans-unit id="Resx/NameColonText" translate="yes" xml:space="preserve">
+          <source>Name:</source>
+          <target state="translated" state-qualifier="tm-suggestion">이름:</target>
+        </trans-unit>
+        <trans-unit id="Resx/NameText" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">이름:</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewChatText" translate="yes" xml:space="preserve">
+          <source>New Chat</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새 채팅</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewGroupText" translate="yes" xml:space="preserve">
+          <source>New group</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새 그룹</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewPollText" translate="yes" xml:space="preserve">
+          <source>New poll</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새 설문</target>
+        </trans-unit>
+        <trans-unit id="Resx/NoUserContactsPageText" translate="yes" xml:space="preserve">
+          <source>None of the users in your phone contact list have registered with Yapper.
+1. You can send an invite to request users to install yapper.
+2. You can add existing Yapper users to your phone contact to start chatting with them.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper를 사용 하 여 등록 한 전화 대화 상대 목록에 사용자가 없습니다.%%amp;#10.%%amp;#10; 1. Yapper 설치 요청 사용자에 게 초대를 보낼 수 있습니다.%%amp;#10.%%amp;#10; 2. 기존 Yapper 사용자와 채팅을 시작 하 여 전화 연락처를 추가할 수 있습니다.</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+        </trans-unit>
+        <trans-unit id="Resx/NoUserInformationText" translate="yes" xml:space="preserve">
+          <source>Your phone contacts list does not have anyone for you to invite at this time. Please add the mobile number of the contact you would like to invite to your phone contact list. Please come back here after that to send the invitations.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 연락처 목록 누구나이 이번에 초대할 수는 없습니다. 전화 연락처 목록에 초대 하려는 대화 상대의 휴대폰 번호를 추가 하십시오. 그런 다음 초대를 보내려면 여기로 돌아와서 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/November" translate="yes" xml:space="preserve">
+          <source>Nov</source>
+          <target state="translated">11 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/October" translate="yes" xml:space="preserve">
+          <source>Oct</source>
+          <target state="translated">10 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/OKText" translate="yes" xml:space="preserve">
+          <source>OK</source>
+          <target state="translated" state-qualifier="tm-suggestion">확인</target>
+        </trans-unit>
+        <trans-unit id="Resx/OnlyOwnerCanModifyGroup" translate="yes" xml:space="preserve">
+          <source>You are not the owner of the group. Only the owner can add or remove members.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">그룹의 소유자가 됩니다. 소유자만 추가 하거나 구성원을 제거할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/OptionsText" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated" state-qualifier="tm-suggestion">옵션</target>
+        </trans-unit>
+        <trans-unit id="Resx/OtherCalendarAccept" translate="yes" xml:space="preserve">
+          <source>'{0}' accepted the appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0}은 약속 수락</target>
+        </trans-unit>
+        <trans-unit id="Resx/OtherCalendarDecline" translate="yes" xml:space="preserve">
+          <source>'{0}' declined the appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0) 약속을 거절 했습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/OtherCalendarNoResponse" translate="yes" xml:space="preserve">
+          <source>'{0}' has not responded to appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0) 약속에 응답 하지 않았습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/OtherPollNoResponse" translate="yes" xml:space="preserve">
+          <source>'{0}' has not responded to the question</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0) 질문에 응답 하지 않았습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/OtherPollResponse" translate="yes" xml:space="preserve">
+          <source>'{0}' responded '{1}' to the question</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">질문에 대 한 ' {0} '이 (1) 응답 ' {0} '이 (0)</target>
+        </trans-unit>
+        <trans-unit id="Resx/OwnerText" translate="yes" xml:space="preserve">
+          <source>Owner</source>
+          <target state="translated" state-qualifier="tm-suggestion">소유자</target>
+        </trans-unit>
+        <trans-unit id="Resx/PhoneNumberConfirmationText" translate="yes" xml:space="preserve">
+          <source>Phone number confirmation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 번호 확인</target>
+        </trans-unit>
+        <trans-unit id="Resx/PhoneNumberIdentityMessageText" translate="yes" xml:space="preserve">
+          <source>Yapper uses your phone number as your identity. This name below is what others will see when you message them.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper id와 전화 번호를 사용합니다. 다음이 이름을이 다른 때 이러한 메시지가 나타납니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/PhoneNumberText" translate="yes" xml:space="preserve">
+          <source>Phone number</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">전화 번호</target>
+        </trans-unit>
+        <trans-unit id="Resx/PhoneNumberToRegisterText" translate="yes" xml:space="preserve">
+          <source>Phone number to register</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 번호를 등록</target>
+        </trans-unit>
+        <trans-unit id="Resx/PollResponseMessage" translate="yes" xml:space="preserve">
+          <source />
+          <target state="needs-review-translation" state-qualifier="mt-suggestion" />
+        </trans-unit><trans-unit id="Resx/PullMeDownMessage" translate="yes" xml:space="preserve">
+          <source>Pull down to add new task</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새 작업을 추가 하려면 풀 다운</target>
+        </trans-unit>
+        <trans-unit id="Resx/PullMeDownTaskItemMessage" translate="yes" xml:space="preserve">
+          <source>Pull down to add new task item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새 작업 항목을 추가 하려면 풀 다운</target>
+        </trans-unit>
+        <trans-unit id="Resx/QuestionText" translate="yes" xml:space="preserve">
+          <source>Question</source>
+          <target state="translated" state-qualifier="tm-suggestion">질문</target>
+        </trans-unit>
+        <trans-unit id="Resx/ReleaseToCreateNewItem" translate="yes" xml:space="preserve">
+          <source>Release to create new item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새 항목을 만들 수 출시</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveUserText" translate="yes" xml:space="preserve">
+          <source>Remove User</source>
+          <target state="translated">사용자를 제거</target>
+        </trans-unit>
+        <trans-unit id="Resx/Saturday" translate="yes" xml:space="preserve">
+          <source>Sat</source>
+          <target state="translated" state-qualifier="tm-suggestion">토</target>
+        </trans-unit>
+        <trans-unit id="Resx/SelectMembersText" translate="yes" xml:space="preserve">
+          <source>Select Members</source>
+          <target state="translated" state-qualifier="tm-suggestion">구성원 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendingMessage3Colon" translate="yes" xml:space="preserve">
+          <source>Sending message...</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">메시지 보내기</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendingMessageText" translate="yes" xml:space="preserve">
+          <source>Sending Message</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">메시지 보내기</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendMessageText" translate="yes" xml:space="preserve">
+          <source>Send Message</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">메시지 보내기</target>
+        </trans-unit>
+        <trans-unit id="Resx/September" translate="yes" xml:space="preserve">
+          <source>Sept</source>
+          <target state="translated">9 월</target>
+        </trans-unit>
+        <trans-unit id="Resx/SettingsText" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated" state-qualifier="tm-suggestion">설정</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShowAllResponsesText" translate="yes" xml:space="preserve">
+          <source>Show All Responses</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">모든 응답 표시</target>
+        </trans-unit>
+        <trans-unit id="Resx/SignoutText" translate="yes" xml:space="preserve">
+          <source>Signout</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">아웃</target>
+        </trans-unit>
+        <trans-unit id="Resx/SMSVerificationText" translate="yes" xml:space="preserve">
+          <source>SMS verification</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">SMS 확인</target>
+        </trans-unit>
+        <trans-unit id="Resx/Sunday" translate="yes" xml:space="preserve">
+          <source>Sun</source>
+          <target state="translated" state-qualifier="tm-suggestion">태양</target>
+        </trans-unit>
+        <trans-unit id="Resx/SynchingText" translate="yes" xml:space="preserve">
+          <source>Syncing</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">동기화 중...</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskAcceptOption" translate="yes" xml:space="preserve">
+          <source>Accept Task</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 수락</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskAddedBy" translate="yes" xml:space="preserve">
+          <source>Added by</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">추가한 사용자:</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskDeclineOption" translate="yes" xml:space="preserve">
+          <source>Decline</source>
+          <target state="translated" state-qualifier="tm-suggestion">동의 안 함</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskSharedBy" translate="yes" xml:space="preserve">
+          <source>Shared by {0}</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">공유자: {0}</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskListText" translate="yes" xml:space="preserve">
+          <source>Task list</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">작업 목록</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskSharedWith" translate="yes" xml:space="preserve">
+          <source>Shared with {0}</source>
+          <target state="translated" state-qualifier="tm-suggestion">{0}님과 공유됨</target>
+        </trans-unit>
+        <trans-unit id="Resx/ThisIsNotAnAppointment" translate="yes" xml:space="preserve">
+          <source>This is not an appointment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이 약속</target>
+        </trans-unit>
+        <trans-unit id="Resx/Thursday" translate="yes" xml:space="preserve">
+          <source>Thur</source>
+          <target state="translated" state-qualifier="tm-suggestion">목</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tuesday" translate="yes" xml:space="preserve">
+          <source>Tue</source>
+          <target state="translated" state-qualifier="tm-suggestion">화</target>
+        </trans-unit>
+        <trans-unit id="Resx/UnknownUser" translate="yes" xml:space="preserve">
+          <source>Unknown User</source>
+          <target state="translated" state-qualifier="tm-suggestion">알 수 없는 사용자</target>
+        </trans-unit>
+        <trans-unit id="Resx/UntitledTask" translate="yes" xml:space="preserve">
+          <source>Untitled</source>
+          <target state="translated" state-qualifier="tm-suggestion">제목 없음</target>
+        </trans-unit>
+        <trans-unit id="Resx/ValidatingConfirmationCodeText" translate="yes" xml:space="preserve">
+          <source>Validating confirmation code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">인증 코드를 확인합니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Wednesday" translate="yes" xml:space="preserve">
+          <source>Wed</source>
+          <target state="translated" state-qualifier="tm-suggestion">수</target>
+        </trans-unit>
+        <trans-unit id="Resx/YapperChatText" translate="yes" xml:space="preserve">
+          <source>Yapper Chat</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper 채팅</target>
+        </trans-unit>
+        <trans-unit id="Resx/YapperSMSMessageText" translate="yes" xml:space="preserve">
+          <source>Yapper will send an SMS message with the your 6 digit verification code to:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper SMS 메시지를 보내는 것은 6 자리 확인 코드를:</target>
+        </trans-unit>
+        <trans-unit id="Resx/YapperText" translate="yes" xml:space="preserve">
+          <source>Yapper</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Yapper</target>
+        </trans-unit>
+        <trans-unit id="Resx/YouAreHereText" translate="yes" xml:space="preserve">
+          <source>You are here</source>
+          <target state="translated" state-qualifier="tm-suggestion">현재 위치</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendText" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">보내기:</target>
+        </trans-unit>
+        <trans-unit id="Resx/CompletedTaskCount" translate="yes" xml:space="preserve">
+          <source>task items completed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">완료 된 작업 항목</target>
+        </trans-unit>
+        <trans-unit id="Resx/PreInstallNoUserText" translate="yes" xml:space="preserve">
+          <source>There are no users in Yapper that are in your phone contacts. Please add users to your contacts.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전화 연락처에 있는 Yapper에 사용자가 없습니다. 연락처에 사용자를 추가 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/PreInstallText" translate="yes" xml:space="preserve">
+          <source>You will be able to communicate with the following Yapper users if you register.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">등록 하는 경우 다음과 같은 Yapper 사용자와 통신할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/LoadingAvailableUsersText" translate="yes" xml:space="preserve">
+          <source>Loading available users whom you can chat with ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">채트 할 수 있습니다 사용할 수 있는 사용자를 로드 하는 중...</target>
+        </trans-unit>
+        <trans-unit id="Resx/HasDeletedTask" translate="yes" xml:space="preserve">
+          <source>'{0}' has deleted the shared task '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0)이 공유 작업 ' {0} '이 (1)를 삭제</target>
+        </trans-unit>
+        <trans-unit id="Resx/HasSharedTask" translate="yes" xml:space="preserve">
+          <source>'{0}' has shared a new task '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0) 공유 하는 새로운 작업 ' {0} '이 (1)</target>
+        </trans-unit>
+        <trans-unit id="Resx/HasUpdatedTask" translate="yes" xml:space="preserve">
+          <source>'{0}' has updated the task '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0}에 작업 ' {0} '이 (1)를 업데이트</target>
+        </trans-unit>
+        <trans-unit id="Resx/ListAlreadyShared" translate="yes" xml:space="preserve">
+          <source>This list has already been shared with '{0}'. A list can be shared with only one contact or group.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (0)를 사용 하 여이 목록은 이미 공유 되었습니다. 연락처 또는 그룹을 하나만 사용 하 여 목록을 공유할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SeeTask" translate="yes" xml:space="preserve">
+          <source>See Task</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업을 참조 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/YouDeletedTask" translate="yes" xml:space="preserve">
+          <source>You deleted the task '{0}' shared with '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 ' {0} '이 (0) 공유 ' {0} '이 (1) 삭제</target>
+        </trans-unit>
+        <trans-unit id="Resx/YouSharedTask" translate="yes" xml:space="preserve">
+          <source>You shared the task '{0}' with '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">' {0} '이 (1)를 사용 하 여 작업 ' {0} ' 공유</target>
+        </trans-unit>
+        <trans-unit id="Resx/YouUpdatedTask" translate="yes" xml:space="preserve">
+          <source>You updated the task '{0}' shared with '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 ' {0} '이 (0) 공유 ' {0} '이 (1) 업데이트</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShareTaskText" translate="yes" xml:space="preserve">
+          <source>Share task</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">작업 공유</target>
+        </trans-unit>
+        <trans-unit id="Resx/New" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <target state="translated" state-qualifier="tm-suggestion">새로 만들기</target>
+        </trans-unit>
+        <trans-unit id="Resx/Updated" translate="yes" xml:space="preserve">
+          <source>Updated</source>
+          <target state="translated" state-qualifier="tm-suggestion">Updated</target>
+        </trans-unit>
+        <trans-unit id="Resx/TwentyPlus" translate="yes" xml:space="preserve">
+          <source>20+</source>
+          <target state="translated">20+</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskSharedWithGroup" translate="yes" xml:space="preserve">
+          <source>Shared with group '{0}' by '{1}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">그룹 ' {0} '에서 ' {0} '이 (1)와 공유</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewTaskItemText" translate="yes" xml:space="preserve">
+          <source>New item</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새 항목</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewTaskText" translate="yes" xml:space="preserve">
+          <source>New task</source>
+          <target state="translated">새 작업</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskCompletedBy" translate="yes" xml:space="preserve">
+          <source>Completed By</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">완료한 사람</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskUpdatedBy" translate="yes" xml:space="preserve">
+          <source>Updated By</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">업데이트한 사람:</target>
+        </trans-unit>
+        <trans-unit id="Resx/PhoneHintText" translate="yes" xml:space="preserve">
+          <source>Enter 10 digit phone #</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">입력 10 자리 전화 번호</target>
+        </trans-unit>
+        <trans-unit id="Resx/NotAGroupMember" translate="yes" xml:space="preserve">
+          <source>You are no longer a member of this group. You cannot send messages to this group or receive messages from this group.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">당신은 더 이상이 그룹의 구성원입니다. 이 그룹에 메시지를 보내거나이 그룹에서 메시지를 받을 수 없습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/CountryCodeText" translate="yes" xml:space="preserve">
+          <source>Select country</source>
+          <target state="translated" state-qualifier="tm-suggestion">국가 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnterValidNameText" translate="yes" xml:space="preserve">
+          <source>Please enter a valid name</source>
+          <target state="translated" state-qualifier="tm-suggestion">올바른 이름을 입력하세요.</target>
+        </trans-unit>
+        <trans-unit id="Resx/InvalidPhoneNumberText" translate="yes" xml:space="preserve">
+          <source>Please enter a valid 10 digit phone number</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">유효한 10 자리의 전화 번호를 입력 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/HideCompletedTasksText" translate="yes" xml:space="preserve">
+          <source>Hide completed tasks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 완료 숨기기</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpdatedTask" translate="yes" xml:space="preserve">
+          <source>Updated the task '{0}'</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 ' {0} ' 업데이트</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskHintText" translate="yes" xml:space="preserve">
+          <source>Enter task name or paste multi line tasks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업 이름을 입력 하거나 붙여 멀티 라인 작업</target>
+        </trans-unit>
+        <trans-unit id="Resx/WrongValidationCode" translate="yes" xml:space="preserve">
+          <source>The confirmation code entered was incorrect. Please enter it again.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">입력 한 확인 코드가 올바르지 않습니다. 다시 입력 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SmsInvite" translate="yes" xml:space="preserve">
+          <source>{0} wants to communicate with you through Yapper. Please install Yapper from http://www.yapperchat.com.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0}가 Yapper를 통해 통신할 수 있습니다. Http://www.yapperchat.com에서 Yapper을 설치 하십시오.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Zimbabwe" translate="yes" xml:space="preserve">
+          <source>Zimbabwe</source>
+          <target state="translated" state-qualifier="tm-suggestion">짐바브웨</target>
+        </trans-unit>
+        <trans-unit id="Resx/YapperIntroduction" translate="yes" xml:space="preserve">
+          <source> Yapper combines the ease of a messaging application with the power of email. With Yapper, you can</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion"> Yapper는 이메일의 힘을 사용 하 여 메시징 응용 프로그램의 용이성을 결합합니다. Yapper를 사용 하 여 수행할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/YapperTutorialStart" translate="yes" xml:space="preserve">
+          <source>While we are setting things up, let's look at some of unique features of Yapper.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">설정 하는 작업을 하는 동안 Yapper의 고유 기능에서 살펴보겠습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/WelcomeText" translate="yes" xml:space="preserve">
+          <source>Welcome</source>
+          <target state="translated" state-qualifier="tm-suggestion">시작</target>
+        </trans-unit>
+        <trans-unit id="Resx/Calendar" translate="yes" xml:space="preserve">
+          <source>Calendar</source>
+          <target state="translated" state-qualifier="tm-suggestion">캘린더</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarPaneInstruction" translate="yes" xml:space="preserve">
+          <source>Then, select the calendar attachment in the calendar pane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">일정 창에서 다음 일정 첨부 파일을 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarAttachInstruction" translate="yes" xml:space="preserve">
+          <source>To send a calendar appointment, before sending a message, select the attachment clip in the appbar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">해당 appbar에서 일정 약속을 메시지를 보내기 전에 보낼 첨부 클립을 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/Next" translate="yes" xml:space="preserve">
+          <source>Next</source>
+          <target state="translated" state-qualifier="tm-suggestion">다음</target>
+        </trans-unit>
+        <trans-unit id="Resx/PollPaneInstruction" translate="yes" xml:space="preserve">
+          <source>Then, select the calendar attachment in the calendar pane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">일정 창에서 다음 일정 첨부 파일을 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/PollAttachInstruction" translate="yes" xml:space="preserve">
+          <source>To send a quick poll, before sending a message, select the attachment clip in the appbar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">해당 appbar에서 보내는 메시지를 보내기 전에 즉석 투표를 첨부 클립을 선택</target>
+        </trans-unit>
+        <trans-unit id="Resx/Poll" translate="yes" xml:space="preserve">
+          <source>Quick Poll</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빠른 폴링</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendTasks" translate="yes" xml:space="preserve">
+          <source>Create and share Tasks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">만들기 및 작업을 공유 합니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskPageInstruction" translate="yes" xml:space="preserve">
+          <source>To view existing tasks and create new tasks, select the task page icon in the top of the application</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업을 응용 프로그램의 맨 위에 있는 작업 페이지 아이콘을 선택 하 고 기존 작업 확인</target>
+        </trans-unit>
+        <trans-unit id="Resx/TutorialText" translate="yes" xml:space="preserve">
+          <source>Tutorial</source>
+          <target state="translated" state-qualifier="tm-suggestion">자습서</target>
+        </trans-unit>
+        <trans-unit id="Resx/Task" translate="yes" xml:space="preserve">
+          <source>Tasks</source>
+          <target state="translated" state-qualifier="tm-suggestion">작업</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskAddNewInstruction" translate="yes" xml:space="preserve">
+          <source>New tasks can be added by clicking on the add button in the application bar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">응용 프로그램 모음에서 추가 단추를 클릭 하 여 새 작업을 추가할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskDeleteInstruction" translate="yes" xml:space="preserve">
+          <source>To delete a task, swipe the task to left</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업을 삭제 하려면 작업 왼쪽 손가락</target>
+        </trans-unit>
+        <trans-unit id="Resx/TaskCompleteInstruction" translate="yes" xml:space="preserve">
+          <source>To complete a task, swipe the task to right</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작업을 완료 하려면 손가락 오른쪽 작업</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendPoll" translate="yes" xml:space="preserve">
+          <source>Quick Poll friends</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빠른 폴링 친구</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendCalendar" translate="yes" xml:space="preserve">
+          <source>Send Calendar appointments</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">일정 약속을 전송</target>
+        </trans-unit>
+        <trans-unit id="Resx/Zambia" translate="yes" xml:space="preserve">
+          <source>Zambia</source>
+          <target state="translated" state-qualifier="tm-suggestion">잠비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Yemen" translate="yes" xml:space="preserve">
+          <source>Yemen</source>
+          <target state="translated" state-qualifier="tm-suggestion">예멘</target>
+        </trans-unit>
+        <trans-unit id="Resx/Vietnam" translate="yes" xml:space="preserve">
+          <source>Vietnam</source>
+          <target state="translated" state-qualifier="tm-suggestion">베트남</target>
+        </trans-unit>
+        <trans-unit id="Resx/Venezuela" translate="yes" xml:space="preserve">
+          <source>Venezuela</source>
+          <target state="translated" state-qualifier="tm-suggestion">베네수엘라</target>
+        </trans-unit>
+        <trans-unit id="Resx/Vanuatu" translate="yes" xml:space="preserve">
+          <source>Vanuatu</source>
+          <target state="translated" state-qualifier="tm-suggestion">바누아투</target>
+        </trans-unit>
+        <trans-unit id="Resx/Uzbekistan" translate="yes" xml:space="preserve">
+          <source>Uzbekistan</source>
+          <target state="translated" state-qualifier="tm-suggestion">우즈베키스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Uruguay" translate="yes" xml:space="preserve">
+          <source>Uruguay</source>
+          <target state="translated" state-qualifier="tm-suggestion">우루과이</target>
+        </trans-unit>
+        <trans-unit id="Resx/UnitedStates" translate="yes" xml:space="preserve">
+          <source>United States</source>
+          <target state="translated" state-qualifier="tm-suggestion">미국</target>
+        </trans-unit>
+        <trans-unit id="Resx/UnitedKingdom" translate="yes" xml:space="preserve">
+          <source>United Kingdom</source>
+          <target state="translated" state-qualifier="tm-suggestion">영국</target>
+        </trans-unit>
+        <trans-unit id="Resx/UnitedArabEmirates" translate="yes" xml:space="preserve">
+          <source>United Arab Emirates</source>
+          <target state="translated" state-qualifier="tm-suggestion">아랍에미리트</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ukraine" translate="yes" xml:space="preserve">
+          <source>Ukraine</source>
+          <target state="translated" state-qualifier="tm-suggestion">우크라이나</target>
+        </trans-unit>
+        <trans-unit id="Resx/Uganda" translate="yes" xml:space="preserve">
+          <source>Uganda</source>
+          <target state="translated" state-qualifier="tm-suggestion">우간다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tuvalu" translate="yes" xml:space="preserve">
+          <source>Tuvalu</source>
+          <target state="translated" state-qualifier="tm-suggestion">투발루</target>
+        </trans-unit>
+        <trans-unit id="Resx/Turkmenistan" translate="yes" xml:space="preserve">
+          <source>Turkmenistan</source>
+          <target state="translated" state-qualifier="tm-suggestion">투르크메니스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Turkey" translate="yes" xml:space="preserve">
+          <source>Turkey</source>
+          <target state="translated" state-qualifier="tm-suggestion">터키</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tunisia" translate="yes" xml:space="preserve">
+          <source>Tunisia</source>
+          <target state="translated" state-qualifier="tm-suggestion">튀니지</target>
+        </trans-unit>
+        <trans-unit id="Resx/TrinidadAndTobago" translate="yes" xml:space="preserve">
+          <source>Trinidad and Tobago</source>
+          <target state="translated" state-qualifier="tm-suggestion">트리니다드 토바고</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tonga" translate="yes" xml:space="preserve">
+          <source>Tonga</source>
+          <target state="translated" state-qualifier="tm-suggestion">통가</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tokelau" translate="yes" xml:space="preserve">
+          <source>Tokelau</source>
+          <target state="translated" state-qualifier="tm-suggestion">토켈라우</target>
+        </trans-unit>
+        <trans-unit id="Resx/Togo" translate="yes" xml:space="preserve">
+          <source>Togo</source>
+          <target state="translated" state-qualifier="tm-suggestion">토고</target>
+        </trans-unit>
+        <trans-unit id="Resx/TimorLeste" translate="yes" xml:space="preserve">
+          <source>Timor-Leste</source>
+          <target state="translated" state-qualifier="tm-suggestion">동티모르</target>
+        </trans-unit>
+        <trans-unit id="Resx/Thailand" translate="yes" xml:space="preserve">
+          <source>Thailand</source>
+          <target state="translated" state-qualifier="tm-suggestion">태국</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tanzania" translate="yes" xml:space="preserve">
+          <source>Tanzania</source>
+          <target state="translated" state-qualifier="tm-suggestion">탄자니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Tajikistan" translate="yes" xml:space="preserve">
+          <source>Tajikistan</source>
+          <target state="translated" state-qualifier="tm-suggestion">타지키스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Taiwan" translate="yes" xml:space="preserve">
+          <source>Taiwan</source>
+          <target state="translated" state-qualifier="tm-suggestion">대만</target>
+        </trans-unit>
+        <trans-unit id="Resx/Syria" translate="yes" xml:space="preserve">
+          <source>Syria</source>
+          <target state="translated" state-qualifier="tm-suggestion">시리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Switzerland" translate="yes" xml:space="preserve">
+          <source>Switzerland</source>
+          <target state="translated" state-qualifier="tm-suggestion">스위스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Sweden" translate="yes" xml:space="preserve">
+          <source>Sweden</source>
+          <target state="translated" state-qualifier="tm-suggestion">스웨덴</target>
+        </trans-unit>
+        <trans-unit id="Resx/Swaziland" translate="yes" xml:space="preserve">
+          <source>Swaziland</source>
+          <target state="translated" state-qualifier="tm-suggestion">스와질란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Suriname" translate="yes" xml:space="preserve">
+          <source>Suriname</source>
+          <target state="translated" state-qualifier="tm-suggestion">수리남</target>
+        </trans-unit>
+        <trans-unit id="Resx/Sudan" translate="yes" xml:space="preserve">
+          <source>Sudan</source>
+          <target state="translated" state-qualifier="tm-suggestion">수단</target>
+        </trans-unit>
+        <trans-unit id="Resx/SriLanka" translate="yes" xml:space="preserve">
+          <source>Sri Lanka</source>
+          <target state="translated" state-qualifier="tm-suggestion">스리랑카</target>
+        </trans-unit>
+        <trans-unit id="Resx/Spain" translate="yes" xml:space="preserve">
+          <source>Spain</source>
+          <target state="translated" state-qualifier="tm-suggestion">스페인</target>
+        </trans-unit>
+        <trans-unit id="Resx/SouthSudan" translate="yes" xml:space="preserve">
+          <source>South Sudan</source>
+          <target state="translated" state-qualifier="tm-suggestion">남수단</target>
+        </trans-unit>
+        <trans-unit id="Resx/SouthKorea" translate="yes" xml:space="preserve">
+          <source>South Korea</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">대한민국</target>
+        </trans-unit>
+        <trans-unit id="Resx/SouthAfrica" translate="yes" xml:space="preserve">
+          <source>South Africa</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">남아프리카 공화국</target>
+        </trans-unit>
+        <trans-unit id="Resx/Somalia" translate="yes" xml:space="preserve">
+          <source>Somalia</source>
+          <target state="translated" state-qualifier="tm-suggestion">소말리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Slovenia" translate="yes" xml:space="preserve">
+          <source>Slovenia</source>
+          <target state="translated" state-qualifier="tm-suggestion">슬로베니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Slovakia" translate="yes" xml:space="preserve">
+          <source>Slovakia</source>
+          <target state="translated" state-qualifier="tm-suggestion">슬로바키아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Singapore" translate="yes" xml:space="preserve">
+          <source>Singapore</source>
+          <target state="translated" state-qualifier="tm-suggestion">싱가포르</target>
+        </trans-unit>
+        <trans-unit id="Resx/SierraLeone" translate="yes" xml:space="preserve">
+          <source>Sierra Leone</source>
+          <target state="translated" state-qualifier="tm-suggestion">시에라리온</target>
+        </trans-unit>
+        <trans-unit id="Resx/Seychelles" translate="yes" xml:space="preserve">
+          <source>Seychelles</source>
+          <target state="translated" state-qualifier="tm-suggestion">세이셸</target>
+        </trans-unit>
+        <trans-unit id="Resx/Serbia" translate="yes" xml:space="preserve">
+          <source>Serbia</source>
+          <target state="translated" state-qualifier="tm-suggestion">세르비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Senegal" translate="yes" xml:space="preserve">
+          <source>Senegal</source>
+          <target state="translated" state-qualifier="tm-suggestion">세네갈</target>
+        </trans-unit>
+        <trans-unit id="Resx/SaudiArabia" translate="yes" xml:space="preserve">
+          <source>Saudi Arabia</source>
+          <target state="translated" state-qualifier="tm-suggestion">사우디아라비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/SaoTomeAndPrincipe" translate="yes" xml:space="preserve">
+          <source>Sao Tome and Principe</source>
+          <target state="translated" state-qualifier="tm-suggestion">상투메 프린시페</target>
+        </trans-unit>
+        <trans-unit id="Resx/SanMarino" translate="yes" xml:space="preserve">
+          <source>San Marino</source>
+          <target state="translated" state-qualifier="tm-suggestion">산마리노</target>
+        </trans-unit>
+        <trans-unit id="Resx/Samoa" translate="yes" xml:space="preserve">
+          <source>Samoa</source>
+          <target state="translated" state-qualifier="tm-suggestion">사모아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Rwanda" translate="yes" xml:space="preserve">
+          <source>Rwanda</source>
+          <target state="translated" state-qualifier="tm-suggestion">르완다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Russia" translate="yes" xml:space="preserve">
+          <source>Russia</source>
+          <target state="translated" state-qualifier="tm-suggestion">러시아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Romania" translate="yes" xml:space="preserve">
+          <source>Romania</source>
+          <target state="translated" state-qualifier="tm-suggestion">루마니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Qatar" translate="yes" xml:space="preserve">
+          <source>Qatar</source>
+          <target state="translated" state-qualifier="tm-suggestion">카타르</target>
+        </trans-unit>
+        <trans-unit id="Resx/PuertoRico" translate="yes" xml:space="preserve">
+          <source>Puerto Rico</source>
+          <target state="translated" state-qualifier="tm-suggestion">푸에르토리코</target>
+        </trans-unit>
+        <trans-unit id="Resx/Portugal" translate="yes" xml:space="preserve">
+          <source>Portugal</source>
+          <target state="translated" state-qualifier="tm-suggestion">포르투갈</target>
+        </trans-unit>
+        <trans-unit id="Resx/Poland" translate="yes" xml:space="preserve">
+          <source>Poland</source>
+          <target state="translated" state-qualifier="tm-suggestion">폴란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Pitcairn" translate="yes" xml:space="preserve">
+          <source>Pitcairn</source>
+          <target state="translated" state-qualifier="tm-suggestion">핏케언</target>
+        </trans-unit>
+        <trans-unit id="Resx/Philippines" translate="yes" xml:space="preserve">
+          <source>Philippines</source>
+          <target state="translated" state-qualifier="tm-suggestion">필리핀</target>
+        </trans-unit>
+        <trans-unit id="Resx/Peru" translate="yes" xml:space="preserve">
+          <source>Peru</source>
+          <target state="translated" state-qualifier="tm-suggestion">페루</target>
+        </trans-unit>
+        <trans-unit id="Resx/Paraguay" translate="yes" xml:space="preserve">
+          <source>Paraguay</source>
+          <target state="translated" state-qualifier="tm-suggestion">파라과이</target>
+        </trans-unit>
+        <trans-unit id="Resx/PapuaNewGuinea" translate="yes" xml:space="preserve">
+          <source>Papua New Guinea</source>
+          <target state="translated" state-qualifier="tm-suggestion">파푸아뉴기니</target>
+        </trans-unit>
+        <trans-unit id="Resx/Panama" translate="yes" xml:space="preserve">
+          <source>Panama</source>
+          <target state="translated" state-qualifier="tm-suggestion">파나마</target>
+        </trans-unit>
+        <trans-unit id="Resx/Palestine" translate="yes" xml:space="preserve">
+          <source>Palestine</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Palestine</target>
+        </trans-unit>
+        <trans-unit id="Resx/Palau" translate="yes" xml:space="preserve">
+          <source>Palau</source>
+          <target state="translated" state-qualifier="tm-suggestion">팔라우</target>
+        </trans-unit>
+        <trans-unit id="Resx/Pakistan" translate="yes" xml:space="preserve">
+          <source>Pakistan</source>
+          <target state="translated" state-qualifier="tm-suggestion">파키스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Oman" translate="yes" xml:space="preserve">
+          <source>Oman</source>
+          <target state="translated" state-qualifier="tm-suggestion">오만</target>
+        </trans-unit>
+        <trans-unit id="Resx/Norway" translate="yes" xml:space="preserve">
+          <source>Norway</source>
+          <target state="translated" state-qualifier="tm-suggestion">노르웨이</target>
+        </trans-unit>
+        <trans-unit id="Resx/NorthKorea" translate="yes" xml:space="preserve">
+          <source>North Korea</source>
+          <target state="translated" state-qualifier="tm-suggestion">북한</target>
+        </trans-unit>
+        <trans-unit id="Resx/Niue" translate="yes" xml:space="preserve">
+          <source>Niue</source>
+          <target state="translated" state-qualifier="tm-suggestion">니우에</target>
+        </trans-unit>
+        <trans-unit id="Resx/Nigeria" translate="yes" xml:space="preserve">
+          <source>Nigeria</source>
+          <target state="translated" state-qualifier="tm-suggestion">나이지리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Niger" translate="yes" xml:space="preserve">
+          <source>Niger</source>
+          <target state="translated" state-qualifier="tm-suggestion">니제르</target>
+        </trans-unit>
+        <trans-unit id="Resx/Nicaragua" translate="yes" xml:space="preserve">
+          <source>Nicaragua</source>
+          <target state="translated" state-qualifier="tm-suggestion">니카라과</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewZealand" translate="yes" xml:space="preserve">
+          <source>New Zealand</source>
+          <target state="translated" state-qualifier="tm-suggestion">뉴질랜드</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewCaledonia" translate="yes" xml:space="preserve">
+          <source>New Caledonia</source>
+          <target state="translated" state-qualifier="tm-suggestion">뉴칼레도니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Netherlands" translate="yes" xml:space="preserve">
+          <source>Netherlands</source>
+          <target state="translated" state-qualifier="tm-suggestion">네덜란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Nepal" translate="yes" xml:space="preserve">
+          <source>Nepal</source>
+          <target state="translated" state-qualifier="tm-suggestion">네팔</target>
+        </trans-unit>
+        <trans-unit id="Resx/Nauru" translate="yes" xml:space="preserve">
+          <source>Nauru</source>
+          <target state="translated" state-qualifier="tm-suggestion">나우루</target>
+        </trans-unit>
+        <trans-unit id="Resx/Namibia" translate="yes" xml:space="preserve">
+          <source>Namibia</source>
+          <target state="translated" state-qualifier="tm-suggestion">나미비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Myanmar" translate="yes" xml:space="preserve">
+          <source>Myanmar</source>
+          <target state="translated" state-qualifier="tm-suggestion">미얀마</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mozambique" translate="yes" xml:space="preserve">
+          <source>Mozambique</source>
+          <target state="translated" state-qualifier="tm-suggestion">모잠비크</target>
+        </trans-unit>
+        <trans-unit id="Resx/Morocco" translate="yes" xml:space="preserve">
+          <source>Morocco</source>
+          <target state="translated" state-qualifier="tm-suggestion">모로코</target>
+        </trans-unit>
+        <trans-unit id="Resx/Montserrat" translate="yes" xml:space="preserve">
+          <source>Montserrat</source>
+          <target state="translated" state-qualifier="tm-suggestion">몬트세라트</target>
+        </trans-unit>
+        <trans-unit id="Resx/Montenegro" translate="yes" xml:space="preserve">
+          <source>Montenegro</source>
+          <target state="translated" state-qualifier="tm-suggestion">몬테네그로</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mongolia" translate="yes" xml:space="preserve">
+          <source>Mongolia</source>
+          <target state="translated" state-qualifier="tm-suggestion">몽골</target>
+        </trans-unit>
+        <trans-unit id="Resx/Monaco" translate="yes" xml:space="preserve">
+          <source>Monaco</source>
+          <target state="translated" state-qualifier="tm-suggestion">모나코</target>
+        </trans-unit>
+        <trans-unit id="Resx/Moldova" translate="yes" xml:space="preserve">
+          <source>Moldova</source>
+          <target state="translated" state-qualifier="tm-suggestion">몰도바</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mexico" translate="yes" xml:space="preserve">
+          <source>Mexico</source>
+          <target state="translated" state-qualifier="tm-suggestion">멕시코</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mayotte" translate="yes" xml:space="preserve">
+          <source>Mayotte</source>
+          <target state="translated" state-qualifier="tm-suggestion">마요트</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mauritius" translate="yes" xml:space="preserve">
+          <source>Mauritius</source>
+          <target state="translated" state-qualifier="tm-suggestion">모리셔스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mauritania" translate="yes" xml:space="preserve">
+          <source>Mauritania</source>
+          <target state="translated" state-qualifier="tm-suggestion">모리타니</target>
+        </trans-unit>
+        <trans-unit id="Resx/Martinique" translate="yes" xml:space="preserve">
+          <source>Martinique</source>
+          <target state="translated" state-qualifier="tm-suggestion">마르티니크</target>
+        </trans-unit>
+        <trans-unit id="Resx/Malta" translate="yes" xml:space="preserve">
+          <source>Malta</source>
+          <target state="translated" state-qualifier="tm-suggestion">몰타</target>
+        </trans-unit>
+        <trans-unit id="Resx/Mali" translate="yes" xml:space="preserve">
+          <source>Mali</source>
+          <target state="translated" state-qualifier="tm-suggestion">말리</target>
+        </trans-unit>
+        <trans-unit id="Resx/Maldives" translate="yes" xml:space="preserve">
+          <source>Maldives</source>
+          <target state="translated" state-qualifier="tm-suggestion">몰디브</target>
+        </trans-unit>
+        <trans-unit id="Resx/Malaysia" translate="yes" xml:space="preserve">
+          <source>Malaysia</source>
+          <target state="translated" state-qualifier="tm-suggestion">말레이시아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Malawi" translate="yes" xml:space="preserve">
+          <source>Malawi</source>
+          <target state="translated" state-qualifier="tm-suggestion">말라위</target>
+        </trans-unit>
+        <trans-unit id="Resx/Madagascar" translate="yes" xml:space="preserve">
+          <source>Madagascar</source>
+          <target state="translated" state-qualifier="tm-suggestion">마다가스카르</target>
+        </trans-unit>
+        <trans-unit id="Resx/Macedonia" translate="yes" xml:space="preserve">
+          <source>Macedonia</source>
+          <target state="translated" state-qualifier="tm-suggestion">마케도니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Macao" translate="yes" xml:space="preserve">
+          <source>Macao</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">마카오</target>
+        </trans-unit>
+        <trans-unit id="Resx/Luxembourg" translate="yes" xml:space="preserve">
+          <source>Luxembourg</source>
+          <target state="translated" state-qualifier="tm-suggestion">룩셈부르크</target>
+        </trans-unit>
+        <trans-unit id="Resx/Lithuania" translate="yes" xml:space="preserve">
+          <source>Lithuania</source>
+          <target state="translated" state-qualifier="tm-suggestion">리투아니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Liechtenstein" translate="yes" xml:space="preserve">
+          <source>Liechtenstein</source>
+          <target state="translated" state-qualifier="tm-suggestion">리히텐슈타인</target>
+        </trans-unit>
+        <trans-unit id="Resx/Libya" translate="yes" xml:space="preserve">
+          <source>Libya</source>
+          <target state="translated" state-qualifier="tm-suggestion">리비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Liberia" translate="yes" xml:space="preserve">
+          <source>Liberia</source>
+          <target state="translated" state-qualifier="tm-suggestion">라이베리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Lesotho" translate="yes" xml:space="preserve">
+          <source>Lesotho</source>
+          <target state="translated" state-qualifier="tm-suggestion">레소토</target>
+        </trans-unit>
+        <trans-unit id="Resx/Lebanon" translate="yes" xml:space="preserve">
+          <source>Lebanon</source>
+          <target state="translated" state-qualifier="tm-suggestion">레바논</target>
+        </trans-unit>
+        <trans-unit id="Resx/Latvia" translate="yes" xml:space="preserve">
+          <source>Latvia</source>
+          <target state="translated" state-qualifier="tm-suggestion">라트비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Kyrgyzstan" translate="yes" xml:space="preserve">
+          <source>Kyrgyzstan</source>
+          <target state="translated" state-qualifier="tm-suggestion">키르기스스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Kuwait" translate="yes" xml:space="preserve">
+          <source>Kuwait</source>
+          <target state="translated" state-qualifier="tm-suggestion">쿠웨이트</target>
+        </trans-unit>
+        <trans-unit id="Resx/Kiribati" translate="yes" xml:space="preserve">
+          <source>Kiribati</source>
+          <target state="translated" state-qualifier="tm-suggestion">키리바시</target>
+        </trans-unit>
+        <trans-unit id="Resx/Kenya" translate="yes" xml:space="preserve">
+          <source>Kenya</source>
+          <target state="translated" state-qualifier="tm-suggestion">케냐</target>
+        </trans-unit>
+        <trans-unit id="Resx/Kazakhstan" translate="yes" xml:space="preserve">
+          <source>Kazakhstan</source>
+          <target state="translated" state-qualifier="tm-suggestion">카자흐스탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Jordan" translate="yes" xml:space="preserve">
+          <source>Jordan</source>
+          <target state="translated" state-qualifier="tm-suggestion">요르단</target>
+        </trans-unit>
+        <trans-unit id="Resx/Jersey" translate="yes" xml:space="preserve">
+          <source>Jersey</source>
+          <target state="translated" state-qualifier="tm-suggestion">저지</target>
+        </trans-unit>
+        <trans-unit id="Resx/Japan" translate="yes" xml:space="preserve">
+          <source>Japan</source>
+          <target state="translated" state-qualifier="tm-suggestion">일본</target>
+        </trans-unit>
+        <trans-unit id="Resx/Jamaica" translate="yes" xml:space="preserve">
+          <source>Jamaica</source>
+          <target state="translated" state-qualifier="tm-suggestion">자마이카</target>
+        </trans-unit>
+        <trans-unit id="Resx/IvoryCoast" translate="yes" xml:space="preserve">
+          <source>Côte d'Ivoire</source>
+          <target state="translated" state-qualifier="tm-suggestion">코트디부아르</target>
+        </trans-unit>
+        <trans-unit id="Resx/Italy" translate="yes" xml:space="preserve">
+          <source>Italy</source>
+          <target state="translated" state-qualifier="tm-suggestion">이탈리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Israel" translate="yes" xml:space="preserve">
+          <source>Israel</source>
+          <target state="translated" state-qualifier="tm-suggestion">이스라엘</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ireland" translate="yes" xml:space="preserve">
+          <source>Ireland</source>
+          <target state="translated" state-qualifier="tm-suggestion">아일랜드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Iraq" translate="yes" xml:space="preserve">
+          <source>Iraq</source>
+          <target state="translated" state-qualifier="tm-suggestion">이라크</target>
+        </trans-unit>
+        <trans-unit id="Resx/Iran" translate="yes" xml:space="preserve">
+          <source>Iran</source>
+          <target state="translated" state-qualifier="tm-suggestion">이란</target>
+        </trans-unit>
+        <trans-unit id="Resx/Indonesia" translate="yes" xml:space="preserve">
+          <source>Indonesia</source>
+          <target state="translated" state-qualifier="tm-suggestion">인도네시아</target>
+        </trans-unit>
+        <trans-unit id="Resx/India" translate="yes" xml:space="preserve">
+          <source>India</source>
+          <target state="translated" state-qualifier="tm-suggestion">인도</target>
+        </trans-unit>
+        <trans-unit id="Resx/Iceland" translate="yes" xml:space="preserve">
+          <source>Iceland</source>
+          <target state="translated" state-qualifier="tm-suggestion">아이슬란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Hungary" translate="yes" xml:space="preserve">
+          <source>Hungary</source>
+          <target state="translated" state-qualifier="tm-suggestion">헝가리</target>
+        </trans-unit>
+        <trans-unit id="Resx/HongKong" translate="yes" xml:space="preserve">
+          <source>Hong Kong</source>
+          <target state="translated" state-qualifier="tm-suggestion">홍콩</target>
+        </trans-unit>
+        <trans-unit id="Resx/Honduras" translate="yes" xml:space="preserve">
+          <source>Honduras</source>
+          <target state="translated" state-qualifier="tm-suggestion">온두라스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Haiti" translate="yes" xml:space="preserve">
+          <source>Haiti</source>
+          <target state="translated" state-qualifier="tm-suggestion">하이티</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guyana" translate="yes" xml:space="preserve">
+          <source>Guyana</source>
+          <target state="translated" state-qualifier="tm-suggestion">가이아나</target>
+        </trans-unit>
+        <trans-unit id="Resx/GuineaBissau" translate="yes" xml:space="preserve">
+          <source>Guinea-Bissau</source>
+          <target state="translated" state-qualifier="tm-suggestion">기니비사우</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guinea" translate="yes" xml:space="preserve">
+          <source>Guinea</source>
+          <target state="translated" state-qualifier="tm-suggestion">기니</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guernsey" translate="yes" xml:space="preserve">
+          <source>Guernsey</source>
+          <target state="translated" state-qualifier="tm-suggestion">건지</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guatemala" translate="yes" xml:space="preserve">
+          <source>Guatemala</source>
+          <target state="translated" state-qualifier="tm-suggestion">과테말라</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guam" translate="yes" xml:space="preserve">
+          <source>Guam</source>
+          <target state="translated" state-qualifier="tm-suggestion">괌</target>
+        </trans-unit>
+        <trans-unit id="Resx/Guadeloupe" translate="yes" xml:space="preserve">
+          <source>Guadeloupe</source>
+          <target state="translated" state-qualifier="tm-suggestion">과들루프</target>
+        </trans-unit>
+        <trans-unit id="Resx/Grenada" translate="yes" xml:space="preserve">
+          <source>Grenada</source>
+          <target state="translated" state-qualifier="tm-suggestion">그레나다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Greenland" translate="yes" xml:space="preserve">
+          <source>Greenland</source>
+          <target state="translated" state-qualifier="tm-suggestion">그린란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Greece" translate="yes" xml:space="preserve">
+          <source>Greece</source>
+          <target state="translated" state-qualifier="tm-suggestion">그리스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Gibraltar" translate="yes" xml:space="preserve">
+          <source>Gibraltar</source>
+          <target state="translated" state-qualifier="tm-suggestion">지브롤터</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ghana" translate="yes" xml:space="preserve">
+          <source>Ghana</source>
+          <target state="translated" state-qualifier="tm-suggestion">가나</target>
+        </trans-unit>
+        <trans-unit id="Resx/Germany" translate="yes" xml:space="preserve">
+          <source>Germany</source>
+          <target state="translated" state-qualifier="tm-suggestion">독일</target>
+        </trans-unit>
+        <trans-unit id="Resx/Georgia" translate="yes" xml:space="preserve">
+          <source>Georgia</source>
+          <target state="translated" state-qualifier="tm-suggestion">그루지야</target>
+        </trans-unit>
+        <trans-unit id="Resx/Gambia" translate="yes" xml:space="preserve">
+          <source>Gambia</source>
+          <target state="translated" state-qualifier="tm-suggestion">감비아                                </target>
+        </trans-unit>
+        <trans-unit id="Resx/Gabon" translate="yes" xml:space="preserve">
+          <source>Gabon</source>
+          <target state="translated" state-qualifier="tm-suggestion">가봉</target>
+        </trans-unit>
+        <trans-unit id="Resx/FrenchPolynesia" translate="yes" xml:space="preserve">
+          <source>French Polynesia</source>
+          <target state="translated" state-qualifier="tm-suggestion">프랑스령 폴리네시아</target>
+        </trans-unit>
+        <trans-unit id="Resx/FrenchGuiana" translate="yes" xml:space="preserve">
+          <source>French Guiana</source>
+          <target state="translated" state-qualifier="tm-suggestion">프랑스령 기아나</target>
+        </trans-unit>
+        <trans-unit id="Resx/France" translate="yes" xml:space="preserve">
+          <source>France</source>
+          <target state="translated" state-qualifier="tm-suggestion">프랑스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Finland" translate="yes" xml:space="preserve">
+          <source>Finland</source>
+          <target state="translated" state-qualifier="tm-suggestion">핀란드</target>
+        </trans-unit>
+        <trans-unit id="Resx/Fiji" translate="yes" xml:space="preserve">
+          <source>Fiji</source>
+          <target state="translated" state-qualifier="tm-suggestion">피지</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ethiopia" translate="yes" xml:space="preserve">
+          <source>Ethiopia</source>
+          <target state="translated" state-qualifier="tm-suggestion">에티오피아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Estonia" translate="yes" xml:space="preserve">
+          <source>Estonia</source>
+          <target state="translated" state-qualifier="tm-suggestion">에스토니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Eritrea" translate="yes" xml:space="preserve">
+          <source>Eritrea</source>
+          <target state="translated" state-qualifier="tm-suggestion">에리트레아</target>
+        </trans-unit>
+        <trans-unit id="Resx/EquatorialGuinea" translate="yes" xml:space="preserve">
+          <source>Equatorial Guinea</source>
+          <target state="translated" state-qualifier="tm-suggestion">적도 기니</target>
+        </trans-unit>
+        <trans-unit id="Resx/ElSalvador" translate="yes" xml:space="preserve">
+          <source>El Salvador</source>
+          <target state="translated" state-qualifier="tm-suggestion">엘살바도르</target>
+        </trans-unit>
+        <trans-unit id="Resx/Egypt" translate="yes" xml:space="preserve">
+          <source>Egypt</source>
+          <target state="translated" state-qualifier="tm-suggestion">이집트</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ecuador" translate="yes" xml:space="preserve">
+          <source>Ecuador</source>
+          <target state="translated" state-qualifier="tm-suggestion">에콰도르</target>
+        </trans-unit>
+        <trans-unit id="Resx/DominicanRepublic" translate="yes" xml:space="preserve">
+          <source>Dominican Republic</source>
+          <target state="translated" state-qualifier="tm-suggestion">도미니카 공화국</target>
+        </trans-unit>
+        <trans-unit id="Resx/Dominica" translate="yes" xml:space="preserve">
+          <source>Dominica</source>
+          <target state="translated" state-qualifier="tm-suggestion">도미니카</target>
+        </trans-unit>
+        <trans-unit id="Resx/Djibouti" translate="yes" xml:space="preserve">
+          <source>Djibouti</source>
+          <target state="translated" state-qualifier="tm-suggestion">지부티</target>
+        </trans-unit>
+        <trans-unit id="Resx/Denmark" translate="yes" xml:space="preserve">
+          <source>Denmark</source>
+          <target state="translated" state-qualifier="tm-suggestion">덴마크</target>
+        </trans-unit>
+        <trans-unit id="Resx/CzechRepublic" translate="yes" xml:space="preserve">
+          <source>Czech Republic</source>
+          <target state="translated" state-qualifier="tm-suggestion">체코</target>
+        </trans-unit>
+        <trans-unit id="Resx/DemocraticRepublicCongo" translate="yes" xml:space="preserve">
+          <source>Democratic Republic of Congo</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">콩고 민주 공화국</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cyprus" translate="yes" xml:space="preserve">
+          <source>Cyprus</source>
+          <target state="translated" state-qualifier="tm-suggestion">키프로스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Curacao" translate="yes" xml:space="preserve">
+          <source>Curaçao</source>
+          <target state="translated" state-qualifier="tm-suggestion">쿠라카오</target>
+        </trans-unit>
+        <trans-unit id="Resx/Croatia" translate="yes" xml:space="preserve">
+          <source>Croatia</source>
+          <target state="translated" state-qualifier="tm-suggestion">크로아티아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cuba" translate="yes" xml:space="preserve">
+          <source>Cuba</source>
+          <target state="translated" state-qualifier="tm-suggestion">쿠바</target>
+        </trans-unit>
+        <trans-unit id="Resx/CostaRica" translate="yes" xml:space="preserve">
+          <source>Costa Rica</source>
+          <target state="translated" state-qualifier="tm-suggestion">코스타리카</target>
+        </trans-unit>
+        <trans-unit id="Resx/Congo" translate="yes" xml:space="preserve">
+          <source>Congo</source>
+          <target state="translated" state-qualifier="tm-suggestion">콩고</target>
+        </trans-unit>
+        <trans-unit id="Resx/Comoros" translate="yes" xml:space="preserve">
+          <source>Comoros</source>
+          <target state="translated" state-qualifier="tm-suggestion">코모로</target>
+        </trans-unit>
+        <trans-unit id="Resx/Colombia" translate="yes" xml:space="preserve">
+          <source>Colombia</source>
+          <target state="translated" state-qualifier="tm-suggestion">콜롬비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/China" translate="yes" xml:space="preserve">
+          <source>China</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">중국</target>
+        </trans-unit>
+        <trans-unit id="Resx/Chile" translate="yes" xml:space="preserve">
+          <source>Chile</source>
+          <target state="translated" state-qualifier="tm-suggestion">칠레</target>
+        </trans-unit>
+        <trans-unit id="Resx/Chad" translate="yes" xml:space="preserve">
+          <source>Chad</source>
+          <target state="translated" state-qualifier="tm-suggestion">차드</target>
+        </trans-unit>
+        <trans-unit id="Resx/CentralAfricanRepublic" translate="yes" xml:space="preserve">
+          <source>Central African Republic</source>
+          <target state="translated" state-qualifier="tm-suggestion">중앙 아프리카 공화국</target>
+        </trans-unit>
+        <trans-unit id="Resx/CaymanIslands" translate="yes" xml:space="preserve">
+          <source>Cayman Islands</source>
+          <target state="translated" state-qualifier="tm-suggestion">케이맨 제도</target>
+        </trans-unit>
+        <trans-unit id="Resx/Canada" translate="yes" xml:space="preserve">
+          <source>Canada</source>
+          <target state="translated" state-qualifier="tm-suggestion">캐나다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cameroon" translate="yes" xml:space="preserve">
+          <source>Cameroon</source>
+          <target state="translated" state-qualifier="tm-suggestion">카메룬</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cambodia" translate="yes" xml:space="preserve">
+          <source>Cambodia</source>
+          <target state="translated" state-qualifier="tm-suggestion">캄보디아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Burundi" translate="yes" xml:space="preserve">
+          <source>Burundi</source>
+          <target state="translated" state-qualifier="tm-suggestion">부룬디</target>
+        </trans-unit>
+        <trans-unit id="Resx/BurkinaFaso" translate="yes" xml:space="preserve">
+          <source>Burkina Faso</source>
+          <target state="translated" state-qualifier="tm-suggestion">부르키나파소</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bulgaria" translate="yes" xml:space="preserve">
+          <source>Bulgaria</source>
+          <target state="translated" state-qualifier="tm-suggestion">불가리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Brunei" translate="yes" xml:space="preserve">
+          <source>Brunei Darussalam</source>
+          <target state="translated" state-qualifier="tm-suggestion">브루나이</target>
+        </trans-unit>
+        <trans-unit id="Resx/Brazil" translate="yes" xml:space="preserve">
+          <source>Brazil</source>
+          <target state="translated" state-qualifier="tm-suggestion">브라질</target>
+        </trans-unit>
+        <trans-unit id="Resx/Botswana" translate="yes" xml:space="preserve">
+          <source>Botswana</source>
+          <target state="translated" state-qualifier="tm-suggestion">보츠와나</target>
+        </trans-unit>
+        <trans-unit id="Resx/BosniaAndHerzegovina" translate="yes" xml:space="preserve">
+          <source>Bosnia and Herzegovina</source>
+          <target state="translated" state-qualifier="tm-suggestion">보스니아 헤르체고비나</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bolivia" translate="yes" xml:space="preserve">
+          <source>Bolivia</source>
+          <target state="translated" state-qualifier="tm-suggestion">볼리비아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bhutan" translate="yes" xml:space="preserve">
+          <source>Bhutan</source>
+          <target state="translated" state-qualifier="tm-suggestion">부탄</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bermuda" translate="yes" xml:space="preserve">
+          <source>Bermuda</source>
+          <target state="translated" state-qualifier="tm-suggestion">버뮤다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Benin" translate="yes" xml:space="preserve">
+          <source>Benin</source>
+          <target state="translated" state-qualifier="tm-suggestion">베넹</target>
+        </trans-unit>
+        <trans-unit id="Resx/Belize" translate="yes" xml:space="preserve">
+          <source>Belize</source>
+          <target state="translated" state-qualifier="tm-suggestion">벨리즈</target>
+        </trans-unit>
+        <trans-unit id="Resx/Belgium" translate="yes" xml:space="preserve">
+          <source>Belgium</source>
+          <target state="translated" state-qualifier="tm-suggestion">벨기에</target>
+        </trans-unit>
+        <trans-unit id="Resx/Belarus" translate="yes" xml:space="preserve">
+          <source>Belarus</source>
+          <target state="translated" state-qualifier="tm-suggestion">벨로루시</target>
+        </trans-unit>
+        <trans-unit id="Resx/Barbados" translate="yes" xml:space="preserve">
+          <source>Barbados</source>
+          <target state="translated" state-qualifier="tm-suggestion">바베이도스</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bangladesh" translate="yes" xml:space="preserve">
+          <source>Bangladesh</source>
+          <target state="translated" state-qualifier="tm-suggestion">방글라데시</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bahrain" translate="yes" xml:space="preserve">
+          <source>Bahrain</source>
+          <target state="translated" state-qualifier="tm-suggestion">바레인</target>
+        </trans-unit>
+        <trans-unit id="Resx/Bahamas" translate="yes" xml:space="preserve">
+          <source>Bahamas</source>
+          <target state="translated" state-qualifier="tm-suggestion">바하마</target>
+        </trans-unit>
+        <trans-unit id="Resx/Azerbaijan" translate="yes" xml:space="preserve">
+          <source>Azerbaijan</source>
+          <target state="translated" state-qualifier="tm-suggestion">아제르바이잔</target>
+        </trans-unit>
+        <trans-unit id="Resx/Austria" translate="yes" xml:space="preserve">
+          <source>Austria</source>
+          <target state="translated" state-qualifier="tm-suggestion">오스트리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Australia" translate="yes" xml:space="preserve">
+          <source>Australia</source>
+          <target state="translated" state-qualifier="tm-suggestion">오스트레일리아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Aruba" translate="yes" xml:space="preserve">
+          <source>Aruba</source>
+          <target state="translated" state-qualifier="tm-suggestion">아루바</target>
+        </trans-unit>
+        <trans-unit id="Resx/Armenia" translate="yes" xml:space="preserve">
+          <source>Armenia</source>
+          <target state="translated" state-qualifier="tm-suggestion">아르메니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Argentina" translate="yes" xml:space="preserve">
+          <source>Argentina</source>
+          <target state="translated" state-qualifier="tm-suggestion">아르헨티나</target>
+        </trans-unit>
+        <trans-unit id="Resx/AntiguaAndBarbuda" translate="yes" xml:space="preserve">
+          <source>Antigua and Barbuda</source>
+          <target state="translated" state-qualifier="tm-suggestion">앤티가 바부다</target>
+        </trans-unit>
+        <trans-unit id="Resx/Anguilla" translate="yes" xml:space="preserve">
+          <source>Anguilla</source>
+          <target state="translated" state-qualifier="tm-suggestion">앵귈라</target>
+        </trans-unit>
+        <trans-unit id="Resx/Angola" translate="yes" xml:space="preserve">
+          <source>Angola</source>
+          <target state="translated" state-qualifier="tm-suggestion">앙골라</target>
+        </trans-unit>
+        <trans-unit id="Resx/Andorra" translate="yes" xml:space="preserve">
+          <source>Andorra</source>
+          <target state="translated" state-qualifier="tm-suggestion">안도라</target>
+        </trans-unit>
+        <trans-unit id="Resx/AmericanSamoa" translate="yes" xml:space="preserve">
+          <source>American Samoa</source>
+          <target state="translated" state-qualifier="tm-suggestion">미국령 사모아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Algeria" translate="yes" xml:space="preserve">
+          <source>Algeria</source>
+          <target state="translated" state-qualifier="tm-suggestion">알제리</target>
+        </trans-unit>
+        <trans-unit id="Resx/Albania" translate="yes" xml:space="preserve">
+          <source>Albania</source>
+          <target state="translated" state-qualifier="tm-suggestion">알바니아</target>
+        </trans-unit>
+        <trans-unit id="Resx/Afghanistan" translate="yes" xml:space="preserve">
+          <source>Afghanistan</source>
+          <target state="translated" state-qualifier="tm-suggestion">아프가니스탄</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

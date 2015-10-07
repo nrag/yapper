@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "YapperAzureDeployment", "WindowsAzure1\YapperAzureDeployment.ccproj", "{AE3A293A-710B-4A35-A88B-4161C690337C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YapperWebRole", "YapperWebRole\YapperWebRole.csproj", "{87260626-F223-4E5E-9746-7E9C79D5E7D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{A1A97AA7-AA20-4236-A7BC-7405CEF7CEF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlCommands", "SqlCommands", "{C30234DC-F34C-43E3-BA57-581C9F65E915}"
+	ProjectSection(SolutionItems) = preProject
+		SqlCommands\CreateConversation.sql = SqlCommands\CreateConversation.sql
+		SqlCommands\CreateConversationRecipients.sql = SqlCommands\CreateConversationRecipients.sql
+		SqlCommands\CreateGroupTable.sql = SqlCommands\CreateGroupTable.sql
+		SqlCommands\CreateMessage.sql = SqlCommands\CreateMessage.sql
+		SqlCommands\CreateMessageTable.sql = SqlCommands\CreateMessageTable.sql
+		SqlCommands\CreateNotificationSubscriptionTable.sql = SqlCommands\CreateNotificationSubscriptionTable.sql
+		SqlCommands\CreateUserTable.sql = SqlCommands\CreateUserTable.sql
+		SqlCommands\GetConversationMessages.sql = SqlCommands\GetConversationMessages.sql
+		SqlCommands\GetConversations.txt = SqlCommands\GetConversations.txt
+		SqlCommands\RegisterNewUser.sql = SqlCommands\RegisterNewUser.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authenticator", "Authenticator\Authenticator.csproj", "{C5E00EAC-C799-474F-B9B7-19D2AFD737EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{041AC8A3-016F-4172-98FD-787523677314}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageStore", "MessageStore\MessageStore.csproj", "{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageStoreTest", "MessageStoreTest\MessageStoreTest.csproj", "{3A44E6A9-2DA0-4D09-B004-34D69D44E3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroSpeech.Imap", "..\..\..\..\IMAPSample\imapclient-25482\NeuroSpeech.Imap\NeuroSpeech.Imap.csproj", "{0CAC8A49-0563-414E-BD58-21791EBD77D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserServiceRole", "UserServiceRole\UserServiceRole.csproj", "{4AB56D64-D2AB-48BB-983F-B3201DB3F41B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3427994D-5860-45C5-8CEB-772221DB6A16}"
+	ProjectSection(SolutionItems) = preProject
+		packages\repositories.config = packages\repositories.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://nrag.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = Authenticator\\Authenticator.csproj
+		SccProjectName0 = Authenticator
+		SccAuxPath0 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath0 = Authenticator
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = DataAccessLayer\\DataAccessLayer.csproj
+		SccProjectName1 = DataAccessLayer
+		SccAuxPath1 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath1 = DataAccessLayer
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = YapperWebRole\\YapperWebRole.csproj
+		SccProjectName2 = YapperWebRole
+		SccAuxPath2 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath2 = YapperWebRole
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = WindowsAzure1\\YapperAzureDeployment.ccproj
+		SccProjectName3 = WindowsAzure1
+		SccAuxPath3 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath3 = WindowsAzure1
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = MessageStore\\MessageStore.csproj
+		SccProjectName4 = MessageStore
+		SccAuxPath4 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath4 = MessageStore
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = MessageStoreTest\\MessageStoreTest.csproj
+		SccProjectName5 = MessageStoreTest
+		SccAuxPath5 = https://nrag.visualstudio.com/defaultcollection
+		SccLocalPath5 = MessageStoreTest
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE3A293A-710B-4A35-A88B-4161C690337C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3A293A-710B-4A35-A88B-4161C690337C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3A293A-710B-4A35-A88B-4161C690337C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3A293A-710B-4A35-A88B-4161C690337C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87260626-F223-4E5E-9746-7E9C79D5E7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87260626-F223-4E5E-9746-7E9C79D5E7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87260626-F223-4E5E-9746-7E9C79D5E7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87260626-F223-4E5E-9746-7E9C79D5E7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A97AA7-AA20-4236-A7BC-7405CEF7CEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A97AA7-AA20-4236-A7BC-7405CEF7CEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A97AA7-AA20-4236-A7BC-7405CEF7CEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A97AA7-AA20-4236-A7BC-7405CEF7CEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E00EAC-C799-474F-B9B7-19D2AFD737EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E00EAC-C799-474F-B9B7-19D2AFD737EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E00EAC-C799-474F-B9B7-19D2AFD737EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E00EAC-C799-474F-B9B7-19D2AFD737EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD8F14F-BF8D-425A-824F-91E9C7CFE9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A44E6A9-2DA0-4D09-B004-34D69D44E3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A44E6A9-2DA0-4D09-B004-34D69D44E3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A44E6A9-2DA0-4D09-B004-34D69D44E3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A44E6A9-2DA0-4D09-B004-34D69D44E3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAC8A49-0563-414E-BD58-21791EBD77D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC8A49-0563-414E-BD58-21791EBD77D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC8A49-0563-414E-BD58-21791EBD77D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAC8A49-0563-414E-BD58-21791EBD77D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB56D64-D2AB-48BB-983F-B3201DB3F41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB56D64-D2AB-48BB-983F-B3201DB3F41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB56D64-D2AB-48BB-983F-B3201DB3F41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB56D64-D2AB-48BB-983F-B3201DB3F41B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

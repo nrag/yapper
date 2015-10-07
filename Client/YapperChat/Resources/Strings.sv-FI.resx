@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddGroupText" xml:space="preserve">
+    <value>Lägg till grupp</value>
+  </data>
+  <data name="AddMemberText" xml:space="preserve">
+    <value>Lägg till medlem</value>
+  </data>
+  <data name="AddMoreTaskItem" xml:space="preserve">
+    <value>Lägga till objekt till aktivitet</value>
+  </data>
+  <data name="AppointmentStartToEndTime" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="AppointmentTimeText" xml:space="preserve">
+    <value>Avtalad tid</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="CalendarAcceptMessage" xml:space="preserve">
+    <value>Accepterat</value>
+  </data>
+  <data name="CalendarAddOption" xml:space="preserve">
+    <value>Lägg till i kalender</value>
+  </data>
+  <data name="CalendarDeclineMessage" xml:space="preserve">
+    <value>Avböjt</value>
+  </data>
+  <data name="CalendarDeclineOption" xml:space="preserve">
+    <value>Tacka nej</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="CompletingRegistrationText" xml:space="preserve">
+    <value>Slutför registrering</value>
+  </data>
+  <data name="ComposePollText" xml:space="preserve">
+    <value>Skapa röstning</value>
+  </data>
+  <data name="ComposeTaskColonText" xml:space="preserve">
+    <value>Skapa aktivitet:</value>
+  </data>
+  <data name="ContactDetailsText" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="CreateGroupText" xml:space="preserve">
+    <value>Skapa grupp</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="DeleteAllChatsFromPhoneText" xml:space="preserve">
+    <value>Ta bort alla chattar från telefon</value>
+  </data>
+  <data name="DoneText" xml:space="preserve">
+    <value>Klar</value>
+  </data>
+  <data name="DontTextAndDrive" xml:space="preserve">
+    <value>Det verkar som om du kör på {0} mph. Ange inte text och enhet. Om du inte är drivrutinen trycker du på ok och fortsätt.</value>
+  </data>
+  <data name="DurationText" xml:space="preserve">
+    <value>Varaktighet</value>
+  </data>
+  <data name="EmptyQuestionText" xml:space="preserve">
+    <value>Tom fråga</value>
+  </data>
+  <data name="EnableChatHeadsText" xml:space="preserve">
+    <value>Aktivera chat-huvuden</value>
+  </data>
+  <data name="EnableDebugModeText" xml:space="preserve">
+    <value>Aktivera felsökningsläget</value>
+  </data>
+  <data name="EnablePushNotificationText" xml:space="preserve">
+    <value>Aktivera push-meddelande</value>
+  </data>
+  <data name="EnableSendingLocationText" xml:space="preserve">
+    <value>Aktivera skicka plats</value>
+  </data>
+  <data name="EncryptText" xml:space="preserve">
+    <value>Kryptera</value>
+  </data>
+  <data name="EnterAMessage" xml:space="preserve">
+    <value>Ange ett meddelande innan du skickar</value>
+  </data>
+  <data name="EnterTheSixHiphenDigitConfirmationCodeSentByYapperInSMSColon" xml:space="preserve">
+    <value>Ange 6-siffriga bekräftelsekoden skickas av Yapper i SMS:</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Fre</value>
+  </data>
+  <data name="GroupDetailsText" xml:space="preserve">
+    <value>Gruppinformation</value>
+  </data>
+  <data name="HomeText" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="InviteFriendsText" xml:space="preserve">
+    <value>Bjuda in vänner</value>
+  </data>
+  <data name="InviteText" xml:space="preserve">
+    <value>Bjud in</value>
+  </data>
+  <data name="IsYourPhoneNumberCorrectText" xml:space="preserve">
+    <value>Är ditt telefonnummer korrekt?</value>
+  </data>
+  <data name="ItemsText" xml:space="preserve">
+    <value>artiklar</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>Jul</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="LoadingSpace3DotsText" xml:space="preserve">
+    <value>Laddar...</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>Inläsning</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>Inloggning</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>Kan</value>
+  </data>
+  <data name="MembersText" xml:space="preserve">
+    <value>Medlemmar</value>
+  </data>
+  <data name="MobileText" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>MON</value>
+  </data>
+  <data name="MyCalendarAccept" xml:space="preserve">
+    <value>Du har accepterat</value>
+  </data>
+  <data name="MyCalendarDecline" xml:space="preserve">
+    <value>Du har tackat nej till mötet</value>
+  </data>
+  <data name="MyPollResponse" xml:space="preserve">
+    <value>Du har svarat '{0}' på frågan</value>
+  </data>
+  <data name="NameColonText" xml:space="preserve">
+    <value>Namn:</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Namn</value>
+  </data>
+  <data name="NewChatText" xml:space="preserve">
+    <value>Nya Chat</value>
+  </data>
+  <data name="NewGroupText" xml:space="preserve">
+    <value>Ny grupp</value>
+  </data>
+  <data name="NewPollText" xml:space="preserve">
+    <value>Ny avsökning</value>
+  </data>
+  <data name="NoUserContactsPageText" xml:space="preserve">
+    <value>Ingen användare i listan med telefonnummer har registrerats med Yapper.&amp;#10;&amp;#10; 1. Du kan skicka en inbjudan till begäran användare att installera yapper.&amp;#10;&amp;#10; 2. Du kan lägga till befintliga användare av Yapper telefon kontakten att börja chatta med dem.</value>
+    <comment></comment>
+  </data>
+  <data name="NoUserInformationText" xml:space="preserve">
+    <value>Kontaktlistan telefon har inte någon bjuda in just nu. Lägg till mobiltelefonnumret till den kontakt som du vill bjuda in till din telefon-kontaktlista. Komma tillbaka här efter det att skicka inbjudningar.</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>Okt</value>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OnlyOwnerCanModifyGroup" xml:space="preserve">
+    <value>Du är inte ägare av gruppen. Endast ägaren kan lägga till eller ta bort medlemmar.</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>Alternativ</value>
+  </data>
+  <data name="OtherCalendarAccept" xml:space="preserve">
+    <value>{0}-accepterat</value>
+  </data>
+  <data name="OtherCalendarDecline" xml:space="preserve">
+    <value>{0} avböjt mötet</value>
+  </data>
+  <data name="OtherCalendarNoResponse" xml:space="preserve">
+    <value>'{0}' har inte svarat på avtalad tid</value>
+  </data>
+  <data name="OtherPollNoResponse" xml:space="preserve">
+    <value>'{0}' har inte svarat på frågan</value>
+  </data>
+  <data name="OtherPollResponse" xml:space="preserve">
+    <value>'{0}' svarat '{1}' på frågan</value>
+  </data>
+  <data name="OwnerText" xml:space="preserve">
+    <value>Ägare</value>
+  </data>
+  <data name="PhoneNumberConfirmationText" xml:space="preserve">
+    <value>Telefon nummer bekräftelse</value>
+  </data>
+  <data name="PhoneNumberIdentityMessageText" xml:space="preserve">
+    <value>Yapper använder ditt telefonnummer som din identitet. Det här namnet nedan är vad andra ser när du message dem.</value>
+  </data>
+  <data name="PhoneNumberText" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <data name="PhoneNumberToRegisterText" xml:space="preserve">
+    <value>Telefonnummer för att registrera</value>
+  </data>
+  <data name="PollResponseMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PullMeDownMessage" xml:space="preserve">
+    <value>Pull-Lägg till ny uppgift</value>
+  </data>
+  <data name="PullMeDownTaskItemMessage" xml:space="preserve">
+    <value>Dra för att lägga till nytt uppgiftsobjekt</value>
+  </data>
+  <data name="QuestionText" xml:space="preserve">
+    <value>Fråga</value>
+  </data>
+  <data name="ReleaseToCreateNewItem" xml:space="preserve">
+    <value>Släpp för att skapa nytt objekt</value>
+  </data>
+  <data name="RemoveUserText" xml:space="preserve">
+    <value>Ta bort användare</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>SAT</value>
+  </data>
+  <data name="SelectMembersText" xml:space="preserve">
+    <value>Välj medlemmar</value>
+  </data>
+  <data name="SendingMessage3Colon" xml:space="preserve">
+    <value>Skickar meddelande...</value>
+  </data>
+  <data name="SendingMessageText" xml:space="preserve">
+    <value>Skicka meddelande</value>
+  </data>
+  <data name="SendMessageText" xml:space="preserve">
+    <value>Skicka meddelande</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>Sept</value>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>Inställningar</value>
+  </data>
+  <data name="ShowAllResponsesText" xml:space="preserve">
+    <value>Visa alla svar</value>
+  </data>
+  <data name="SignoutText" xml:space="preserve">
+    <value>Utloggning</value>
+  </data>
+  <data name="SMSVerificationText" xml:space="preserve">
+    <value>SMS-kontroll</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="SynchingText" xml:space="preserve">
+    <value>Synkronisera</value>
+  </data>
+  <data name="TaskAcceptOption" xml:space="preserve">
+    <value>Acceptera uppgift</value>
+  </data>
+  <data name="TaskAddedBy" xml:space="preserve">
+    <value>Lagts till av</value>
+  </data>
+  <data name="TaskDeclineOption" xml:space="preserve">
+    <value>Tacka nej</value>
+  </data>
+  <data name="TaskSharedBy" xml:space="preserve">
+    <value>Delats av {0}</value>
+  </data>
+  <data name="TaskListText" xml:space="preserve">
+    <value>Uppgiftslista</value>
+  </data>
+  <data name="TaskSharedWith" xml:space="preserve">
+    <value>Delat med {0}</value>
+  </data>
+  <data name="ThisIsNotAnAppointment" xml:space="preserve">
+    <value>Detta är inte en avtalad tid</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Tors</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>TIS</value>
+  </data>
+  <data name="UnknownUser" xml:space="preserve">
+    <value>Okänd användare</value>
+  </data>
+  <data name="UntitledTask" xml:space="preserve">
+    <value>Namnlös</value>
+  </data>
+  <data name="ValidatingConfirmationCodeText" xml:space="preserve">
+    <value>Validera bekräftelsekod</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Ons</value>
+  </data>
+  <data name="YapperChatText" xml:space="preserve">
+    <value>Yapper Chat</value>
+  </data>
+  <data name="YapperSMSMessageText" xml:space="preserve">
+    <value>Yapper kommer att skicka ett SMS-meddelande med den sexsiffriga koden till kontrollen:</value>
+  </data>
+  <data name="YapperText" xml:space="preserve">
+    <value>Yapper</value>
+  </data>
+  <data name="YouAreHereText" xml:space="preserve">
+    <value>Du är här</value>
+  </data>
+  <data name="SendText" xml:space="preserve">
+    <value>Skicka</value>
+  </data>
+  <data name="CompletedTaskCount" xml:space="preserve">
+    <value>uppgiftsobjekt som slutförd</value>
+  </data>
+  <data name="PreInstallNoUserText" xml:space="preserve">
+    <value>Det finns inga användare i Yapper som finns i dina telefonkontakter. Lägg till användare till dina kontakter.</value>
+  </data>
+  <data name="PreInstallText" xml:space="preserve">
+    <value>Du kommer att kunna kommunicera med följande Yapper-användare om du registrerar dig.</value>
+  </data>
+  <data name="LoadingAvailableUsersText" xml:space="preserve">
+    <value>Läser in tillgängliga användare som du kan chatta med...</value>
+  </data>
+  <data name="HasDeletedTask" xml:space="preserve">
+    <value>'{0}' har bort den delade aktiviteten '{1}'</value>
+  </data>
+  <data name="HasSharedTask" xml:space="preserve">
+    <value>'{0}' har delat en ny aktivitet '{1}'</value>
+  </data>
+  <data name="HasUpdatedTask" xml:space="preserve">
+    <value>'{0}' har uppdaterat aktiviteten '{1}'</value>
+  </data>
+  <data name="ListAlreadyShared" xml:space="preserve">
+    <value>Den här listan har redan delats med {0}. En lista kan delas med endast en kontakt eller grupp.</value>
+  </data>
+  <data name="SeeTask" xml:space="preserve">
+    <value>Visa aktivitet</value>
+  </data>
+  <data name="YouDeletedTask" xml:space="preserve">
+    <value>Du har tagit bort aktiviteten '{0}' som delas med {1}</value>
+  </data>
+  <data name="YouSharedTask" xml:space="preserve">
+    <value>Du delade aktiviteten '{0}' med '{1}'</value>
+  </data>
+  <data name="YouUpdatedTask" xml:space="preserve">
+    <value>Du har uppdaterat aktiviteten '{0}' som delas med {1}</value>
+  </data>
+  <data name="ShareTaskText" xml:space="preserve">
+    <value>Dela aktivitet</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Ny</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Uppdaterad</value>
+  </data>
+  <data name="TwentyPlus" xml:space="preserve">
+    <value>20 +</value>
+  </data>
+  <data name="TaskSharedWithGroup" xml:space="preserve">
+    <value>Delat med gruppen {0} av {1}'</value>
+  </data>
+  <data name="NewTaskItemText" xml:space="preserve">
+    <value>Nytt objekt</value>
+  </data>
+  <data name="NewTaskText" xml:space="preserve">
+    <value>Ny uppgift</value>
+  </data>
+  <data name="TaskCompletedBy" xml:space="preserve">
+    <value>Genomförd</value>
+  </data>
+  <data name="TaskUpdatedBy" xml:space="preserve">
+    <value>Uppdaterad av</value>
+  </data>
+  <data name="PhoneHintText" xml:space="preserve">
+    <value>Ange tiosiffriga telefonnummer</value>
+  </data>
+  <data name="NotAGroupMember" xml:space="preserve">
+    <value>Du är inte längre medlem av gruppen. Du kan inte skicka meddelanden till den här gruppen eller ta emot meddelanden från den här gruppen.</value>
+  </data>
+  <data name="CountryCodeText" xml:space="preserve">
+    <value>Välj land</value>
+  </data>
+  <data name="EnterValidNameText" xml:space="preserve">
+    <value>Ange ett giltigt namn</value>
+  </data>
+  <data name="InvalidPhoneNumberText" xml:space="preserve">
+    <value>Ange en giltig tiosiffriga telefonnummer</value>
+  </data>
+  <data name="HideCompletedTasksText" xml:space="preserve">
+    <value>Dölj slutförda aktiviteter</value>
+  </data>
+  <data name="UpdatedTask" xml:space="preserve">
+    <value>Aktiviteten '{0}' har uppdaterats</value>
+  </data>
+  <data name="TaskHintText" xml:space="preserve">
+    <value>Ange aktivitetens namn eller klistra in flera rad-aktiviteter</value>
+  </data>
+  <data name="WrongValidationCode" xml:space="preserve">
+    <value>Bekräftelsekod som angavs var felaktig. Skriv in det igen.</value>
+  </data>
+  <data name="SmsInvite" xml:space="preserve">
+    <value>{0} vill kommunicera med dig via Yapper. Installera Yapper från http://www.yapperchat.com.</value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>Zimbabwe</value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>Zambia</value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>Yemen</value>
+  </data>
+  <data name="Vietnam" xml:space="preserve">
+    <value>Vietnam</value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>Venezuela</value>
+  </data>
+  <data name="Vanuatu" xml:space="preserve">
+    <value>Vanuatu</value>
+  </data>
+  <data name="Uzbekistan" xml:space="preserve">
+    <value>Uzbekistan</value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>Uruguay</value>
+  </data>
+  <data name="UnitedStates" xml:space="preserve">
+    <value>USA</value>
+  </data>
+  <data name="UnitedKingdom" xml:space="preserve">
+    <value>Storbritannien</value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>Förenade Arabemiraten</value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>Ukraina</value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>Uganda</value>
+  </data>
+  <data name="Tuvalu" xml:space="preserve">
+    <value>Tuvalu</value>
+  </data>
+  <data name="Turkmenistan" xml:space="preserve">
+    <value>Turkmenistan</value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>Turkiet</value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>Tunisien</value>
+  </data>
+  <data name="TrinidadAndTobago" xml:space="preserve">
+    <value>Trinidad och Tobago</value>
+  </data>
+  <data name="Tonga" xml:space="preserve">
+    <value>Tonga</value>
+  </data>
+  <data name="Tokelau" xml:space="preserve">
+    <value>Tokelauöarna</value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>Togo</value>
+  </data>
+  <data name="TimorLeste" xml:space="preserve">
+    <value>Östtimor</value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>Thailand</value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>Tanzania</value>
+  </data>
+  <data name="Tajikistan" xml:space="preserve">
+    <value>Tadzjikistan</value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>Taiwan</value>
+  </data>
+  <data name="Syria" xml:space="preserve">
+    <value>Syrien</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Schweiz</value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>Sverige</value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>Swaziland</value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>Surinam</value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>Sudan</value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>Sri Lanka</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>Spanien</value>
+  </data>
+  <data name="SouthSudan" xml:space="preserve">
+    <value>Södra Sudan</value>
+  </data>
+  <data name="SouthKorea" xml:space="preserve">
+    <value>Sydkorea</value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>Sydafrika</value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>Somalia</value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>Slovenien</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>Slovakien</value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>Singapore</value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>Sierra Leone</value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>Seychellerna</value>
+  </data>
+  <data name="Serbia" xml:space="preserve">
+    <value>Serbien</value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>Senegal</value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>Saudiarabien</value>
+  </data>
+  <data name="SaoTomeAndPrincipe" xml:space="preserve">
+    <value>Sao Tome och Principe</value>
+  </data>
+  <data name="SanMarino" xml:space="preserve">
+    <value>San Marino</value>
+  </data>
+  <data name="Samoa" xml:space="preserve">
+    <value>Samoa</value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>Rwanda</value>
+  </data>
+  <data name="Russia" xml:space="preserve">
+    <value>Ryssland</value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>Rumänien</value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="PuertoRico" xml:space="preserve">
+    <value>Puerto Rico</value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>Portugal</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Polen</value>
+  </data>
+  <data name="Pitcairn" xml:space="preserve">
+    <value>Pitcairn</value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>Filippinerna</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>Peru</value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>Paraguay</value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>Papua Nya Guinea</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>Panama</value>
+  </data>
+  <data name="Palestine" xml:space="preserve">
+    <value>Palestine</value>
+  </data>
+  <data name="Palau" xml:space="preserve">
+    <value>Palau</value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>Pakistan</value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>Norge</value>
+  </data>
+  <data name="NorthKorea" xml:space="preserve">
+    <value>Nordkorea</value>
+  </data>
+  <data name="Niue" xml:space="preserve">
+    <value>Niue</value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>Nigeria</value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>Niger</value>
+  </data>
+  <data name="Nicaragua" xml:space="preserve">
+    <value>Nicaragua</value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>Nya Zeeland</value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>Nya Kaledonien</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>Nederländerna</value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>Nepal</value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>Nauru</value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>Namibia</value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>Myanmar</value>
+  </data>
+  <data name="Mozambique" xml:space="preserve">
+    <value>Moçambique</value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>Marocko</value>
+  </data>
+  <data name="Montserrat" xml:space="preserve">
+    <value>Montserrat</value>
+  </data>
+  <data name="Montenegro" xml:space="preserve">
+    <value>Montenegro</value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>Mongoliet</value>
+  </data>
+  <data name="Monaco" xml:space="preserve">
+    <value>Monaco</value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>Moldavien</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>Mexiko</value>
+  </data>
+  <data name="Mayotte" xml:space="preserve">
+    <value>Mayotte</value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>Mauritius</value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>Mauretanien</value>
+  </data>
+  <data name="Martinique" xml:space="preserve">
+    <value>Martinique</value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>Malta</value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>Mali</value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>Maldiverna</value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>Malaysia</value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>Malawi</value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>Madagaskar</value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>Makedonien</value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>Macao</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>Luxemburg</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>Litauen</value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>Liechtenstein</value>
+  </data>
+  <data name="Libya" xml:space="preserve">
+    <value>Libyen</value>
+  </data>
+  <data name="Liberia" xml:space="preserve">
+    <value>Liberia</value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>Lesotho</value>
+  </data>
+  <data name="Lebanon" xml:space="preserve">
+    <value>Libanon</value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>Lettland</value>
+  </data>
+  <data name="Kyrgyzstan" xml:space="preserve">
+    <value>Kirgizistan</value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>Kuwait</value>
+  </data>
+  <data name="Kiribati" xml:space="preserve">
+    <value>Kiribati</value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>Kenya</value>
+  </data>
+  <data name="Kazakhstan" xml:space="preserve">
+    <value>Kazakstan</value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>Jordan</value>
+  </data>
+  <data name="Jersey" xml:space="preserve">
+    <value>Jersey</value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>Japan</value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>Jamaica</value>
+  </data>
+  <data name="IvoryCoast" xml:space="preserve">
+    <value>(Côte d'Ivoire)</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>Italien</value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>Israel</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>Irland</value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>Irak</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>Iran</value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>Indonesien</value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>Indien</value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>Island</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>Ungern</value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>Hong Kong</value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>Honduras</value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>Haiti</value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>Guyana</value>
+  </data>
+  <data name="GuineaBissau" xml:space="preserve">
+    <value>Guinea-Bissau</value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>Guinea</value>
+  </data>
+  <data name="Guernsey" xml:space="preserve">
+    <value>Guernsey</value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>Guatemala</value>
+  </data>
+  <data name="Guam" xml:space="preserve">
+    <value>Guam</value>
+  </data>
+  <data name="Guadeloupe" xml:space="preserve">
+    <value>Guadeloupe</value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>Grenada</value>
+  </data>
+  <data name="Greenland" xml:space="preserve">
+    <value>Grönland</value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>Grekland</value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>Gibraltar</value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>Ghana</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>Tyskland</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>Georgien</value>
+  </data>
+  <data name="Gambia" xml:space="preserve">
+    <value>Gambia</value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>Gabon</value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>Franska Polynesien</value>
+  </data>
+  <data name="FrenchGuiana" xml:space="preserve">
+    <value>Franska Guyana</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>Frankrike</value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>Finland</value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>Fiji</value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>Etiopien</value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>Estland</value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>Eritrea</value>
+  </data>
+  <data name="EquatorialGuinea" xml:space="preserve">
+    <value>Ekvatorialguinea</value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>El Salvador</value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>Egypten</value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>Ecuador</value>
+  </data>
+  <data name="DominicanRepublic" xml:space="preserve">
+    <value>Dominikanska republiken</value>
+  </data>
+  <data name="Dominica" xml:space="preserve">
+    <value>Dominica</value>
+  </data>
+  <data name="Djibouti" xml:space="preserve">
+    <value>Djibouti</value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>Danmark</value>
+  </data>
+  <data name="CzechRepublic" xml:space="preserve">
+    <value>Tjeckien</value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>Cypern</value>
+  </data>
+  <data name="Curacao" xml:space="preserve">
+    <value>Curaçao</value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>Kroatien</value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>Costa Rica</value>
+  </data>
+  <data name="Congo" xml:space="preserve">
+    <value>Kongo</value>
+  </data>
+  <data name="Comoros" xml:space="preserve">
+    <value>Komorerna</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="China" xml:space="preserve">
+    <value>Kina</value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>Chile</value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>Tchad</value>
+  </data>
+  <data name="CentralAfricanRepublic" xml:space="preserve">
+    <value>Centralafrikanska republiken</value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>Caymanöarna</value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>Kanada</value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>Kamerun</value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>Kambodja</value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>Burundi</value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>Burkina Faso</value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>Bulgarien</value>
+  </data>
+  <data name="Brunei" xml:space="preserve">
+    <value>Brunei Darussalam</value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>Brasilien</value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>Botswana</value>
+  </data>
+  <data name="BosniaAndHerzegovina" xml:space="preserve">
+    <value>Bosnien och Hercegovina</value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>Bolivia</value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>Bhutan</value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>Bermudaöarna</value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>Benin</value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>Belize</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>Belgien</value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>Vitryssland</value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>Barbados</value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>Bangladesh</value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>Bahamas</value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>Azerbajdzjan</value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>Österrike</value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>Australien</value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>Aruba</value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>Armenien</value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>Argentina</value>
+  </data>
+  <data name="AntiguaAndBarbuda" xml:space="preserve">
+    <value>Antigua och Barbuda</value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>Anguilla</value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>Angola</value>
+  </data>
+  <data name="Andorra" xml:space="preserve">
+    <value>Andorra</value>
+  </data>
+  <data name="AmericanSamoa" xml:space="preserve">
+    <value>Amerikanska Samoa</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>Algeriet</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>Albanien</value>
+  </data>
+  <data name="Afghanistan" xml:space="preserve">
+    <value>Afghanistan</value>
+  </data>
+  <data name="YapperIntroduction" xml:space="preserve">
+    <value> Yapper kombinerar programmet för en enkel med kraften i e-post. Med Yapper kan du</value>
+  </data>
+  <data name="YapperTutorialStart" xml:space="preserve">
+    <value>Medan vi konfigurerar saker, låt oss titta på några unika funktioner i Yapper.</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Välkommen</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="CalendarPaneInstruction" xml:space="preserve">
+    <value>Markera kalender-bilagan i kalenderrutan</value>
+  </data>
+  <data name="CalendarAttachInstruction" xml:space="preserve">
+    <value>Om du vill skicka en avtalad tid i kalendern, innan du skickar ett meddelande klippet som bifogad fil i appbar</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Nästa</value>
+  </data>
+  <data name="PollPaneInstruction" xml:space="preserve">
+    <value>Markera kalender-bilagan i kalenderrutan</value>
+  </data>
+  <data name="PollAttachInstruction" xml:space="preserve">
+    <value>Om du vill skicka en Snabbenkät innan ett meddelande skickas klippet som bifogad fil i appbar</value>
+  </data>
+  <data name="Poll" xml:space="preserve">
+    <value>Snabbenkät</value>
+  </data>
+  <data name="SendTasks" xml:space="preserve">
+    <value>Skapa och dela aktiviteter</value>
+  </data>
+  <data name="TaskPageInstruction" xml:space="preserve">
+    <value>Om du vill visa befintliga uppgifter och skapa nya aktiviteter väljer aktivitet sidikonen överst i programmet</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Aktiviteter</value>
+  </data>
+  <data name="TaskAddNewInstruction" xml:space="preserve">
+    <value>Nya aktiviteter kan läggas till genom att klicka på knappen Lägg till i programfältet</value>
+  </data>
+  <data name="TaskDeleteInstruction" xml:space="preserve">
+    <value>Svep aktivitet till vänster om du vill ta bort en aktivitet</value>
+  </data>
+  <data name="TaskCompleteInstruction" xml:space="preserve">
+    <value>Svep för att slutföra en aktivitet, aktivitet till höger</value>
+  </data>
+  <data name="SendPoll" xml:space="preserve">
+    <value>Snabb röstning vänner</value>
+  </data>
+  <data name="SendCalendar" xml:space="preserve">
+    <value>Skicka avtalade tider i kalendern</value>
+  </data>
+  <data name="DemocraticRepublicCongo" xml:space="preserve">
+    <value>Demokratiska republiken Kongo</value>
+  </data>
+  <data name="Cuba" xml:space="preserve">
+    <value>Kuba</value>
+  </data>
+  <data name="TutorialText" xml:space="preserve">
+    <value>Självstudier</value>
+  </data>
+</root>
