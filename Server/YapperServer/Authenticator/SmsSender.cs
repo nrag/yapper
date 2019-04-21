@@ -8,9 +8,6 @@ namespace Authenticator
 {
     public class SmsSender
     {
-        private static string SID = "ACae58b3128e48c0cb138780f27e218dc7";
-
-        private static string AuthToken = "50778b46ffea7bda3c432a831d55e31d";
 
         private static Dictionary<string, string> SmsMessageFormat = new Dictionary<string, string>()
         {
