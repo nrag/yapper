@@ -12,9 +12,6 @@ namespace Authenticator
 {
     class NexmoAPI
     {
-        public static string Username = "d202d564";
-        public static string Password = "c961cccc";
-        public static string Sender = "12182967598";
 
         public NexmoResponse SendSMS(string to, string text)
         {
